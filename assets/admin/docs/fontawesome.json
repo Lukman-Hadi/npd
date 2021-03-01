@@ -1,0 +1,6656 @@
+[
+  {
+    "icon": "address-book",
+    "unicode": "f2b9",
+    "html": "<i class='fa fas-address-book'></i>",
+    "value": "fa fas-address-book"
+  },
+  {
+    "icon": "address-card",
+    "unicode": "f2bb",
+    "html": "<i class='fa fas-address-card'></i>",
+    "value": "fa fas-address-card"
+  },
+  {
+    "icon": "adjust",
+    "unicode": "f042",
+    "html": "<i class='fa fas-adjust'></i>",
+    "value": "fa fas-adjust"
+  },
+  {
+    "icon": "align-center",
+    "unicode": "f037",
+    "html": "<i class='fa fas-align-center'></i>",
+    "value": "fa fas-align-center"
+  },
+  {
+    "icon": "align-justify",
+    "unicode": "f039",
+    "html": "<i class='fa fas-align-justify'></i>",
+    "value": "fa fas-align-justify"
+  },
+  {
+    "icon": "align-left",
+    "unicode": "f036",
+    "html": "<i class='fa fas-align-left'></i>",
+    "value": "fa fas-align-left"
+  },
+  {
+    "icon": "align-right",
+    "unicode": "f038",
+    "html": "<i class='fa fas-align-right'></i>",
+    "value": "fa fas-align-right"
+  },
+  {
+    "icon": "allergies",
+    "unicode": "f461",
+    "html": "<i class='fa fas-allergies'></i>",
+    "value": "fa fas-allergies"
+  },
+  {
+    "icon": "ambulance",
+    "unicode": "f0f9",
+    "html": "<i class='fa fas-ambulance'></i>",
+    "value": "fa fas-ambulance"
+  },
+  {
+    "icon": "american-sign-language-interpreting",
+    "unicode": "f2a3",
+    "html": "<i class='fa fas-american-sign-language-interpreting'></i>",
+    "value": "fa fas-american-sign-language-interpreting"
+  },
+  {
+    "icon": "anchor",
+    "unicode": "f13d",
+    "html": "<i class='fa fas-anchor'></i>",
+    "value": "fa fas-anchor"
+  },
+  {
+    "icon": "angle-double-down",
+    "unicode": "f103",
+    "html": "<i class='fa fas-angle-double-down'></i>",
+    "value": "fa fas-angle-double-down"
+  },
+  {
+    "icon": "angle-double-left",
+    "unicode": "f100",
+    "html": "<i class='fa fas-angle-double-left'></i>",
+    "value": "fa fas-angle-double-left"
+  },
+  {
+    "icon": "angle-double-right",
+    "unicode": "f101",
+    "html": "<i class='fa fas-angle-double-right'></i>",
+    "value": "fa fas-angle-double-right"
+  },
+  {
+    "icon": "angle-double-up",
+    "unicode": "f102",
+    "html": "<i class='fa fas-angle-double-up'></i>",
+    "value": "fa fas-angle-double-up"
+  },
+  {
+    "icon": "angle-down",
+    "unicode": "f107",
+    "html": "<i class='fa fas-angle-down'></i>",
+    "value": "fa fas-angle-down"
+  },
+  {
+    "icon": "angle-left",
+    "unicode": "f104",
+    "html": "<i class='fa fas-angle-left'></i>",
+    "value": "fa fas-angle-left"
+  },
+  {
+    "icon": "angle-right",
+    "unicode": "f105",
+    "html": "<i class='fa fas-angle-right'></i>",
+    "value": "fa fas-angle-right"
+  },
+  {
+    "icon": "angle-up",
+    "unicode": "f106",
+    "html": "<i class='fa fas-angle-up'></i>",
+    "value": "fa fas-angle-up"
+  },
+  {
+    "icon": "archive",
+    "unicode": "f187",
+    "html": "<i class='fa fas-archive'></i>",
+    "value": "fa fas-archive"
+  },
+  {
+    "icon": "arrow-alt-circle-down",
+    "unicode": "f358",
+    "html": "<i class='fa fas-arrow-alt-circle-down'></i>",
+    "value": "fa fas-arrow-alt-circle-down"
+  },
+  {
+    "icon": "arrow-alt-circle-left",
+    "unicode": "f359",
+    "html": "<i class='fa fas-arrow-alt-circle-left'></i>",
+    "value": "fa fas-arrow-alt-circle-left"
+  },
+  {
+    "icon": "arrow-alt-circle-right",
+    "unicode": "f35a",
+    "html": "<i class='fa fas-arrow-alt-circle-right'></i>",
+    "value": "fa fas-arrow-alt-circle-right"
+  },
+  {
+    "icon": "arrow-alt-circle-up",
+    "unicode": "f35b",
+    "html": "<i class='fa fas-arrow-alt-circle-up'></i>",
+    "value": "fa fas-arrow-alt-circle-up"
+  },
+  {
+    "icon": "arrow-circle-down",
+    "unicode": "f0ab",
+    "html": "<i class='fa fas-arrow-circle-down'></i>",
+    "value": "fa fas-arrow-circle-down"
+  },
+  {
+    "icon": "arrow-circle-left",
+    "unicode": "f0a8",
+    "html": "<i class='fa fas-arrow-circle-left'></i>",
+    "value": "fa fas-arrow-circle-left"
+  },
+  {
+    "icon": "arrow-circle-right",
+    "unicode": "f0a9",
+    "html": "<i class='fa fas-arrow-circle-right'></i>",
+    "value": "fa fas-arrow-circle-right"
+  },
+  {
+    "icon": "arrow-circle-up",
+    "unicode": "f0aa",
+    "html": "<i class='fa fas-arrow-circle-up'></i>",
+    "value": "fa fas-arrow-circle-up"
+  },
+  {
+    "icon": "arrow-down",
+    "unicode": "f063",
+    "html": "<i class='fa fas-arrow-down'></i>",
+    "value": "fa fas-arrow-down"
+  },
+  {
+    "icon": "arrow-left",
+    "unicode": "f060",
+    "html": "<i class='fa fas-arrow-left'></i>",
+    "value": "fa fas-arrow-left"
+  },
+  {
+    "icon": "arrow-right",
+    "unicode": "f061",
+    "html": "<i class='fa fas-arrow-right'></i>",
+    "value": "fa fas-arrow-right"
+  },
+  {
+    "icon": "arrow-up",
+    "unicode": "f062",
+    "html": "<i class='fa fas-arrow-up'></i>",
+    "value": "fa fas-arrow-up"
+  },
+  {
+    "icon": "arrows-alt",
+    "unicode": "f0b2",
+    "html": "<i class='fa fas-arrows-alt'></i>",
+    "value": "fa fas-arrows-alt"
+  },
+  {
+    "icon": "arrows-alt-h",
+    "unicode": "f337",
+    "html": "<i class='fa fas-arrows-alt-h'></i>",
+    "value": "fa fas-arrows-alt-h"
+  },
+  {
+    "icon": "arrows-alt-v",
+    "unicode": "f338",
+    "html": "<i class='fa fas-arrows-alt-v'></i>",
+    "value": "fa fas-arrows-alt-v"
+  },
+  {
+    "icon": "assistive-listening-systems",
+    "unicode": "f2a2",
+    "html": "<i class='fa fas-assistive-listening-systems'></i>",
+    "value": "fa fas-assistive-listening-systems"
+  },
+  {
+    "icon": "asterisk",
+    "unicode": "f069",
+    "html": "<i class='fa fas-asterisk'></i>",
+    "value": "fa fas-asterisk"
+  },
+  {
+    "icon": "at",
+    "unicode": "f1fa",
+    "html": "<i class='fa fas-at'></i>",
+    "value": "fa fas-at"
+  },
+  {
+    "icon": "audio-description",
+    "unicode": "f29e",
+    "html": "<i class='fa fas-audio-description'></i>",
+    "value": "fa fas-audio-description"
+  },
+  {
+    "icon": "backward",
+    "unicode": "f04a",
+    "html": "<i class='fa fas-backward'></i>",
+    "value": "fa fas-backward"
+  },
+  {
+    "icon": "balance-scale",
+    "unicode": "f24e",
+    "html": "<i class='fa fas-balance-scale'></i>",
+    "value": "fa fas-balance-scale"
+  },
+  {
+    "icon": "ban",
+    "unicode": "f05e",
+    "html": "<i class='fa fas-ban'></i>",
+    "value": "fa fas-ban"
+  },
+  {
+    "icon": "band-aid",
+    "unicode": "f462",
+    "html": "<i class='fa fas-band-aid'></i>",
+    "value": "fa fas-band-aid"
+  },
+  {
+    "icon": "barcode",
+    "unicode": "f02a",
+    "html": "<i class='fa fas-barcode'></i>",
+    "value": "fa fas-barcode"
+  },
+  {
+    "icon": "bars",
+    "unicode": "f0c9",
+    "html": "<i class='fa fas-bars'></i>",
+    "value": "fa fas-bars"
+  },
+  {
+    "icon": "baseball-ball",
+    "unicode": "f433",
+    "html": "<i class='fa fas-baseball-ball'></i>",
+    "value": "fa fas-baseball-ball"
+  },
+  {
+    "icon": "basketball-ball",
+    "unicode": "f434",
+    "html": "<i class='fa fas-basketball-ball'></i>",
+    "value": "fa fas-basketball-ball"
+  },
+  {
+    "icon": "bath",
+    "unicode": "f2cd",
+    "html": "<i class='fa fas-bath'></i>",
+    "value": "fa fas-bath"
+  },
+  {
+    "icon": "battery-empty",
+    "unicode": "f244",
+    "html": "<i class='fa fas-battery-empty'></i>",
+    "value": "fa fas-battery-empty"
+  },
+  {
+    "icon": "battery-full",
+    "unicode": "f240",
+    "html": "<i class='fa fas-battery-full'></i>",
+    "value": "fa fas-battery-full"
+  },
+  {
+    "icon": "battery-half",
+    "unicode": "f242",
+    "html": "<i class='fa fas-battery-half'></i>",
+    "value": "fa fas-battery-half"
+  },
+  {
+    "icon": "battery-quarter",
+    "unicode": "f243",
+    "html": "<i class='fa fas-battery-quarter'></i>",
+    "value": "fa fas-battery-quarter"
+  },
+  {
+    "icon": "battery-three-quarters",
+    "unicode": "f241",
+    "html": "<i class='fa fas-battery-three-quarters'></i>",
+    "value": "fa fas-battery-three-quarters"
+  },
+  {
+    "icon": "bed",
+    "unicode": "f236",
+    "html": "<i class='fa fas-bed'></i>",
+    "value": "fa fas-bed"
+  },
+  {
+    "icon": "beer",
+    "unicode": "f0fc",
+    "html": "<i class='fa fas-beer'></i>",
+    "value": "fa fas-beer"
+  },
+  {
+    "icon": "bell",
+    "unicode": "f0f3",
+    "html": "<i class='fa fas-bell'></i>",
+    "value": "fa fas-bell"
+  },
+  {
+    "icon": "bell-slash",
+    "unicode": "f1f6",
+    "html": "<i class='fa fas-bell-slash'></i>",
+    "value": "fa fas-bell-slash"
+  },
+  {
+    "icon": "bicycle",
+    "unicode": "f206",
+    "html": "<i class='fa fas-bicycle'></i>",
+    "value": "fa fas-bicycle"
+  },
+  {
+    "icon": "binoculars",
+    "unicode": "f1e5",
+    "html": "<i class='fa fas-binoculars'></i>",
+    "value": "fa fas-binoculars"
+  },
+  {
+    "icon": "birthday-cake",
+    "unicode": "f1fd",
+    "html": "<i class='fa fas-birthday-cake'></i>",
+    "value": "fa fas-birthday-cake"
+  },
+  {
+    "icon": "blender",
+    "unicode": "f517",
+    "html": "<i class='fa fas-blender'></i>",
+    "value": "fa fas-blender"
+  },
+  {
+    "icon": "blind",
+    "unicode": "f29d",
+    "html": "<i class='fa fas-blind'></i>",
+    "value": "fa fas-blind"
+  },
+  {
+    "icon": "bold",
+    "unicode": "f032",
+    "html": "<i class='fa fas-bold'></i>",
+    "value": "fa fas-bold"
+  },
+  {
+    "icon": "bolt",
+    "unicode": "f0e7",
+    "html": "<i class='fa fas-bolt'></i>",
+    "value": "fa fas-bolt"
+  },
+  {
+    "icon": "bomb",
+    "unicode": "f1e2",
+    "html": "<i class='fa fas-bomb'></i>",
+    "value": "fa fas-bomb"
+  },
+  {
+    "icon": "book",
+    "unicode": "f02d",
+    "html": "<i class='fa fas-book'></i>",
+    "value": "fa fas-book"
+  },
+  {
+    "icon": "book-open",
+    "unicode": "f518",
+    "html": "<i class='fa fas-book-open'></i>",
+    "value": "fa fas-book-open"
+  },
+  {
+    "icon": "bookmark",
+    "unicode": "f02e",
+    "html": "<i class='fa fas-bookmark'></i>",
+    "value": "fa fas-bookmark"
+  },
+  {
+    "icon": "bowling-ball",
+    "unicode": "f436",
+    "html": "<i class='fa fas-bowling-ball'></i>",
+    "value": "fa fas-bowling-ball"
+  },
+  {
+    "icon": "box",
+    "unicode": "f466",
+    "html": "<i class='fa fas-box'></i>",
+    "value": "fa fas-box"
+  },
+  {
+    "icon": "box-open",
+    "unicode": "f49e",
+    "html": "<i class='fa fas-box-open'></i>",
+    "value": "fa fas-box-open"
+  },
+  {
+    "icon": "boxes",
+    "unicode": "f468",
+    "html": "<i class='fa fas-boxes'></i>",
+    "value": "fa fas-boxes"
+  },
+  {
+    "icon": "braille",
+    "unicode": "f2a1",
+    "html": "<i class='fa fas-braille'></i>",
+    "value": "fa fas-braille"
+  },
+  {
+    "icon": "briefcase",
+    "unicode": "f0b1",
+    "html": "<i class='fa fas-briefcase'></i>",
+    "value": "fa fas-briefcase"
+  },
+  {
+    "icon": "briefcase-medical",
+    "unicode": "f469",
+    "html": "<i class='fa fas-briefcase-medical'></i>",
+    "value": "fa fas-briefcase-medical"
+  },
+  {
+    "icon": "broadcast-tower",
+    "unicode": "f519",
+    "html": "<i class='fa fas-broadcast-tower'></i>",
+    "value": "fa fas-broadcast-tower"
+  },
+  {
+    "icon": "broom",
+    "unicode": "f51a",
+    "html": "<i class='fa fas-broom'></i>",
+    "value": "fa fas-broom"
+  },
+  {
+    "icon": "bug",
+    "unicode": "f188",
+    "html": "<i class='fa fas-bug'></i>",
+    "value": "fa fas-bug"
+  },
+  {
+    "icon": "building",
+    "unicode": "f1ad",
+    "html": "<i class='fa fas-building'></i>",
+    "value": "fa fas-building"
+  },
+  {
+    "icon": "bullhorn",
+    "unicode": "f0a1",
+    "html": "<i class='fa fas-bullhorn'></i>",
+    "value": "fa fas-bullhorn"
+  },
+  {
+    "icon": "bullseye",
+    "unicode": "f140",
+    "html": "<i class='fa fas-bullseye'></i>",
+    "value": "fa fas-bullseye"
+  },
+  {
+    "icon": "burn",
+    "unicode": "f46a",
+    "html": "<i class='fa fas-burn'></i>",
+    "value": "fa fas-burn"
+  },
+  {
+    "icon": "bus",
+    "unicode": "f207",
+    "html": "<i class='fa fas-bus'></i>",
+    "value": "fa fas-bus"
+  },
+  {
+    "icon": "calculator",
+    "unicode": "f1ec",
+    "html": "<i class='fa fas-calculator'></i>",
+    "value": "fa fas-calculator"
+  },
+  {
+    "icon": "calendar",
+    "unicode": "f133",
+    "html": "<i class='fa fas-calendar'></i>",
+    "value": "fa fas-calendar"
+  },
+  {
+    "icon": "calendar-alt",
+    "unicode": "f073",
+    "html": "<i class='fa fas-calendar-alt'></i>",
+    "value": "fa fas-calendar-alt"
+  },
+  {
+    "icon": "calendar-check",
+    "unicode": "f274",
+    "html": "<i class='fa fas-calendar-check'></i>",
+    "value": "fa fas-calendar-check"
+  },
+  {
+    "icon": "calendar-minus",
+    "unicode": "f272",
+    "html": "<i class='fa fas-calendar-minus'></i>",
+    "value": "fa fas-calendar-minus"
+  },
+  {
+    "icon": "calendar-plus",
+    "unicode": "f271",
+    "html": "<i class='fa fas-calendar-plus'></i>",
+    "value": "fa fas-calendar-plus"
+  },
+  {
+    "icon": "calendar-times",
+    "unicode": "f273",
+    "html": "<i class='fa fas-calendar-times'></i>",
+    "value": "fa fas-calendar-times"
+  },
+  {
+    "icon": "camera",
+    "unicode": "f030",
+    "html": "<i class='fa fas-camera'></i>",
+    "value": "fa fas-camera"
+  },
+  {
+    "icon": "camera-retro",
+    "unicode": "f083",
+    "html": "<i class='fa fas-camera-retro'></i>",
+    "value": "fa fas-camera-retro"
+  },
+  {
+    "icon": "capsules",
+    "unicode": "f46b",
+    "html": "<i class='fa fas-capsules'></i>",
+    "value": "fa fas-capsules"
+  },
+  {
+    "icon": "car",
+    "unicode": "f1b9",
+    "html": "<i class='fa fas-car'></i>",
+    "value": "fa fas-car"
+  },
+  {
+    "icon": "caret-down",
+    "unicode": "f0d7",
+    "html": "<i class='fa fas-caret-down'></i>",
+    "value": "fa fas-caret-down"
+  },
+  {
+    "icon": "caret-left",
+    "unicode": "f0d9",
+    "html": "<i class='fa fas-caret-left'></i>",
+    "value": "fa fas-caret-left"
+  },
+  {
+    "icon": "caret-right",
+    "unicode": "f0da",
+    "html": "<i class='fa fas-caret-right'></i>",
+    "value": "fa fas-caret-right"
+  },
+  {
+    "icon": "caret-square-down",
+    "unicode": "f150",
+    "html": "<i class='fa fas-caret-square-down'></i>",
+    "value": "fa fas-caret-square-down"
+  },
+  {
+    "icon": "caret-square-left",
+    "unicode": "f191",
+    "html": "<i class='fa fas-caret-square-left'></i>",
+    "value": "fa fas-caret-square-left"
+  },
+  {
+    "icon": "caret-square-right",
+    "unicode": "f152",
+    "html": "<i class='fa fas-caret-square-right'></i>",
+    "value": "fa fas-caret-square-right"
+  },
+  {
+    "icon": "caret-square-up",
+    "unicode": "f151",
+    "html": "<i class='fa fas-caret-square-up'></i>",
+    "value": "fa fas-caret-square-up"
+  },
+  {
+    "icon": "caret-up",
+    "unicode": "f0d8",
+    "html": "<i class='fa fas-caret-up'></i>",
+    "value": "fa fas-caret-up"
+  },
+  {
+    "icon": "cart-arrow-down",
+    "unicode": "f218",
+    "html": "<i class='fa fas-cart-arrow-down'></i>",
+    "value": "fa fas-cart-arrow-down"
+  },
+  {
+    "icon": "cart-plus",
+    "unicode": "f217",
+    "html": "<i class='fa fas-cart-plus'></i>",
+    "value": "fa fas-cart-plus"
+  },
+  {
+    "icon": "certificate",
+    "unicode": "f0a3",
+    "html": "<i class='fa fas-certificate'></i>",
+    "value": "fa fas-certificate"
+  },
+  {
+    "icon": "chalkboard",
+    "unicode": "f51b",
+    "html": "<i class='fa fas-chalkboard'></i>",
+    "value": "fa fas-chalkboard"
+  },
+  {
+    "icon": "chalkboard-teacher",
+    "unicode": "f51c",
+    "html": "<i class='fa fas-chalkboard-teacher'></i>",
+    "value": "fa fas-chalkboard-teacher"
+  },
+  {
+    "icon": "chart-area",
+    "unicode": "f1fe",
+    "html": "<i class='fa fas-chart-area'></i>",
+    "value": "fa fas-chart-area"
+  },
+  {
+    "icon": "chart-bar",
+    "unicode": "f080",
+    "html": "<i class='fa fas-chart-bar'></i>",
+    "value": "fa fas-chart-bar"
+  },
+  {
+    "icon": "chart-line",
+    "unicode": "f201",
+    "html": "<i class='fa fas-chart-line'></i>",
+    "value": "fa fas-chart-line"
+  },
+  {
+    "icon": "chart-pie",
+    "unicode": "f200",
+    "html": "<i class='fa fas-chart-pie'></i>",
+    "value": "fa fas-chart-pie"
+  },
+  {
+    "icon": "check",
+    "unicode": "f00c",
+    "html": "<i class='fa fas-check'></i>",
+    "value": "fa fas-check"
+  },
+  {
+    "icon": "check-circle",
+    "unicode": "f058",
+    "html": "<i class='fa fas-check-circle'></i>",
+    "value": "fa fas-check-circle"
+  },
+  {
+    "icon": "check-square",
+    "unicode": "f14a",
+    "html": "<i class='fa fas-check-square'></i>",
+    "value": "fa fas-check-square"
+  },
+  {
+    "icon": "chess",
+    "unicode": "f439",
+    "html": "<i class='fa fas-chess'></i>",
+    "value": "fa fas-chess"
+  },
+  {
+    "icon": "chess-bishop",
+    "unicode": "f43a",
+    "html": "<i class='fa fas-chess-bishop'></i>",
+    "value": "fa fas-chess-bishop"
+  },
+  {
+    "icon": "chess-board",
+    "unicode": "f43c",
+    "html": "<i class='fa fas-chess-board'></i>",
+    "value": "fa fas-chess-board"
+  },
+  {
+    "icon": "chess-king",
+    "unicode": "f43f",
+    "html": "<i class='fa fas-chess-king'></i>",
+    "value": "fa fas-chess-king"
+  },
+  {
+    "icon": "chess-knight",
+    "unicode": "f441",
+    "html": "<i class='fa fas-chess-knight'></i>",
+    "value": "fa fas-chess-knight"
+  },
+  {
+    "icon": "chess-pawn",
+    "unicode": "f443",
+    "html": "<i class='fa fas-chess-pawn'></i>",
+    "value": "fa fas-chess-pawn"
+  },
+  {
+    "icon": "chess-queen",
+    "unicode": "f445",
+    "html": "<i class='fa fas-chess-queen'></i>",
+    "value": "fa fas-chess-queen"
+  },
+  {
+    "icon": "chess-rook",
+    "unicode": "f447",
+    "html": "<i class='fa fas-chess-rook'></i>",
+    "value": "fa fas-chess-rook"
+  },
+  {
+    "icon": "chevron-circle-down",
+    "unicode": "f13a",
+    "html": "<i class='fa fas-chevron-circle-down'></i>",
+    "value": "fa fas-chevron-circle-down"
+  },
+  {
+    "icon": "chevron-circle-left",
+    "unicode": "f137",
+    "html": "<i class='fa fas-chevron-circle-left'></i>",
+    "value": "fa fas-chevron-circle-left"
+  },
+  {
+    "icon": "chevron-circle-right",
+    "unicode": "f138",
+    "html": "<i class='fa fas-chevron-circle-right'></i>",
+    "value": "fa fas-chevron-circle-right"
+  },
+  {
+    "icon": "chevron-circle-up",
+    "unicode": "f139",
+    "html": "<i class='fa fas-chevron-circle-up'></i>",
+    "value": "fa fas-chevron-circle-up"
+  },
+  {
+    "icon": "chevron-down",
+    "unicode": "f078",
+    "html": "<i class='fa fas-chevron-down'></i>",
+    "value": "fa fas-chevron-down"
+  },
+  {
+    "icon": "chevron-left",
+    "unicode": "f053",
+    "html": "<i class='fa fas-chevron-left'></i>",
+    "value": "fa fas-chevron-left"
+  },
+  {
+    "icon": "chevron-right",
+    "unicode": "f054",
+    "html": "<i class='fa fas-chevron-right'></i>",
+    "value": "fa fas-chevron-right"
+  },
+  {
+    "icon": "chevron-up",
+    "unicode": "f077",
+    "html": "<i class='fa fas-chevron-up'></i>",
+    "value": "fa fas-chevron-up"
+  },
+  {
+    "icon": "child",
+    "unicode": "f1ae",
+    "html": "<i class='fa fas-child'></i>",
+    "value": "fa fas-child"
+  },
+  {
+    "icon": "church",
+    "unicode": "f51d",
+    "html": "<i class='fa fas-church'></i>",
+    "value": "fa fas-church"
+  },
+  {
+    "icon": "circle",
+    "unicode": "f111",
+    "html": "<i class='fa fas-circle'></i>",
+    "value": "fa fas-circle"
+  },
+  {
+    "icon": "circle-notch",
+    "unicode": "f1ce",
+    "html": "<i class='fa fas-circle-notch'></i>",
+    "value": "fa fas-circle-notch"
+  },
+  {
+    "icon": "clipboard",
+    "unicode": "f328",
+    "html": "<i class='fa fas-clipboard'></i>",
+    "value": "fa fas-clipboard"
+  },
+  {
+    "icon": "clipboard-check",
+    "unicode": "f46c",
+    "html": "<i class='fa fas-clipboard-check'></i>",
+    "value": "fa fas-clipboard-check"
+  },
+  {
+    "icon": "clipboard-list",
+    "unicode": "f46d",
+    "html": "<i class='fa fas-clipboard-list'></i>",
+    "value": "fa fas-clipboard-list"
+  },
+  {
+    "icon": "clock",
+    "unicode": "f017",
+    "html": "<i class='fa fas-clock'></i>",
+    "value": "fa fas-clock"
+  },
+  {
+    "icon": "clone",
+    "unicode": "f24d",
+    "html": "<i class='fa fas-clone'></i>",
+    "value": "fa fas-clone"
+  },
+  {
+    "icon": "closed-captioning",
+    "unicode": "f20a",
+    "html": "<i class='fa fas-closed-captioning'></i>",
+    "value": "fa fas-closed-captioning"
+  },
+  {
+    "icon": "cloud",
+    "unicode": "f0c2",
+    "html": "<i class='fa fas-cloud'></i>",
+    "value": "fa fas-cloud"
+  },
+  {
+    "icon": "cloud-download-alt",
+    "unicode": "f381",
+    "html": "<i class='fa fas-cloud-download-alt'></i>",
+    "value": "fa fas-cloud-download-alt"
+  },
+  {
+    "icon": "cloud-upload-alt",
+    "unicode": "f382",
+    "html": "<i class='fa fas-cloud-upload-alt'></i>",
+    "value": "fa fas-cloud-upload-alt"
+  },
+  {
+    "icon": "code",
+    "unicode": "f121",
+    "html": "<i class='fa fas-code'></i>",
+    "value": "fa fas-code"
+  },
+  {
+    "icon": "code-branch",
+    "unicode": "f126",
+    "html": "<i class='fa fas-code-branch'></i>",
+    "value": "fa fas-code-branch"
+  },
+  {
+    "icon": "coffee",
+    "unicode": "f0f4",
+    "html": "<i class='fa fas-coffee'></i>",
+    "value": "fa fas-coffee"
+  },
+  {
+    "icon": "cog",
+    "unicode": "f013",
+    "html": "<i class='fa fas-cog'></i>",
+    "value": "fa fas-cog"
+  },
+  {
+    "icon": "cogs",
+    "unicode": "f085",
+    "html": "<i class='fa fas-cogs'></i>",
+    "value": "fa fas-cogs"
+  },
+  {
+    "icon": "coins",
+    "unicode": "f51e",
+    "html": "<i class='fa fas-coins'></i>",
+    "value": "fa fas-coins"
+  },
+  {
+    "icon": "columns",
+    "unicode": "f0db",
+    "html": "<i class='fa fas-columns'></i>",
+    "value": "fa fas-columns"
+  },
+  {
+    "icon": "comment",
+    "unicode": "f075",
+    "html": "<i class='fa fas-comment'></i>",
+    "value": "fa fas-comment"
+  },
+  {
+    "icon": "comment-alt",
+    "unicode": "f27a",
+    "html": "<i class='fa fas-comment-alt'></i>",
+    "value": "fa fas-comment-alt"
+  },
+  {
+    "icon": "comment-dots",
+    "unicode": "f4ad",
+    "html": "<i class='fa fas-comment-dots'></i>",
+    "value": "fa fas-comment-dots"
+  },
+  {
+    "icon": "comment-slash",
+    "unicode": "f4b3",
+    "html": "<i class='fa fas-comment-slash'></i>",
+    "value": "fa fas-comment-slash"
+  },
+  {
+    "icon": "comments",
+    "unicode": "f086",
+    "html": "<i class='fa fas-comments'></i>",
+    "value": "fa fas-comments"
+  },
+  {
+    "icon": "compact-disc",
+    "unicode": "f51f",
+    "html": "<i class='fa fas-compact-disc'></i>",
+    "value": "fa fas-compact-disc"
+  },
+  {
+    "icon": "compass",
+    "unicode": "f14e",
+    "html": "<i class='fa fas-compass'></i>",
+    "value": "fa fas-compass"
+  },
+  {
+    "icon": "compress",
+    "unicode": "f066",
+    "html": "<i class='fa fas-compress'></i>",
+    "value": "fa fas-compress"
+  },
+  {
+    "icon": "copy",
+    "unicode": "f0c5",
+    "html": "<i class='fa fas-copy'></i>",
+    "value": "fa fas-copy"
+  },
+  {
+    "icon": "copyright",
+    "unicode": "f1f9",
+    "html": "<i class='fa fas-copyright'></i>",
+    "value": "fa fas-copyright"
+  },
+  {
+    "icon": "couch",
+    "unicode": "f4b8",
+    "html": "<i class='fa fas-couch'></i>",
+    "value": "fa fas-couch"
+  },
+  {
+    "icon": "credit-card",
+    "unicode": "f09d",
+    "html": "<i class='fa fas-credit-card'></i>",
+    "value": "fa fas-credit-card"
+  },
+  {
+    "icon": "crop",
+    "unicode": "f125",
+    "html": "<i class='fa fas-crop'></i>",
+    "value": "fa fas-crop"
+  },
+  {
+    "icon": "crosshairs",
+    "unicode": "f05b",
+    "html": "<i class='fa fas-crosshairs'></i>",
+    "value": "fa fas-crosshairs"
+  },
+  {
+    "icon": "crow",
+    "unicode": "f520",
+    "html": "<i class='fa fas-crow'></i>",
+    "value": "fa fas-crow"
+  },
+  {
+    "icon": "crown",
+    "unicode": "f521",
+    "html": "<i class='fa fas-crown'></i>",
+    "value": "fa fas-crown"
+  },
+  {
+    "icon": "cube",
+    "unicode": "f1b2",
+    "html": "<i class='fa fas-cube'></i>",
+    "value": "fa fas-cube"
+  },
+  {
+    "icon": "cubes",
+    "unicode": "f1b3",
+    "html": "<i class='fa fas-cubes'></i>",
+    "value": "fa fas-cubes"
+  },
+  {
+    "icon": "cut",
+    "unicode": "f0c4",
+    "html": "<i class='fa fas-cut'></i>",
+    "value": "fa fas-cut"
+  },
+  {
+    "icon": "database",
+    "unicode": "f1c0",
+    "html": "<i class='fa fas-database'></i>",
+    "value": "fa fas-database"
+  },
+  {
+    "icon": "deaf",
+    "unicode": "f2a4",
+    "html": "<i class='fa fas-deaf'></i>",
+    "value": "fa fas-deaf"
+  },
+  {
+    "icon": "desktop",
+    "unicode": "f108",
+    "html": "<i class='fa fas-desktop'></i>",
+    "value": "fa fas-desktop"
+  },
+  {
+    "icon": "diagnoses",
+    "unicode": "f470",
+    "html": "<i class='fa fas-diagnoses'></i>",
+    "value": "fa fas-diagnoses"
+  },
+  {
+    "icon": "dice",
+    "unicode": "f522",
+    "html": "<i class='fa fas-dice'></i>",
+    "value": "fa fas-dice"
+  },
+  {
+    "icon": "dice-five",
+    "unicode": "f523",
+    "html": "<i class='fa fas-dice-five'></i>",
+    "value": "fa fas-dice-five"
+  },
+  {
+    "icon": "dice-four",
+    "unicode": "f524",
+    "html": "<i class='fa fas-dice-four'></i>",
+    "value": "fa fas-dice-four"
+  },
+  {
+    "icon": "dice-one",
+    "unicode": "f525",
+    "html": "<i class='fa fas-dice-one'></i>",
+    "value": "fa fas-dice-one"
+  },
+  {
+    "icon": "dice-six",
+    "unicode": "f526",
+    "html": "<i class='fa fas-dice-six'></i>",
+    "value": "fa fas-dice-six"
+  },
+  {
+    "icon": "dice-three",
+    "unicode": "f527",
+    "html": "<i class='fa fas-dice-three'></i>",
+    "value": "fa fas-dice-three"
+  },
+  {
+    "icon": "dice-two",
+    "unicode": "f528",
+    "html": "<i class='fa fas-dice-two'></i>",
+    "value": "fa fas-dice-two"
+  },
+  {
+    "icon": "divide",
+    "unicode": "f529",
+    "html": "<i class='fa fas-divide'></i>",
+    "value": "fa fas-divide"
+  },
+  {
+    "icon": "dna",
+    "unicode": "f471",
+    "html": "<i class='fa fas-dna'></i>",
+    "value": "fa fas-dna"
+  },
+  {
+    "icon": "dollar-sign",
+    "unicode": "f155",
+    "html": "<i class='fa fas-dollar-sign'></i>",
+    "value": "fa fas-dollar-sign"
+  },
+  {
+    "icon": "dolly",
+    "unicode": "f472",
+    "html": "<i class='fa fas-dolly'></i>",
+    "value": "fa fas-dolly"
+  },
+  {
+    "icon": "dolly-flatbed",
+    "unicode": "f474",
+    "html": "<i class='fa fas-dolly-flatbed'></i>",
+    "value": "fa fas-dolly-flatbed"
+  },
+  {
+    "icon": "donate",
+    "unicode": "f4b9",
+    "html": "<i class='fa fas-donate'></i>",
+    "value": "fa fas-donate"
+  },
+  {
+    "icon": "door-closed",
+    "unicode": "f52a",
+    "html": "<i class='fa fas-door-closed'></i>",
+    "value": "fa fas-door-closed"
+  },
+  {
+    "icon": "door-open",
+    "unicode": "f52b",
+    "html": "<i class='fa fas-door-open'></i>",
+    "value": "fa fas-door-open"
+  },
+  {
+    "icon": "dot-circle",
+    "unicode": "f192",
+    "html": "<i class='fa fas-dot-circle'></i>",
+    "value": "fa fas-dot-circle"
+  },
+  {
+    "icon": "dove",
+    "unicode": "f4ba",
+    "html": "<i class='fa fas-dove'></i>",
+    "value": "fa fas-dove"
+  },
+  {
+    "icon": "download",
+    "unicode": "f019",
+    "html": "<i class='fa fas-download'></i>",
+    "value": "fa fas-download"
+  },
+  {
+    "icon": "dumbbell",
+    "unicode": "f44b",
+    "html": "<i class='fa fas-dumbbell'></i>",
+    "value": "fa fas-dumbbell"
+  },
+  {
+    "icon": "edit",
+    "unicode": "f044",
+    "html": "<i class='fa fas-edit'></i>",
+    "value": "fa fas-edit"
+  },
+  {
+    "icon": "eject",
+    "unicode": "f052",
+    "html": "<i class='fa fas-eject'></i>",
+    "value": "fa fas-eject"
+  },
+  {
+    "icon": "ellipsis-h",
+    "unicode": "f141",
+    "html": "<i class='fa fas-ellipsis-h'></i>",
+    "value": "fa fas-ellipsis-h"
+  },
+  {
+    "icon": "ellipsis-v",
+    "unicode": "f142",
+    "html": "<i class='fa fas-ellipsis-v'></i>",
+    "value": "fa fas-ellipsis-v"
+  },
+  {
+    "icon": "envelope",
+    "unicode": "f0e0",
+    "html": "<i class='fa fas-envelope'></i>",
+    "value": "fa fas-envelope"
+  },
+  {
+    "icon": "envelope-open",
+    "unicode": "f2b6",
+    "html": "<i class='fa fas-envelope-open'></i>",
+    "value": "fa fas-envelope-open"
+  },
+  {
+    "icon": "envelope-square",
+    "unicode": "f199",
+    "html": "<i class='fa fas-envelope-square'></i>",
+    "value": "fa fas-envelope-square"
+  },
+  {
+    "icon": "equals",
+    "unicode": "f52c",
+    "html": "<i class='fa fas-equals'></i>",
+    "value": "fa fas-equals"
+  },
+  {
+    "icon": "eraser",
+    "unicode": "f12d",
+    "html": "<i class='fa fas-eraser'></i>",
+    "value": "fa fas-eraser"
+  },
+  {
+    "icon": "euro-sign",
+    "unicode": "f153",
+    "html": "<i class='fa fas-euro-sign'></i>",
+    "value": "fa fas-euro-sign"
+  },
+  {
+    "icon": "exchange-alt",
+    "unicode": "f362",
+    "html": "<i class='fa fas-exchange-alt'></i>",
+    "value": "fa fas-exchange-alt"
+  },
+  {
+    "icon": "exclamation",
+    "unicode": "f12a",
+    "html": "<i class='fa fas-exclamation'></i>",
+    "value": "fa fas-exclamation"
+  },
+  {
+    "icon": "exclamation-circle",
+    "unicode": "f06a",
+    "html": "<i class='fa fas-exclamation-circle'></i>",
+    "value": "fa fas-exclamation-circle"
+  },
+  {
+    "icon": "exclamation-triangle",
+    "unicode": "f071",
+    "html": "<i class='fa fas-exclamation-triangle'></i>",
+    "value": "fa fas-exclamation-triangle"
+  },
+  {
+    "icon": "expand",
+    "unicode": "f065",
+    "html": "<i class='fa fas-expand'></i>",
+    "value": "fa fas-expand"
+  },
+  {
+    "icon": "expand-arrows-alt",
+    "unicode": "f31e",
+    "html": "<i class='fa fas-expand-arrows-alt'></i>",
+    "value": "fa fas-expand-arrows-alt"
+  },
+  {
+    "icon": "external-link-alt",
+    "unicode": "f35d",
+    "html": "<i class='fa fas-external-link-alt'></i>",
+    "value": "fa fas-external-link-alt"
+  },
+  {
+    "icon": "external-link-square-alt",
+    "unicode": "f360",
+    "html": "<i class='fa fas-external-link-square-alt'></i>",
+    "value": "fa fas-external-link-square-alt"
+  },
+  {
+    "icon": "eye",
+    "unicode": "f06e",
+    "html": "<i class='fa fas-eye'></i>",
+    "value": "fa fas-eye"
+  },
+  {
+    "icon": "eye-dropper",
+    "unicode": "f1fb",
+    "html": "<i class='fa fas-eye-dropper'></i>",
+    "value": "fa fas-eye-dropper"
+  },
+  {
+    "icon": "eye-slash",
+    "unicode": "f070",
+    "html": "<i class='fa fas-eye-slash'></i>",
+    "value": "fa fas-eye-slash"
+  },
+  {
+    "icon": "fast-backward",
+    "unicode": "f049",
+    "html": "<i class='fa fas-fast-backward'></i>",
+    "value": "fa fas-fast-backward"
+  },
+  {
+    "icon": "fast-forward",
+    "unicode": "f050",
+    "html": "<i class='fa fas-fast-forward'></i>",
+    "value": "fa fas-fast-forward"
+  },
+  {
+    "icon": "fax",
+    "unicode": "f1ac",
+    "html": "<i class='fa fas-fax'></i>",
+    "value": "fa fas-fax"
+  },
+  {
+    "icon": "feather",
+    "unicode": "f52d",
+    "html": "<i class='fa fas-feather'></i>",
+    "value": "fa fas-feather"
+  },
+  {
+    "icon": "female",
+    "unicode": "f182",
+    "html": "<i class='fa fas-female'></i>",
+    "value": "fa fas-female"
+  },
+  {
+    "icon": "fighter-jet",
+    "unicode": "f0fb",
+    "html": "<i class='fa fas-fighter-jet'></i>",
+    "value": "fa fas-fighter-jet"
+  },
+  {
+    "icon": "file",
+    "unicode": "f15b",
+    "html": "<i class='fa fas-file'></i>",
+    "value": "fa fas-file"
+  },
+  {
+    "icon": "file-alt",
+    "unicode": "f15c",
+    "html": "<i class='fa fas-file-alt'></i>",
+    "value": "fa fas-file-alt"
+  },
+  {
+    "icon": "file-archive",
+    "unicode": "f1c6",
+    "html": "<i class='fa fas-file-archive'></i>",
+    "value": "fa fas-file-archive"
+  },
+  {
+    "icon": "file-audio",
+    "unicode": "f1c7",
+    "html": "<i class='fa fas-file-audio'></i>",
+    "value": "fa fas-file-audio"
+  },
+  {
+    "icon": "file-code",
+    "unicode": "f1c9",
+    "html": "<i class='fa fas-file-code'></i>",
+    "value": "fa fas-file-code"
+  },
+  {
+    "icon": "file-excel",
+    "unicode": "f1c3",
+    "html": "<i class='fa fas-file-excel'></i>",
+    "value": "fa fas-file-excel"
+  },
+  {
+    "icon": "file-image",
+    "unicode": "f1c5",
+    "html": "<i class='fa fas-file-image'></i>",
+    "value": "fa fas-file-image"
+  },
+  {
+    "icon": "file-medical",
+    "unicode": "f477",
+    "html": "<i class='fa fas-file-medical'></i>",
+    "value": "fa fas-file-medical"
+  },
+  {
+    "icon": "file-medical-alt",
+    "unicode": "f478",
+    "html": "<i class='fa fas-file-medical-alt'></i>",
+    "value": "fa fas-file-medical-alt"
+  },
+  {
+    "icon": "file-pdf",
+    "unicode": "f1c1",
+    "html": "<i class='fa fas-file-pdf'></i>",
+    "value": "fa fas-file-pdf"
+  },
+  {
+    "icon": "file-powerpoint",
+    "unicode": "f1c4",
+    "html": "<i class='fa fas-file-powerpoint'></i>",
+    "value": "fa fas-file-powerpoint"
+  },
+  {
+    "icon": "file-video",
+    "unicode": "f1c8",
+    "html": "<i class='fa fas-file-video'></i>",
+    "value": "fa fas-file-video"
+  },
+  {
+    "icon": "file-word",
+    "unicode": "f1c2",
+    "html": "<i class='fa fas-file-word'></i>",
+    "value": "fa fas-file-word"
+  },
+  {
+    "icon": "film",
+    "unicode": "f008",
+    "html": "<i class='fa fas-film'></i>",
+    "value": "fa fas-film"
+  },
+  {
+    "icon": "filter",
+    "unicode": "f0b0",
+    "html": "<i class='fa fas-filter'></i>",
+    "value": "fa fas-filter"
+  },
+  {
+    "icon": "fire",
+    "unicode": "f06d",
+    "html": "<i class='fa fas-fire'></i>",
+    "value": "fa fas-fire"
+  },
+  {
+    "icon": "fire-extinguisher",
+    "unicode": "f134",
+    "html": "<i class='fa fas-fire-extinguisher'></i>",
+    "value": "fa fas-fire-extinguisher"
+  },
+  {
+    "icon": "first-aid",
+    "unicode": "f479",
+    "html": "<i class='fa fas-first-aid'></i>",
+    "value": "fa fas-first-aid"
+  },
+  {
+    "icon": "flag",
+    "unicode": "f024",
+    "html": "<i class='fa fas-flag'></i>",
+    "value": "fa fas-flag"
+  },
+  {
+    "icon": "flag-checkered",
+    "unicode": "f11e",
+    "html": "<i class='fa fas-flag-checkered'></i>",
+    "value": "fa fas-flag-checkered"
+  },
+  {
+    "icon": "flask",
+    "unicode": "f0c3",
+    "html": "<i class='fa fas-flask'></i>",
+    "value": "fa fas-flask"
+  },
+  {
+    "icon": "folder",
+    "unicode": "f07b",
+    "html": "<i class='fa fas-folder'></i>",
+    "value": "fa fas-folder"
+  },
+  {
+    "icon": "folder-open",
+    "unicode": "f07c",
+    "html": "<i class='fa fas-folder-open'></i>",
+    "value": "fa fas-folder-open"
+  },
+  {
+    "icon": "font",
+    "unicode": "f031",
+    "html": "<i class='fa fas-font'></i>",
+    "value": "fa fas-font"
+  },
+  {
+    "icon": "font-awesome-logo-full",
+    "unicode": "f4e6",
+    "html": "<i class='fa fas-font-awesome-logo-full'></i>",
+    "value": "fa fas-font-awesome-logo-full"
+  },
+  {
+    "icon": "football-ball",
+    "unicode": "f44e",
+    "html": "<i class='fa fas-football-ball'></i>",
+    "value": "fa fas-football-ball"
+  },
+  {
+    "icon": "forward",
+    "unicode": "f04e",
+    "html": "<i class='fa fas-forward'></i>",
+    "value": "fa fas-forward"
+  },
+  {
+    "icon": "frog",
+    "unicode": "f52e",
+    "html": "<i class='fa fas-frog'></i>",
+    "value": "fa fas-frog"
+  },
+  {
+    "icon": "frown",
+    "unicode": "f119",
+    "html": "<i class='fa fas-frown'></i>",
+    "value": "fa fas-frown"
+  },
+  {
+    "icon": "futbol",
+    "unicode": "f1e3",
+    "html": "<i class='fa fas-futbol'></i>",
+    "value": "fa fas-futbol"
+  },
+  {
+    "icon": "gamepad",
+    "unicode": "f11b",
+    "html": "<i class='fa fas-gamepad'></i>",
+    "value": "fa fas-gamepad"
+  },
+  {
+    "icon": "gas-pump",
+    "unicode": "f52f",
+    "html": "<i class='fa fas-gas-pump'></i>",
+    "value": "fa fas-gas-pump"
+  },
+  {
+    "icon": "gavel",
+    "unicode": "f0e3",
+    "html": "<i class='fa fas-gavel'></i>",
+    "value": "fa fas-gavel"
+  },
+  {
+    "icon": "gem",
+    "unicode": "f3a5",
+    "html": "<i class='fa fas-gem'></i>",
+    "value": "fa fas-gem"
+  },
+  {
+    "icon": "genderless",
+    "unicode": "f22d",
+    "html": "<i class='fa fas-genderless'></i>",
+    "value": "fa fas-genderless"
+  },
+  {
+    "icon": "gift",
+    "unicode": "f06b",
+    "html": "<i class='fa fas-gift'></i>",
+    "value": "fa fas-gift"
+  },
+  {
+    "icon": "glass-martini",
+    "unicode": "f000",
+    "html": "<i class='fa fas-glass-martini'></i>",
+    "value": "fa fas-glass-martini"
+  },
+  {
+    "icon": "glasses",
+    "unicode": "f530",
+    "html": "<i class='fa fas-glasses'></i>",
+    "value": "fa fas-glasses"
+  },
+  {
+    "icon": "globe",
+    "unicode": "f0ac",
+    "html": "<i class='fa fas-globe'></i>",
+    "value": "fa fas-globe"
+  },
+  {
+    "icon": "golf-ball",
+    "unicode": "f450",
+    "html": "<i class='fa fas-golf-ball'></i>",
+    "value": "fa fas-golf-ball"
+  },
+  {
+    "icon": "graduation-cap",
+    "unicode": "f19d",
+    "html": "<i class='fa fas-graduation-cap'></i>",
+    "value": "fa fas-graduation-cap"
+  },
+  {
+    "icon": "greater-than",
+    "unicode": "f531",
+    "html": "<i class='fa fas-greater-than'></i>",
+    "value": "fa fas-greater-than"
+  },
+  {
+    "icon": "greater-than-equal",
+    "unicode": "f532",
+    "html": "<i class='fa fas-greater-than-equal'></i>",
+    "value": "fa fas-greater-than-equal"
+  },
+  {
+    "icon": "h-square",
+    "unicode": "f0fd",
+    "html": "<i class='fa fas-h-square'></i>",
+    "value": "fa fas-h-square"
+  },
+  {
+    "icon": "hand-holding",
+    "unicode": "f4bd",
+    "html": "<i class='fa fas-hand-holding'></i>",
+    "value": "fa fas-hand-holding"
+  },
+  {
+    "icon": "hand-holding-heart",
+    "unicode": "f4be",
+    "html": "<i class='fa fas-hand-holding-heart'></i>",
+    "value": "fa fas-hand-holding-heart"
+  },
+  {
+    "icon": "hand-holding-usd",
+    "unicode": "f4c0",
+    "html": "<i class='fa fas-hand-holding-usd'></i>",
+    "value": "fa fas-hand-holding-usd"
+  },
+  {
+    "icon": "hand-lizard",
+    "unicode": "f258",
+    "html": "<i class='fa fas-hand-lizard'></i>",
+    "value": "fa fas-hand-lizard"
+  },
+  {
+    "icon": "hand-paper",
+    "unicode": "f256",
+    "html": "<i class='fa fas-hand-paper'></i>",
+    "value": "fa fas-hand-paper"
+  },
+  {
+    "icon": "hand-peace",
+    "unicode": "f25b",
+    "html": "<i class='fa fas-hand-peace'></i>",
+    "value": "fa fas-hand-peace"
+  },
+  {
+    "icon": "hand-point-down",
+    "unicode": "f0a7",
+    "html": "<i class='fa fas-hand-point-down'></i>",
+    "value": "fa fas-hand-point-down"
+  },
+  {
+    "icon": "hand-point-left",
+    "unicode": "f0a5",
+    "html": "<i class='fa fas-hand-point-left'></i>",
+    "value": "fa fas-hand-point-left"
+  },
+  {
+    "icon": "hand-point-right",
+    "unicode": "f0a4",
+    "html": "<i class='fa fas-hand-point-right'></i>",
+    "value": "fa fas-hand-point-right"
+  },
+  {
+    "icon": "hand-point-up",
+    "unicode": "f0a6",
+    "html": "<i class='fa fas-hand-point-up'></i>",
+    "value": "fa fas-hand-point-up"
+  },
+  {
+    "icon": "hand-pointer",
+    "unicode": "f25a",
+    "html": "<i class='fa fas-hand-pointer'></i>",
+    "value": "fa fas-hand-pointer"
+  },
+  {
+    "icon": "hand-rock",
+    "unicode": "f255",
+    "html": "<i class='fa fas-hand-rock'></i>",
+    "value": "fa fas-hand-rock"
+  },
+  {
+    "icon": "hand-scissors",
+    "unicode": "f257",
+    "html": "<i class='fa fas-hand-scissors'></i>",
+    "value": "fa fas-hand-scissors"
+  },
+  {
+    "icon": "hand-spock",
+    "unicode": "f259",
+    "html": "<i class='fa fas-hand-spock'></i>",
+    "value": "fa fas-hand-spock"
+  },
+  {
+    "icon": "hands",
+    "unicode": "f4c2",
+    "html": "<i class='fa fas-hands'></i>",
+    "value": "fa fas-hands"
+  },
+  {
+    "icon": "hands-helping",
+    "unicode": "f4c4",
+    "html": "<i class='fa fas-hands-helping'></i>",
+    "value": "fa fas-hands-helping"
+  },
+  {
+    "icon": "handshake",
+    "unicode": "f2b5",
+    "html": "<i class='fa fas-handshake'></i>",
+    "value": "fa fas-handshake"
+  },
+  {
+    "icon": "hashtag",
+    "unicode": "f292",
+    "html": "<i class='fa fas-hashtag'></i>",
+    "value": "fa fas-hashtag"
+  },
+  {
+    "icon": "hdd",
+    "unicode": "f0a0",
+    "html": "<i class='fa fas-hdd'></i>",
+    "value": "fa fas-hdd"
+  },
+  {
+    "icon": "heading",
+    "unicode": "f1dc",
+    "html": "<i class='fa fas-heading'></i>",
+    "value": "fa fas-heading"
+  },
+  {
+    "icon": "headphones",
+    "unicode": "f025",
+    "html": "<i class='fa fas-headphones'></i>",
+    "value": "fa fas-headphones"
+  },
+  {
+    "icon": "heart",
+    "unicode": "f004",
+    "html": "<i class='fa fas-heart'></i>",
+    "value": "fa fas-heart"
+  },
+  {
+    "icon": "heartbeat",
+    "unicode": "f21e",
+    "html": "<i class='fa fas-heartbeat'></i>",
+    "value": "fa fas-heartbeat"
+  },
+  {
+    "icon": "helicopter",
+    "unicode": "f533",
+    "html": "<i class='fa fas-helicopter'></i>",
+    "value": "fa fas-helicopter"
+  },
+  {
+    "icon": "history",
+    "unicode": "f1da",
+    "html": "<i class='fa fas-history'></i>",
+    "value": "fa fas-history"
+  },
+  {
+    "icon": "hockey-puck",
+    "unicode": "f453",
+    "html": "<i class='fa fas-hockey-puck'></i>",
+    "value": "fa fas-hockey-puck"
+  },
+  {
+    "icon": "home",
+    "unicode": "f015",
+    "html": "<i class='fa fas-home'></i>",
+    "value": "fa fas-home"
+  },
+  {
+    "icon": "hospital",
+    "unicode": "f0f8",
+    "html": "<i class='fa fas-hospital'></i>",
+    "value": "fa fas-hospital"
+  },
+  {
+    "icon": "hospital-alt",
+    "unicode": "f47d",
+    "html": "<i class='fa fas-hospital-alt'></i>",
+    "value": "fa fas-hospital-alt"
+  },
+  {
+    "icon": "hospital-symbol",
+    "unicode": "f47e",
+    "html": "<i class='fa fas-hospital-symbol'></i>",
+    "value": "fa fas-hospital-symbol"
+  },
+  {
+    "icon": "hourglass",
+    "unicode": "f254",
+    "html": "<i class='fa fas-hourglass'></i>",
+    "value": "fa fas-hourglass"
+  },
+  {
+    "icon": "hourglass-end",
+    "unicode": "f253",
+    "html": "<i class='fa fas-hourglass-end'></i>",
+    "value": "fa fas-hourglass-end"
+  },
+  {
+    "icon": "hourglass-half",
+    "unicode": "f252",
+    "html": "<i class='fa fas-hourglass-half'></i>",
+    "value": "fa fas-hourglass-half"
+  },
+  {
+    "icon": "hourglass-start",
+    "unicode": "f251",
+    "html": "<i class='fa fas-hourglass-start'></i>",
+    "value": "fa fas-hourglass-start"
+  },
+  {
+    "icon": "i-cursor",
+    "unicode": "f246",
+    "html": "<i class='fa fas-i-cursor'></i>",
+    "value": "fa fas-i-cursor"
+  },
+  {
+    "icon": "id-badge",
+    "unicode": "f2c1",
+    "html": "<i class='fa fas-id-badge'></i>",
+    "value": "fa fas-id-badge"
+  },
+  {
+    "icon": "id-card",
+    "unicode": "f2c2",
+    "html": "<i class='fa fas-id-card'></i>",
+    "value": "fa fas-id-card"
+  },
+  {
+    "icon": "id-card-alt",
+    "unicode": "f47f",
+    "html": "<i class='fa fas-id-card-alt'></i>",
+    "value": "fa fas-id-card-alt"
+  },
+  {
+    "icon": "image",
+    "unicode": "f03e",
+    "html": "<i class='fa fas-image'></i>",
+    "value": "fa fas-image"
+  },
+  {
+    "icon": "images",
+    "unicode": "f302",
+    "html": "<i class='fa fas-images'></i>",
+    "value": "fa fas-images"
+  },
+  {
+    "icon": "inbox",
+    "unicode": "f01c",
+    "html": "<i class='fa fas-inbox'></i>",
+    "value": "fa fas-inbox"
+  },
+  {
+    "icon": "indent",
+    "unicode": "f03c",
+    "html": "<i class='fa fas-indent'></i>",
+    "value": "fa fas-indent"
+  },
+  {
+    "icon": "industry",
+    "unicode": "f275",
+    "html": "<i class='fa fas-industry'></i>",
+    "value": "fa fas-industry"
+  },
+  {
+    "icon": "infinity",
+    "unicode": "f534",
+    "html": "<i class='fa fas-infinity'></i>",
+    "value": "fa fas-infinity"
+  },
+  {
+    "icon": "info",
+    "unicode": "f129",
+    "html": "<i class='fa fas-info'></i>",
+    "value": "fa fas-info"
+  },
+  {
+    "icon": "info-circle",
+    "unicode": "f05a",
+    "html": "<i class='fa fas-info-circle'></i>",
+    "value": "fa fas-info-circle"
+  },
+  {
+    "icon": "italic",
+    "unicode": "f033",
+    "html": "<i class='fa fas-italic'></i>",
+    "value": "fa fas-italic"
+  },
+  {
+    "icon": "key",
+    "unicode": "f084",
+    "html": "<i class='fa fas-key'></i>",
+    "value": "fa fas-key"
+  },
+  {
+    "icon": "keyboard",
+    "unicode": "f11c",
+    "html": "<i class='fa fas-keyboard'></i>",
+    "value": "fa fas-keyboard"
+  },
+  {
+    "icon": "kiwi-bird",
+    "unicode": "f535",
+    "html": "<i class='fa fas-kiwi-bird'></i>",
+    "value": "fa fas-kiwi-bird"
+  },
+  {
+    "icon": "language",
+    "unicode": "f1ab",
+    "html": "<i class='fa fas-language'></i>",
+    "value": "fa fas-language"
+  },
+  {
+    "icon": "laptop",
+    "unicode": "f109",
+    "html": "<i class='fa fas-laptop'></i>",
+    "value": "fa fas-laptop"
+  },
+  {
+    "icon": "leaf",
+    "unicode": "f06c",
+    "html": "<i class='fa fas-leaf'></i>",
+    "value": "fa fas-leaf"
+  },
+  {
+    "icon": "lemon",
+    "unicode": "f094",
+    "html": "<i class='fa fas-lemon'></i>",
+    "value": "fa fas-lemon"
+  },
+  {
+    "icon": "less-than",
+    "unicode": "f536",
+    "html": "<i class='fa fas-less-than'></i>",
+    "value": "fa fas-less-than"
+  },
+  {
+    "icon": "less-than-equal",
+    "unicode": "f537",
+    "html": "<i class='fa fas-less-than-equal'></i>",
+    "value": "fa fas-less-than-equal"
+  },
+  {
+    "icon": "level-down-alt",
+    "unicode": "f3be",
+    "html": "<i class='fa fas-level-down-alt'></i>",
+    "value": "fa fas-level-down-alt"
+  },
+  {
+    "icon": "level-up-alt",
+    "unicode": "f3bf",
+    "html": "<i class='fa fas-level-up-alt'></i>",
+    "value": "fa fas-level-up-alt"
+  },
+  {
+    "icon": "life-ring",
+    "unicode": "f1cd",
+    "html": "<i class='fa fas-life-ring'></i>",
+    "value": "fa fas-life-ring"
+  },
+  {
+    "icon": "lightbulb",
+    "unicode": "f0eb",
+    "html": "<i class='fa fas-lightbulb'></i>",
+    "value": "fa fas-lightbulb"
+  },
+  {
+    "icon": "link",
+    "unicode": "f0c1",
+    "html": "<i class='fa fas-link'></i>",
+    "value": "fa fas-link"
+  },
+  {
+    "icon": "lira-sign",
+    "unicode": "f195",
+    "html": "<i class='fa fas-lira-sign'></i>",
+    "value": "fa fas-lira-sign"
+  },
+  {
+    "icon": "list",
+    "unicode": "f03a",
+    "html": "<i class='fa fas-list'></i>",
+    "value": "fa fas-list"
+  },
+  {
+    "icon": "list-alt",
+    "unicode": "f022",
+    "html": "<i class='fa fas-list-alt'></i>",
+    "value": "fa fas-list-alt"
+  },
+  {
+    "icon": "list-ol",
+    "unicode": "f0cb",
+    "html": "<i class='fa fas-list-ol'></i>",
+    "value": "fa fas-list-ol"
+  },
+  {
+    "icon": "list-ul",
+    "unicode": "f0ca",
+    "html": "<i class='fa fas-list-ul'></i>",
+    "value": "fa fas-list-ul"
+  },
+  {
+    "icon": "location-arrow",
+    "unicode": "f124",
+    "html": "<i class='fa fas-location-arrow'></i>",
+    "value": "fa fas-location-arrow"
+  },
+  {
+    "icon": "lock",
+    "unicode": "f023",
+    "html": "<i class='fa fas-lock'></i>",
+    "value": "fa fas-lock"
+  },
+  {
+    "icon": "lock-open",
+    "unicode": "f3c1",
+    "html": "<i class='fa fas-lock-open'></i>",
+    "value": "fa fas-lock-open"
+  },
+  {
+    "icon": "long-arrow-alt-down",
+    "unicode": "f309",
+    "html": "<i class='fa fas-long-arrow-alt-down'></i>",
+    "value": "fa fas-long-arrow-alt-down"
+  },
+  {
+    "icon": "long-arrow-alt-left",
+    "unicode": "f30a",
+    "html": "<i class='fa fas-long-arrow-alt-left'></i>",
+    "value": "fa fas-long-arrow-alt-left"
+  },
+  {
+    "icon": "long-arrow-alt-right",
+    "unicode": "f30b",
+    "html": "<i class='fa fas-long-arrow-alt-right'></i>",
+    "value": "fa fas-long-arrow-alt-right"
+  },
+  {
+    "icon": "long-arrow-alt-up",
+    "unicode": "f30c",
+    "html": "<i class='fa fas-long-arrow-alt-up'></i>",
+    "value": "fa fas-long-arrow-alt-up"
+  },
+  {
+    "icon": "low-vision",
+    "unicode": "f2a8",
+    "html": "<i class='fa fas-low-vision'></i>",
+    "value": "fa fas-low-vision"
+  },
+  {
+    "icon": "magic",
+    "unicode": "f0d0",
+    "html": "<i class='fa fas-magic'></i>",
+    "value": "fa fas-magic"
+  },
+  {
+    "icon": "magnet",
+    "unicode": "f076",
+    "html": "<i class='fa fas-magnet'></i>",
+    "value": "fa fas-magnet"
+  },
+  {
+    "icon": "male",
+    "unicode": "f183",
+    "html": "<i class='fa fas-male'></i>",
+    "value": "fa fas-male"
+  },
+  {
+    "icon": "map",
+    "unicode": "f279",
+    "html": "<i class='fa fas-map'></i>",
+    "value": "fa fas-map"
+  },
+  {
+    "icon": "map-marker",
+    "unicode": "f041",
+    "html": "<i class='fa fas-map-marker'></i>",
+    "value": "fa fas-map-marker"
+  },
+  {
+    "icon": "map-marker-alt",
+    "unicode": "f3c5",
+    "html": "<i class='fa fas-map-marker-alt'></i>",
+    "value": "fa fas-map-marker-alt"
+  },
+  {
+    "icon": "map-pin",
+    "unicode": "f276",
+    "html": "<i class='fa fas-map-pin'></i>",
+    "value": "fa fas-map-pin"
+  },
+  {
+    "icon": "map-signs",
+    "unicode": "f277",
+    "html": "<i class='fa fas-map-signs'></i>",
+    "value": "fa fas-map-signs"
+  },
+  {
+    "icon": "mars",
+    "unicode": "f222",
+    "html": "<i class='fa fas-mars'></i>",
+    "value": "fa fas-mars"
+  },
+  {
+    "icon": "mars-double",
+    "unicode": "f227",
+    "html": "<i class='fa fas-mars-double'></i>",
+    "value": "fa fas-mars-double"
+  },
+  {
+    "icon": "mars-stroke",
+    "unicode": "f229",
+    "html": "<i class='fa fas-mars-stroke'></i>",
+    "value": "fa fas-mars-stroke"
+  },
+  {
+    "icon": "mars-stroke-h",
+    "unicode": "f22b",
+    "html": "<i class='fa fas-mars-stroke-h'></i>",
+    "value": "fa fas-mars-stroke-h"
+  },
+  {
+    "icon": "mars-stroke-v",
+    "unicode": "f22a",
+    "html": "<i class='fa fas-mars-stroke-v'></i>",
+    "value": "fa fas-mars-stroke-v"
+  },
+  {
+    "icon": "medkit",
+    "unicode": "f0fa",
+    "html": "<i class='fa fas-medkit'></i>",
+    "value": "fa fas-medkit"
+  },
+  {
+    "icon": "meh",
+    "unicode": "f11a",
+    "html": "<i class='fa fas-meh'></i>",
+    "value": "fa fas-meh"
+  },
+  {
+    "icon": "memory",
+    "unicode": "f538",
+    "html": "<i class='fa fas-memory'></i>",
+    "value": "fa fas-memory"
+  },
+  {
+    "icon": "mercury",
+    "unicode": "f223",
+    "html": "<i class='fa fas-mercury'></i>",
+    "value": "fa fas-mercury"
+  },
+  {
+    "icon": "microchip",
+    "unicode": "f2db",
+    "html": "<i class='fa fas-microchip'></i>",
+    "value": "fa fas-microchip"
+  },
+  {
+    "icon": "microphone",
+    "unicode": "f130",
+    "html": "<i class='fa fas-microphone'></i>",
+    "value": "fa fas-microphone"
+  },
+  {
+    "icon": "microphone-alt",
+    "unicode": "f3c9",
+    "html": "<i class='fa fas-microphone-alt'></i>",
+    "value": "fa fas-microphone-alt"
+  },
+  {
+    "icon": "microphone-alt-slash",
+    "unicode": "f539",
+    "html": "<i class='fa fas-microphone-alt-slash'></i>",
+    "value": "fa fas-microphone-alt-slash"
+  },
+  {
+    "icon": "microphone-slash",
+    "unicode": "f131",
+    "html": "<i class='fa fas-microphone-slash'></i>",
+    "value": "fa fas-microphone-slash"
+  },
+  {
+    "icon": "minus",
+    "unicode": "f068",
+    "html": "<i class='fa fas-minus'></i>",
+    "value": "fa fas-minus"
+  },
+  {
+    "icon": "minus-circle",
+    "unicode": "f056",
+    "html": "<i class='fa fas-minus-circle'></i>",
+    "value": "fa fas-minus-circle"
+  },
+  {
+    "icon": "minus-square",
+    "unicode": "f146",
+    "html": "<i class='fa fas-minus-square'></i>",
+    "value": "fa fas-minus-square"
+  },
+  {
+    "icon": "mobile",
+    "unicode": "f10b",
+    "html": "<i class='fa fas-mobile'></i>",
+    "value": "fa fas-mobile"
+  },
+  {
+    "icon": "mobile-alt",
+    "unicode": "f3cd",
+    "html": "<i class='fa fas-mobile-alt'></i>",
+    "value": "fa fas-mobile-alt"
+  },
+  {
+    "icon": "money-bill",
+    "unicode": "f0d6",
+    "html": "<i class='fa fas-money-bill'></i>",
+    "value": "fa fas-money-bill"
+  },
+  {
+    "icon": "money-bill-alt",
+    "unicode": "f3d1",
+    "html": "<i class='fa fas-money-bill-alt'></i>",
+    "value": "fa fas-money-bill-alt"
+  },
+  {
+    "icon": "money-bill-wave",
+    "unicode": "f53a",
+    "html": "<i class='fa fas-money-bill-wave'></i>",
+    "value": "fa fas-money-bill-wave"
+  },
+  {
+    "icon": "money-bill-wave-alt",
+    "unicode": "f53b",
+    "html": "<i class='fa fas-money-bill-wave-alt'></i>",
+    "value": "fa fas-money-bill-wave-alt"
+  },
+  {
+    "icon": "money-check",
+    "unicode": "f53c",
+    "html": "<i class='fa fas-money-check'></i>",
+    "value": "fa fas-money-check"
+  },
+  {
+    "icon": "money-check-alt",
+    "unicode": "f53d",
+    "html": "<i class='fa fas-money-check-alt'></i>",
+    "value": "fa fas-money-check-alt"
+  },
+  {
+    "icon": "moon",
+    "unicode": "f186",
+    "html": "<i class='fa fas-moon'></i>",
+    "value": "fa fas-moon"
+  },
+  {
+    "icon": "motorcycle",
+    "unicode": "f21c",
+    "html": "<i class='fa fas-motorcycle'></i>",
+    "value": "fa fas-motorcycle"
+  },
+  {
+    "icon": "mouse-pointer",
+    "unicode": "f245",
+    "html": "<i class='fa fas-mouse-pointer'></i>",
+    "value": "fa fas-mouse-pointer"
+  },
+  {
+    "icon": "music",
+    "unicode": "f001",
+    "html": "<i class='fa fas-music'></i>",
+    "value": "fa fas-music"
+  },
+  {
+    "icon": "neuter",
+    "unicode": "f22c",
+    "html": "<i class='fa fas-neuter'></i>",
+    "value": "fa fas-neuter"
+  },
+  {
+    "icon": "newspaper",
+    "unicode": "f1ea",
+    "html": "<i class='fa fas-newspaper'></i>",
+    "value": "fa fas-newspaper"
+  },
+  {
+    "icon": "not-equal",
+    "unicode": "f53e",
+    "html": "<i class='fa fas-not-equal'></i>",
+    "value": "fa fas-not-equal"
+  },
+  {
+    "icon": "notes-medical",
+    "unicode": "f481",
+    "html": "<i class='fa fas-notes-medical'></i>",
+    "value": "fa fas-notes-medical"
+  },
+  {
+    "icon": "object-group",
+    "unicode": "f247",
+    "html": "<i class='fa fas-object-group'></i>",
+    "value": "fa fas-object-group"
+  },
+  {
+    "icon": "object-ungroup",
+    "unicode": "f248",
+    "html": "<i class='fa fas-object-ungroup'></i>",
+    "value": "fa fas-object-ungroup"
+  },
+  {
+    "icon": "outdent",
+    "unicode": "f03b",
+    "html": "<i class='fa fas-outdent'></i>",
+    "value": "fa fas-outdent"
+  },
+  {
+    "icon": "paint-brush",
+    "unicode": "f1fc",
+    "html": "<i class='fa fas-paint-brush'></i>",
+    "value": "fa fas-paint-brush"
+  },
+  {
+    "icon": "palette",
+    "unicode": "f53f",
+    "html": "<i class='fa fas-palette'></i>",
+    "value": "fa fas-palette"
+  },
+  {
+    "icon": "pallet",
+    "unicode": "f482",
+    "html": "<i class='fa fas-pallet'></i>",
+    "value": "fa fas-pallet"
+  },
+  {
+    "icon": "paper-plane",
+    "unicode": "f1d8",
+    "html": "<i class='fa fas-paper-plane'></i>",
+    "value": "fa fas-paper-plane"
+  },
+  {
+    "icon": "paperclip",
+    "unicode": "f0c6",
+    "html": "<i class='fa fas-paperclip'></i>",
+    "value": "fa fas-paperclip"
+  },
+  {
+    "icon": "parachute-box",
+    "unicode": "f4cd",
+    "html": "<i class='fa fas-parachute-box'></i>",
+    "value": "fa fas-parachute-box"
+  },
+  {
+    "icon": "paragraph",
+    "unicode": "f1dd",
+    "html": "<i class='fa fas-paragraph'></i>",
+    "value": "fa fas-paragraph"
+  },
+  {
+    "icon": "parking",
+    "unicode": "f540",
+    "html": "<i class='fa fas-parking'></i>",
+    "value": "fa fas-parking"
+  },
+  {
+    "icon": "paste",
+    "unicode": "f0ea",
+    "html": "<i class='fa fas-paste'></i>",
+    "value": "fa fas-paste"
+  },
+  {
+    "icon": "pause",
+    "unicode": "f04c",
+    "html": "<i class='fa fas-pause'></i>",
+    "value": "fa fas-pause"
+  },
+  {
+    "icon": "pause-circle",
+    "unicode": "f28b",
+    "html": "<i class='fa fas-pause-circle'></i>",
+    "value": "fa fas-pause-circle"
+  },
+  {
+    "icon": "paw",
+    "unicode": "f1b0",
+    "html": "<i class='fa fas-paw'></i>",
+    "value": "fa fas-paw"
+  },
+  {
+    "icon": "pen-square",
+    "unicode": "f14b",
+    "html": "<i class='fa fas-pen-square'></i>",
+    "value": "fa fas-pen-square"
+  },
+  {
+    "icon": "pencil-alt",
+    "unicode": "f303",
+    "html": "<i class='fa fas-pencil-alt'></i>",
+    "value": "fa fas-pencil-alt"
+  },
+  {
+    "icon": "people-carry",
+    "unicode": "f4ce",
+    "html": "<i class='fa fas-people-carry'></i>",
+    "value": "fa fas-people-carry"
+  },
+  {
+    "icon": "percent",
+    "unicode": "f295",
+    "html": "<i class='fa fas-percent'></i>",
+    "value": "fa fas-percent"
+  },
+  {
+    "icon": "percentage",
+    "unicode": "f541",
+    "html": "<i class='fa fas-percentage'></i>",
+    "value": "fa fas-percentage"
+  },
+  {
+    "icon": "phone",
+    "unicode": "f095",
+    "html": "<i class='fa fas-phone'></i>",
+    "value": "fa fas-phone"
+  },
+  {
+    "icon": "phone-slash",
+    "unicode": "f3dd",
+    "html": "<i class='fa fas-phone-slash'></i>",
+    "value": "fa fas-phone-slash"
+  },
+  {
+    "icon": "phone-square",
+    "unicode": "f098",
+    "html": "<i class='fa fas-phone-square'></i>",
+    "value": "fa fas-phone-square"
+  },
+  {
+    "icon": "phone-volume",
+    "unicode": "f2a0",
+    "html": "<i class='fa fas-phone-volume'></i>",
+    "value": "fa fas-phone-volume"
+  },
+  {
+    "icon": "piggy-bank",
+    "unicode": "f4d3",
+    "html": "<i class='fa fas-piggy-bank'></i>",
+    "value": "fa fas-piggy-bank"
+  },
+  {
+    "icon": "pills",
+    "unicode": "f484",
+    "html": "<i class='fa fas-pills'></i>",
+    "value": "fa fas-pills"
+  },
+  {
+    "icon": "plane",
+    "unicode": "f072",
+    "html": "<i class='fa fas-plane'></i>",
+    "value": "fa fas-plane"
+  },
+  {
+    "icon": "play",
+    "unicode": "f04b",
+    "html": "<i class='fa fas-play'></i>",
+    "value": "fa fas-play"
+  },
+  {
+    "icon": "play-circle",
+    "unicode": "f144",
+    "html": "<i class='fa fas-play-circle'></i>",
+    "value": "fa fas-play-circle"
+  },
+  {
+    "icon": "plug",
+    "unicode": "f1e6",
+    "html": "<i class='fa fas-plug'></i>",
+    "value": "fa fas-plug"
+  },
+  {
+    "icon": "plus",
+    "unicode": "f067",
+    "html": "<i class='fa fas-plus'></i>",
+    "value": "fa fas-plus"
+  },
+  {
+    "icon": "plus-circle",
+    "unicode": "f055",
+    "html": "<i class='fa fas-plus-circle'></i>",
+    "value": "fa fas-plus-circle"
+  },
+  {
+    "icon": "plus-square",
+    "unicode": "f0fe",
+    "html": "<i class='fa fas-plus-square'></i>",
+    "value": "fa fas-plus-square"
+  },
+  {
+    "icon": "podcast",
+    "unicode": "f2ce",
+    "html": "<i class='fa fas-podcast'></i>",
+    "value": "fa fas-podcast"
+  },
+  {
+    "icon": "poo",
+    "unicode": "f2fe",
+    "html": "<i class='fa fas-poo'></i>",
+    "value": "fa fas-poo"
+  },
+  {
+    "icon": "portrait",
+    "unicode": "f3e0",
+    "html": "<i class='fa fas-portrait'></i>",
+    "value": "fa fas-portrait"
+  },
+  {
+    "icon": "pound-sign",
+    "unicode": "f154",
+    "html": "<i class='fa fas-pound-sign'></i>",
+    "value": "fa fas-pound-sign"
+  },
+  {
+    "icon": "power-off",
+    "unicode": "f011",
+    "html": "<i class='fa fas-power-off'></i>",
+    "value": "fa fas-power-off"
+  },
+  {
+    "icon": "prescription-bottle",
+    "unicode": "f485",
+    "html": "<i class='fa fas-prescription-bottle'></i>",
+    "value": "fa fas-prescription-bottle"
+  },
+  {
+    "icon": "prescription-bottle-alt",
+    "unicode": "f486",
+    "html": "<i class='fa fas-prescription-bottle-alt'></i>",
+    "value": "fa fas-prescription-bottle-alt"
+  },
+  {
+    "icon": "print",
+    "unicode": "f02f",
+    "html": "<i class='fa fas-print'></i>",
+    "value": "fa fas-print"
+  },
+  {
+    "icon": "procedures",
+    "unicode": "f487",
+    "html": "<i class='fa fas-procedures'></i>",
+    "value": "fa fas-procedures"
+  },
+  {
+    "icon": "project-diagram",
+    "unicode": "f542",
+    "html": "<i class='fa fas-project-diagram'></i>",
+    "value": "fa fas-project-diagram"
+  },
+  {
+    "icon": "puzzle-piece",
+    "unicode": "f12e",
+    "html": "<i class='fa fas-puzzle-piece'></i>",
+    "value": "fa fas-puzzle-piece"
+  },
+  {
+    "icon": "qrcode",
+    "unicode": "f029",
+    "html": "<i class='fa fas-qrcode'></i>",
+    "value": "fa fas-qrcode"
+  },
+  {
+    "icon": "question",
+    "unicode": "f128",
+    "html": "<i class='fa fas-question'></i>",
+    "value": "fa fas-question"
+  },
+  {
+    "icon": "question-circle",
+    "unicode": "f059",
+    "html": "<i class='fa fas-question-circle'></i>",
+    "value": "fa fas-question-circle"
+  },
+  {
+    "icon": "quidditch",
+    "unicode": "f458",
+    "html": "<i class='fa fas-quidditch'></i>",
+    "value": "fa fas-quidditch"
+  },
+  {
+    "icon": "quote-left",
+    "unicode": "f10d",
+    "html": "<i class='fa fas-quote-left'></i>",
+    "value": "fa fas-quote-left"
+  },
+  {
+    "icon": "quote-right",
+    "unicode": "f10e",
+    "html": "<i class='fa fas-quote-right'></i>",
+    "value": "fa fas-quote-right"
+  },
+  {
+    "icon": "random",
+    "unicode": "f074",
+    "html": "<i class='fa fas-random'></i>",
+    "value": "fa fas-random"
+  },
+  {
+    "icon": "receipt",
+    "unicode": "f543",
+    "html": "<i class='fa fas-receipt'></i>",
+    "value": "fa fas-receipt"
+  },
+  {
+    "icon": "recycle",
+    "unicode": "f1b8",
+    "html": "<i class='fa fas-recycle'></i>",
+    "value": "fa fas-recycle"
+  },
+  {
+    "icon": "redo",
+    "unicode": "f01e",
+    "html": "<i class='fa fas-redo'></i>",
+    "value": "fa fas-redo"
+  },
+  {
+    "icon": "redo-alt",
+    "unicode": "f2f9",
+    "html": "<i class='fa fas-redo-alt'></i>",
+    "value": "fa fas-redo-alt"
+  },
+  {
+    "icon": "registered",
+    "unicode": "f25d",
+    "html": "<i class='fa fas-registered'></i>",
+    "value": "fa fas-registered"
+  },
+  {
+    "icon": "reply",
+    "unicode": "f3e5",
+    "html": "<i class='fa fas-reply'></i>",
+    "value": "fa fas-reply"
+  },
+  {
+    "icon": "reply-all",
+    "unicode": "f122",
+    "html": "<i class='fa fas-reply-all'></i>",
+    "value": "fa fas-reply-all"
+  },
+  {
+    "icon": "retweet",
+    "unicode": "f079",
+    "html": "<i class='fa fas-retweet'></i>",
+    "value": "fa fas-retweet"
+  },
+  {
+    "icon": "ribbon",
+    "unicode": "f4d6",
+    "html": "<i class='fa fas-ribbon'></i>",
+    "value": "fa fas-ribbon"
+  },
+  {
+    "icon": "road",
+    "unicode": "f018",
+    "html": "<i class='fa fas-road'></i>",
+    "value": "fa fas-road"
+  },
+  {
+    "icon": "robot",
+    "unicode": "f544",
+    "html": "<i class='fa fas-robot'></i>",
+    "value": "fa fas-robot"
+  },
+  {
+    "icon": "rocket",
+    "unicode": "f135",
+    "html": "<i class='fa fas-rocket'></i>",
+    "value": "fa fas-rocket"
+  },
+  {
+    "icon": "rss",
+    "unicode": "f09e",
+    "html": "<i class='fa fas-rss'></i>",
+    "value": "fa fas-rss"
+  },
+  {
+    "icon": "rss-square",
+    "unicode": "f143",
+    "html": "<i class='fa fas-rss-square'></i>",
+    "value": "fa fas-rss-square"
+  },
+  {
+    "icon": "ruble-sign",
+    "unicode": "f158",
+    "html": "<i class='fa fas-ruble-sign'></i>",
+    "value": "fa fas-ruble-sign"
+  },
+  {
+    "icon": "ruler",
+    "unicode": "f545",
+    "html": "<i class='fa fas-ruler'></i>",
+    "value": "fa fas-ruler"
+  },
+  {
+    "icon": "ruler-combined",
+    "unicode": "f546",
+    "html": "<i class='fa fas-ruler-combined'></i>",
+    "value": "fa fas-ruler-combined"
+  },
+  {
+    "icon": "ruler-horizontal",
+    "unicode": "f547",
+    "html": "<i class='fa fas-ruler-horizontal'></i>",
+    "value": "fa fas-ruler-horizontal"
+  },
+  {
+    "icon": "ruler-vertical",
+    "unicode": "f548",
+    "html": "<i class='fa fas-ruler-vertical'></i>",
+    "value": "fa fas-ruler-vertical"
+  },
+  {
+    "icon": "rupee-sign",
+    "unicode": "f156",
+    "html": "<i class='fa fas-rupee-sign'></i>",
+    "value": "fa fas-rupee-sign"
+  },
+  {
+    "icon": "save",
+    "unicode": "f0c7",
+    "html": "<i class='fa fas-save'></i>",
+    "value": "fa fas-save"
+  },
+  {
+    "icon": "school",
+    "unicode": "f549",
+    "html": "<i class='fa fas-school'></i>",
+    "value": "fa fas-school"
+  },
+  {
+    "icon": "screwdriver",
+    "unicode": "f54a",
+    "html": "<i class='fa fas-screwdriver'></i>",
+    "value": "fa fas-screwdriver"
+  },
+  {
+    "icon": "search",
+    "unicode": "f002",
+    "html": "<i class='fa fas-search'></i>",
+    "value": "fa fas-search"
+  },
+  {
+    "icon": "search-minus",
+    "unicode": "f010",
+    "html": "<i class='fa fas-search-minus'></i>",
+    "value": "fa fas-search-minus"
+  },
+  {
+    "icon": "search-plus",
+    "unicode": "f00e",
+    "html": "<i class='fa fas-search-plus'></i>",
+    "value": "fa fas-search-plus"
+  },
+  {
+    "icon": "seedling",
+    "unicode": "f4d8",
+    "html": "<i class='fa fas-seedling'></i>",
+    "value": "fa fas-seedling"
+  },
+  {
+    "icon": "server",
+    "unicode": "f233",
+    "html": "<i class='fa fas-server'></i>",
+    "value": "fa fas-server"
+  },
+  {
+    "icon": "share",
+    "unicode": "f064",
+    "html": "<i class='fa fas-share'></i>",
+    "value": "fa fas-share"
+  },
+  {
+    "icon": "share-alt",
+    "unicode": "f1e0",
+    "html": "<i class='fa fas-share-alt'></i>",
+    "value": "fa fas-share-alt"
+  },
+  {
+    "icon": "share-alt-square",
+    "unicode": "f1e1",
+    "html": "<i class='fa fas-share-alt-square'></i>",
+    "value": "fa fas-share-alt-square"
+  },
+  {
+    "icon": "share-square",
+    "unicode": "f14d",
+    "html": "<i class='fa fas-share-square'></i>",
+    "value": "fa fas-share-square"
+  },
+  {
+    "icon": "shekel-sign",
+    "unicode": "f20b",
+    "html": "<i class='fa fas-shekel-sign'></i>",
+    "value": "fa fas-shekel-sign"
+  },
+  {
+    "icon": "shield-alt",
+    "unicode": "f3ed",
+    "html": "<i class='fa fas-shield-alt'></i>",
+    "value": "fa fas-shield-alt"
+  },
+  {
+    "icon": "ship",
+    "unicode": "f21a",
+    "html": "<i class='fa fas-ship'></i>",
+    "value": "fa fas-ship"
+  },
+  {
+    "icon": "shipping-fast",
+    "unicode": "f48b",
+    "html": "<i class='fa fas-shipping-fast'></i>",
+    "value": "fa fas-shipping-fast"
+  },
+  {
+    "icon": "shoe-prints",
+    "unicode": "f54b",
+    "html": "<i class='fa fas-shoe-prints'></i>",
+    "value": "fa fas-shoe-prints"
+  },
+  {
+    "icon": "shopping-bag",
+    "unicode": "f290",
+    "html": "<i class='fa fas-shopping-bag'></i>",
+    "value": "fa fas-shopping-bag"
+  },
+  {
+    "icon": "shopping-basket",
+    "unicode": "f291",
+    "html": "<i class='fa fas-shopping-basket'></i>",
+    "value": "fa fas-shopping-basket"
+  },
+  {
+    "icon": "shopping-cart",
+    "unicode": "f07a",
+    "html": "<i class='fa fas-shopping-cart'></i>",
+    "value": "fa fas-shopping-cart"
+  },
+  {
+    "icon": "shower",
+    "unicode": "f2cc",
+    "html": "<i class='fa fas-shower'></i>",
+    "value": "fa fas-shower"
+  },
+  {
+    "icon": "sign",
+    "unicode": "f4d9",
+    "html": "<i class='fa fas-sign'></i>",
+    "value": "fa fas-sign"
+  },
+  {
+    "icon": "sign-in-alt",
+    "unicode": "f2f6",
+    "html": "<i class='fa fas-sign-in-alt'></i>",
+    "value": "fa fas-sign-in-alt"
+  },
+  {
+    "icon": "sign-language",
+    "unicode": "f2a7",
+    "html": "<i class='fa fas-sign-language'></i>",
+    "value": "fa fas-sign-language"
+  },
+  {
+    "icon": "sign-out-alt",
+    "unicode": "f2f5",
+    "html": "<i class='fa fas-sign-out-alt'></i>",
+    "value": "fa fas-sign-out-alt"
+  },
+  {
+    "icon": "signal",
+    "unicode": "f012",
+    "html": "<i class='fa fas-signal'></i>",
+    "value": "fa fas-signal"
+  },
+  {
+    "icon": "sitemap",
+    "unicode": "f0e8",
+    "html": "<i class='fa fas-sitemap'></i>",
+    "value": "fa fas-sitemap"
+  },
+  {
+    "icon": "skull",
+    "unicode": "f54c",
+    "html": "<i class='fa fas-skull'></i>",
+    "value": "fa fas-skull"
+  },
+  {
+    "icon": "sliders-h",
+    "unicode": "f1de",
+    "html": "<i class='fa fas-sliders-h'></i>",
+    "value": "fa fas-sliders-h"
+  },
+  {
+    "icon": "smile",
+    "unicode": "f118",
+    "html": "<i class='fa fas-smile'></i>",
+    "value": "fa fas-smile"
+  },
+  {
+    "icon": "smoking",
+    "unicode": "f48d",
+    "html": "<i class='fa fas-smoking'></i>",
+    "value": "fa fas-smoking"
+  },
+  {
+    "icon": "smoking-ban",
+    "unicode": "f54d",
+    "html": "<i class='fa fas-smoking-ban'></i>",
+    "value": "fa fas-smoking-ban"
+  },
+  {
+    "icon": "snowflake",
+    "unicode": "f2dc",
+    "html": "<i class='fa fas-snowflake'></i>",
+    "value": "fa fas-snowflake"
+  },
+  {
+    "icon": "sort",
+    "unicode": "f0dc",
+    "html": "<i class='fa fas-sort'></i>",
+    "value": "fa fas-sort"
+  },
+  {
+    "icon": "sort-alpha-down",
+    "unicode": "f15d",
+    "html": "<i class='fa fas-sort-alpha-down'></i>",
+    "value": "fa fas-sort-alpha-down"
+  },
+  {
+    "icon": "sort-alpha-up",
+    "unicode": "f15e",
+    "html": "<i class='fa fas-sort-alpha-up'></i>",
+    "value": "fa fas-sort-alpha-up"
+  },
+  {
+    "icon": "sort-amount-down",
+    "unicode": "f160",
+    "html": "<i class='fa fas-sort-amount-down'></i>",
+    "value": "fa fas-sort-amount-down"
+  },
+  {
+    "icon": "sort-amount-up",
+    "unicode": "f161",
+    "html": "<i class='fa fas-sort-amount-up'></i>",
+    "value": "fa fas-sort-amount-up"
+  },
+  {
+    "icon": "sort-down",
+    "unicode": "f0dd",
+    "html": "<i class='fa fas-sort-down'></i>",
+    "value": "fa fas-sort-down"
+  },
+  {
+    "icon": "sort-numeric-down",
+    "unicode": "f162",
+    "html": "<i class='fa fas-sort-numeric-down'></i>",
+    "value": "fa fas-sort-numeric-down"
+  },
+  {
+    "icon": "sort-numeric-up",
+    "unicode": "f163",
+    "html": "<i class='fa fas-sort-numeric-up'></i>",
+    "value": "fa fas-sort-numeric-up"
+  },
+  {
+    "icon": "sort-up",
+    "unicode": "f0de",
+    "html": "<i class='fa fas-sort-up'></i>",
+    "value": "fa fas-sort-up"
+  },
+  {
+    "icon": "space-shuttle",
+    "unicode": "f197",
+    "html": "<i class='fa fas-space-shuttle'></i>",
+    "value": "fa fas-space-shuttle"
+  },
+  {
+    "icon": "spinner",
+    "unicode": "f110",
+    "html": "<i class='fa fas-spinner'></i>",
+    "value": "fa fas-spinner"
+  },
+  {
+    "icon": "square",
+    "unicode": "f0c8",
+    "html": "<i class='fa fas-square'></i>",
+    "value": "fa fas-square"
+  },
+  {
+    "icon": "square-full",
+    "unicode": "f45c",
+    "html": "<i class='fa fas-square-full'></i>",
+    "value": "fa fas-square-full"
+  },
+  {
+    "icon": "star",
+    "unicode": "f005",
+    "html": "<i class='fa fas-star'></i>",
+    "value": "fa fas-star"
+  },
+  {
+    "icon": "star-half",
+    "unicode": "f089",
+    "html": "<i class='fa fas-star-half'></i>",
+    "value": "fa fas-star-half"
+  },
+  {
+    "icon": "step-backward",
+    "unicode": "f048",
+    "html": "<i class='fa fas-step-backward'></i>",
+    "value": "fa fas-step-backward"
+  },
+  {
+    "icon": "step-forward",
+    "unicode": "f051",
+    "html": "<i class='fa fas-step-forward'></i>",
+    "value": "fa fas-step-forward"
+  },
+  {
+    "icon": "stethoscope",
+    "unicode": "f0f1",
+    "html": "<i class='fa fas-stethoscope'></i>",
+    "value": "fa fas-stethoscope"
+  },
+  {
+    "icon": "sticky-note",
+    "unicode": "f249",
+    "html": "<i class='fa fas-sticky-note'></i>",
+    "value": "fa fas-sticky-note"
+  },
+  {
+    "icon": "stop",
+    "unicode": "f04d",
+    "html": "<i class='fa fas-stop'></i>",
+    "value": "fa fas-stop"
+  },
+  {
+    "icon": "stop-circle",
+    "unicode": "f28d",
+    "html": "<i class='fa fas-stop-circle'></i>",
+    "value": "fa fas-stop-circle"
+  },
+  {
+    "icon": "stopwatch",
+    "unicode": "f2f2",
+    "html": "<i class='fa fas-stopwatch'></i>",
+    "value": "fa fas-stopwatch"
+  },
+  {
+    "icon": "store",
+    "unicode": "f54e",
+    "html": "<i class='fa fas-store'></i>",
+    "value": "fa fas-store"
+  },
+  {
+    "icon": "store-alt",
+    "unicode": "f54f",
+    "html": "<i class='fa fas-store-alt'></i>",
+    "value": "fa fas-store-alt"
+  },
+  {
+    "icon": "stream",
+    "unicode": "f550",
+    "html": "<i class='fa fas-stream'></i>",
+    "value": "fa fas-stream"
+  },
+  {
+    "icon": "street-view",
+    "unicode": "f21d",
+    "html": "<i class='fa fas-street-view'></i>",
+    "value": "fa fas-street-view"
+  },
+  {
+    "icon": "strikethrough",
+    "unicode": "f0cc",
+    "html": "<i class='fa fas-strikethrough'></i>",
+    "value": "fa fas-strikethrough"
+  },
+  {
+    "icon": "stroopwafel",
+    "unicode": "f551",
+    "html": "<i class='fa fas-stroopwafel'></i>",
+    "value": "fa fas-stroopwafel"
+  },
+  {
+    "icon": "subscript",
+    "unicode": "f12c",
+    "html": "<i class='fa fas-subscript'></i>",
+    "value": "fa fas-subscript"
+  },
+  {
+    "icon": "subway",
+    "unicode": "f239",
+    "html": "<i class='fa fas-subway'></i>",
+    "value": "fa fas-subway"
+  },
+  {
+    "icon": "suitcase",
+    "unicode": "f0f2",
+    "html": "<i class='fa fas-suitcase'></i>",
+    "value": "fa fas-suitcase"
+  },
+  {
+    "icon": "sun",
+    "unicode": "f185",
+    "html": "<i class='fa fas-sun'></i>",
+    "value": "fa fas-sun"
+  },
+  {
+    "icon": "superscript",
+    "unicode": "f12b",
+    "html": "<i class='fa fas-superscript'></i>",
+    "value": "fa fas-superscript"
+  },
+  {
+    "icon": "sync",
+    "unicode": "f021",
+    "html": "<i class='fa fas-sync'></i>",
+    "value": "fa fas-sync"
+  },
+  {
+    "icon": "sync-alt",
+    "unicode": "f2f1",
+    "html": "<i class='fa fas-sync-alt'></i>",
+    "value": "fa fas-sync-alt"
+  },
+  {
+    "icon": "syringe",
+    "unicode": "f48e",
+    "html": "<i class='fa fas-syringe'></i>",
+    "value": "fa fas-syringe"
+  },
+  {
+    "icon": "table",
+    "unicode": "f0ce",
+    "html": "<i class='fa fas-table'></i>",
+    "value": "fa fas-table"
+  },
+  {
+    "icon": "table-tennis",
+    "unicode": "f45d",
+    "html": "<i class='fa fas-table-tennis'></i>",
+    "value": "fa fas-table-tennis"
+  },
+  {
+    "icon": "tablet",
+    "unicode": "f10a",
+    "html": "<i class='fa fas-tablet'></i>",
+    "value": "fa fas-tablet"
+  },
+  {
+    "icon": "tablet-alt",
+    "unicode": "f3fa",
+    "html": "<i class='fa fas-tablet-alt'></i>",
+    "value": "fa fas-tablet-alt"
+  },
+  {
+    "icon": "tablets",
+    "unicode": "f490",
+    "html": "<i class='fa fas-tablets'></i>",
+    "value": "fa fas-tablets"
+  },
+  {
+    "icon": "tachometer-alt",
+    "unicode": "f3fd",
+    "html": "<i class='fa fas-tachometer-alt'></i>",
+    "value": "fa fas-tachometer-alt"
+  },
+  {
+    "icon": "tag",
+    "unicode": "f02b",
+    "html": "<i class='fa fas-tag'></i>",
+    "value": "fa fas-tag"
+  },
+  {
+    "icon": "tags",
+    "unicode": "f02c",
+    "html": "<i class='fa fas-tags'></i>",
+    "value": "fa fas-tags"
+  },
+  {
+    "icon": "tape",
+    "unicode": "f4db",
+    "html": "<i class='fa fas-tape'></i>",
+    "value": "fa fas-tape"
+  },
+  {
+    "icon": "tasks",
+    "unicode": "f0ae",
+    "html": "<i class='fa fas-tasks'></i>",
+    "value": "fa fas-tasks"
+  },
+  {
+    "icon": "taxi",
+    "unicode": "f1ba",
+    "html": "<i class='fa fas-taxi'></i>",
+    "value": "fa fas-taxi"
+  },
+  {
+    "icon": "terminal",
+    "unicode": "f120",
+    "html": "<i class='fa fas-terminal'></i>",
+    "value": "fa fas-terminal"
+  },
+  {
+    "icon": "text-height",
+    "unicode": "f034",
+    "html": "<i class='fa fas-text-height'></i>",
+    "value": "fa fas-text-height"
+  },
+  {
+    "icon": "text-width",
+    "unicode": "f035",
+    "html": "<i class='fa fas-text-width'></i>",
+    "value": "fa fas-text-width"
+  },
+  {
+    "icon": "th",
+    "unicode": "f00a",
+    "html": "<i class='fa fas-th'></i>",
+    "value": "fa fas-th"
+  },
+  {
+    "icon": "th-large",
+    "unicode": "f009",
+    "html": "<i class='fa fas-th-large'></i>",
+    "value": "fa fas-th-large"
+  },
+  {
+    "icon": "th-list",
+    "unicode": "f00b",
+    "html": "<i class='fa fas-th-list'></i>",
+    "value": "fa fas-th-list"
+  },
+  {
+    "icon": "thermometer",
+    "unicode": "f491",
+    "html": "<i class='fa fas-thermometer'></i>",
+    "value": "fa fas-thermometer"
+  },
+  {
+    "icon": "thermometer-empty",
+    "unicode": "f2cb",
+    "html": "<i class='fa fas-thermometer-empty'></i>",
+    "value": "fa fas-thermometer-empty"
+  },
+  {
+    "icon": "thermometer-full",
+    "unicode": "f2c7",
+    "html": "<i class='fa fas-thermometer-full'></i>",
+    "value": "fa fas-thermometer-full"
+  },
+  {
+    "icon": "thermometer-half",
+    "unicode": "f2c9",
+    "html": "<i class='fa fas-thermometer-half'></i>",
+    "value": "fa fas-thermometer-half"
+  },
+  {
+    "icon": "thermometer-quarter",
+    "unicode": "f2ca",
+    "html": "<i class='fa fas-thermometer-quarter'></i>",
+    "value": "fa fas-thermometer-quarter"
+  },
+  {
+    "icon": "thermometer-three-quarters",
+    "unicode": "f2c8",
+    "html": "<i class='fa fas-thermometer-three-quarters'></i>",
+    "value": "fa fas-thermometer-three-quarters"
+  },
+  {
+    "icon": "thumbs-down",
+    "unicode": "f165",
+    "html": "<i class='fa fas-thumbs-down'></i>",
+    "value": "fa fas-thumbs-down"
+  },
+  {
+    "icon": "thumbs-up",
+    "unicode": "f164",
+    "html": "<i class='fa fas-thumbs-up'></i>",
+    "value": "fa fas-thumbs-up"
+  },
+  {
+    "icon": "thumbtack",
+    "unicode": "f08d",
+    "html": "<i class='fa fas-thumbtack'></i>",
+    "value": "fa fas-thumbtack"
+  },
+  {
+    "icon": "ticket-alt",
+    "unicode": "f3ff",
+    "html": "<i class='fa fas-ticket-alt'></i>",
+    "value": "fa fas-ticket-alt"
+  },
+  {
+    "icon": "times",
+    "unicode": "f00d",
+    "html": "<i class='fa fas-times'></i>",
+    "value": "fa fas-times"
+  },
+  {
+    "icon": "times-circle",
+    "unicode": "f057",
+    "html": "<i class='fa fas-times-circle'></i>",
+    "value": "fa fas-times-circle"
+  },
+  {
+    "icon": "tint",
+    "unicode": "f043",
+    "html": "<i class='fa fas-tint'></i>",
+    "value": "fa fas-tint"
+  },
+  {
+    "icon": "toggle-off",
+    "unicode": "f204",
+    "html": "<i class='fa fas-toggle-off'></i>",
+    "value": "fa fas-toggle-off"
+  },
+  {
+    "icon": "toggle-on",
+    "unicode": "f205",
+    "html": "<i class='fa fas-toggle-on'></i>",
+    "value": "fa fas-toggle-on"
+  },
+  {
+    "icon": "toolbox",
+    "unicode": "f552",
+    "html": "<i class='fa fas-toolbox'></i>",
+    "value": "fa fas-toolbox"
+  },
+  {
+    "icon": "trademark",
+    "unicode": "f25c",
+    "html": "<i class='fa fas-trademark'></i>",
+    "value": "fa fas-trademark"
+  },
+  {
+    "icon": "train",
+    "unicode": "f238",
+    "html": "<i class='fa fas-train'></i>",
+    "value": "fa fas-train"
+  },
+  {
+    "icon": "transgender",
+    "unicode": "f224",
+    "html": "<i class='fa fas-transgender'></i>",
+    "value": "fa fas-transgender"
+  },
+  {
+    "icon": "transgender-alt",
+    "unicode": "f225",
+    "html": "<i class='fa fas-transgender-alt'></i>",
+    "value": "fa fas-transgender-alt"
+  },
+  {
+    "icon": "trash",
+    "unicode": "f1f8",
+    "html": "<i class='fa fas-trash'></i>",
+    "value": "fa fas-trash"
+  },
+  {
+    "icon": "trash-alt",
+    "unicode": "f2ed",
+    "html": "<i class='fa fas-trash-alt'></i>",
+    "value": "fa fas-trash-alt"
+  },
+  {
+    "icon": "tree",
+    "unicode": "f1bb",
+    "html": "<i class='fa fas-tree'></i>",
+    "value": "fa fas-tree"
+  },
+  {
+    "icon": "trophy",
+    "unicode": "f091",
+    "html": "<i class='fa fas-trophy'></i>",
+    "value": "fa fas-trophy"
+  },
+  {
+    "icon": "truck",
+    "unicode": "f0d1",
+    "html": "<i class='fa fas-truck'></i>",
+    "value": "fa fas-truck"
+  },
+  {
+    "icon": "truck-loading",
+    "unicode": "f4de",
+    "html": "<i class='fa fas-truck-loading'></i>",
+    "value": "fa fas-truck-loading"
+  },
+  {
+    "icon": "truck-moving",
+    "unicode": "f4df",
+    "html": "<i class='fa fas-truck-moving'></i>",
+    "value": "fa fas-truck-moving"
+  },
+  {
+    "icon": "tshirt",
+    "unicode": "f553",
+    "html": "<i class='fa fas-tshirt'></i>",
+    "value": "fa fas-tshirt"
+  },
+  {
+    "icon": "tty",
+    "unicode": "f1e4",
+    "html": "<i class='fa fas-tty'></i>",
+    "value": "fa fas-tty"
+  },
+  {
+    "icon": "tv",
+    "unicode": "f26c",
+    "html": "<i class='fa fas-tv'></i>",
+    "value": "fa fas-tv"
+  },
+  {
+    "icon": "umbrella",
+    "unicode": "f0e9",
+    "html": "<i class='fa fas-umbrella'></i>",
+    "value": "fa fas-umbrella"
+  },
+  {
+    "icon": "underline",
+    "unicode": "f0cd",
+    "html": "<i class='fa fas-underline'></i>",
+    "value": "fa fas-underline"
+  },
+  {
+    "icon": "undo",
+    "unicode": "f0e2",
+    "html": "<i class='fa fas-undo'></i>",
+    "value": "fa fas-undo"
+  },
+  {
+    "icon": "undo-alt",
+    "unicode": "f2ea",
+    "html": "<i class='fa fas-undo-alt'></i>",
+    "value": "fa fas-undo-alt"
+  },
+  {
+    "icon": "universal-access",
+    "unicode": "f29a",
+    "html": "<i class='fa fas-universal-access'></i>",
+    "value": "fa fas-universal-access"
+  },
+  {
+    "icon": "university",
+    "unicode": "f19c",
+    "html": "<i class='fa fas-university'></i>",
+    "value": "fa fas-university"
+  },
+  {
+    "icon": "unlink",
+    "unicode": "f127",
+    "html": "<i class='fa fas-unlink'></i>",
+    "value": "fa fas-unlink"
+  },
+  {
+    "icon": "unlock",
+    "unicode": "f09c",
+    "html": "<i class='fa fas-unlock'></i>",
+    "value": "fa fas-unlock"
+  },
+  {
+    "icon": "unlock-alt",
+    "unicode": "f13e",
+    "html": "<i class='fa fas-unlock-alt'></i>",
+    "value": "fa fas-unlock-alt"
+  },
+  {
+    "icon": "upload",
+    "unicode": "f093",
+    "html": "<i class='fa fas-upload'></i>",
+    "value": "fa fas-upload"
+  },
+  {
+    "icon": "user",
+    "unicode": "f007",
+    "html": "<i class='fa fas-user'></i>",
+    "value": "fa fas-user"
+  },
+  {
+    "icon": "user-alt",
+    "unicode": "f406",
+    "html": "<i class='fa fas-user-alt'></i>",
+    "value": "fa fas-user-alt"
+  },
+  {
+    "icon": "user-alt-slash",
+    "unicode": "f4fa",
+    "html": "<i class='fa fas-user-alt-slash'></i>",
+    "value": "fa fas-user-alt-slash"
+  },
+  {
+    "icon": "user-astronaut",
+    "unicode": "f4fb",
+    "html": "<i class='fa fas-user-astronaut'></i>",
+    "value": "fa fas-user-astronaut"
+  },
+  {
+    "icon": "user-check",
+    "unicode": "f4fc",
+    "html": "<i class='fa fas-user-check'></i>",
+    "value": "fa fas-user-check"
+  },
+  {
+    "icon": "user-circle",
+    "unicode": "f2bd",
+    "html": "<i class='fa fas-user-circle'></i>",
+    "value": "fa fas-user-circle"
+  },
+  {
+    "icon": "user-clock",
+    "unicode": "f4fd",
+    "html": "<i class='fa fas-user-clock'></i>",
+    "value": "fa fas-user-clock"
+  },
+  {
+    "icon": "user-cog",
+    "unicode": "f4fe",
+    "html": "<i class='fa fas-user-cog'></i>",
+    "value": "fa fas-user-cog"
+  },
+  {
+    "icon": "user-edit",
+    "unicode": "f4ff",
+    "html": "<i class='fa fas-user-edit'></i>",
+    "value": "fa fas-user-edit"
+  },
+  {
+    "icon": "user-friends",
+    "unicode": "f500",
+    "html": "<i class='fa fas-user-friends'></i>",
+    "value": "fa fas-user-friends"
+  },
+  {
+    "icon": "user-graduate",
+    "unicode": "f501",
+    "html": "<i class='fa fas-user-graduate'></i>",
+    "value": "fa fas-user-graduate"
+  },
+  {
+    "icon": "user-lock",
+    "unicode": "f502",
+    "html": "<i class='fa fas-user-lock'></i>",
+    "value": "fa fas-user-lock"
+  },
+  {
+    "icon": "user-md",
+    "unicode": "f0f0",
+    "html": "<i class='fa fas-user-md'></i>",
+    "value": "fa fas-user-md"
+  },
+  {
+    "icon": "user-minus",
+    "unicode": "f503",
+    "html": "<i class='fa fas-user-minus'></i>",
+    "value": "fa fas-user-minus"
+  },
+  {
+    "icon": "user-ninja",
+    "unicode": "f504",
+    "html": "<i class='fa fas-user-ninja'></i>",
+    "value": "fa fas-user-ninja"
+  },
+  {
+    "icon": "user-plus",
+    "unicode": "f234",
+    "html": "<i class='fa fas-user-plus'></i>",
+    "value": "fa fas-user-plus"
+  },
+  {
+    "icon": "user-secret",
+    "unicode": "f21b",
+    "html": "<i class='fa fas-user-secret'></i>",
+    "value": "fa fas-user-secret"
+  },
+  {
+    "icon": "user-shield",
+    "unicode": "f505",
+    "html": "<i class='fa fas-user-shield'></i>",
+    "value": "fa fas-user-shield"
+  },
+  {
+    "icon": "user-slash",
+    "unicode": "f506",
+    "html": "<i class='fa fas-user-slash'></i>",
+    "value": "fa fas-user-slash"
+  },
+  {
+    "icon": "user-tag",
+    "unicode": "f507",
+    "html": "<i class='fa fas-user-tag'></i>",
+    "value": "fa fas-user-tag"
+  },
+  {
+    "icon": "user-tie",
+    "unicode": "f508",
+    "html": "<i class='fa fas-user-tie'></i>",
+    "value": "fa fas-user-tie"
+  },
+  {
+    "icon": "user-times",
+    "unicode": "f235",
+    "html": "<i class='fa fas-user-times'></i>",
+    "value": "fa fas-user-times"
+  },
+  {
+    "icon": "users",
+    "unicode": "f0c0",
+    "html": "<i class='fa fas-users'></i>",
+    "value": "fa fas-users"
+  },
+  {
+    "icon": "users-cog",
+    "unicode": "f509",
+    "html": "<i class='fa fas-users-cog'></i>",
+    "value": "fa fas-users-cog"
+  },
+  {
+    "icon": "utensil-spoon",
+    "unicode": "f2e5",
+    "html": "<i class='fa fas-utensil-spoon'></i>",
+    "value": "fa fas-utensil-spoon"
+  },
+  {
+    "icon": "utensils",
+    "unicode": "f2e7",
+    "html": "<i class='fa fas-utensils'></i>",
+    "value": "fa fas-utensils"
+  },
+  {
+    "icon": "venus",
+    "unicode": "f221",
+    "html": "<i class='fa fas-venus'></i>",
+    "value": "fa fas-venus"
+  },
+  {
+    "icon": "venus-double",
+    "unicode": "f226",
+    "html": "<i class='fa fas-venus-double'></i>",
+    "value": "fa fas-venus-double"
+  },
+  {
+    "icon": "venus-mars",
+    "unicode": "f228",
+    "html": "<i class='fa fas-venus-mars'></i>",
+    "value": "fa fas-venus-mars"
+  },
+  {
+    "icon": "vial",
+    "unicode": "f492",
+    "html": "<i class='fa fas-vial'></i>",
+    "value": "fa fas-vial"
+  },
+  {
+    "icon": "vials",
+    "unicode": "f493",
+    "html": "<i class='fa fas-vials'></i>",
+    "value": "fa fas-vials"
+  },
+  {
+    "icon": "video",
+    "unicode": "f03d",
+    "html": "<i class='fa fas-video'></i>",
+    "value": "fa fas-video"
+  },
+  {
+    "icon": "video-slash",
+    "unicode": "f4e2",
+    "html": "<i class='fa fas-video-slash'></i>",
+    "value": "fa fas-video-slash"
+  },
+  {
+    "icon": "volleyball-ball",
+    "unicode": "f45f",
+    "html": "<i class='fa fas-volleyball-ball'></i>",
+    "value": "fa fas-volleyball-ball"
+  },
+  {
+    "icon": "volume-down",
+    "unicode": "f027",
+    "html": "<i class='fa fas-volume-down'></i>",
+    "value": "fa fas-volume-down"
+  },
+  {
+    "icon": "volume-off",
+    "unicode": "f026",
+    "html": "<i class='fa fas-volume-off'></i>",
+    "value": "fa fas-volume-off"
+  },
+  {
+    "icon": "volume-up",
+    "unicode": "f028",
+    "html": "<i class='fa fas-volume-up'></i>",
+    "value": "fa fas-volume-up"
+  },
+  {
+    "icon": "walking",
+    "unicode": "f554",
+    "html": "<i class='fa fas-walking'></i>",
+    "value": "fa fas-walking"
+  },
+  {
+    "icon": "wallet",
+    "unicode": "f555",
+    "html": "<i class='fa fas-wallet'></i>",
+    "value": "fa fas-wallet"
+  },
+  {
+    "icon": "warehouse",
+    "unicode": "f494",
+    "html": "<i class='fa fas-warehouse'></i>",
+    "value": "fa fas-warehouse"
+  },
+  {
+    "icon": "weight",
+    "unicode": "f496",
+    "html": "<i class='fa fas-weight'></i>",
+    "value": "fa fas-weight"
+  },
+  {
+    "icon": "wheelchair",
+    "unicode": "f193",
+    "html": "<i class='fa fas-wheelchair'></i>",
+    "value": "fa fas-wheelchair"
+  },
+  {
+    "icon": "wifi",
+    "unicode": "f1eb",
+    "html": "<i class='fa fas-wifi'></i>",
+    "value": "fa fas-wifi"
+  },
+  {
+    "icon": "window-close",
+    "unicode": "f410",
+    "html": "<i class='fa fas-window-close'></i>",
+    "value": "fa fas-window-close"
+  },
+  {
+    "icon": "window-maximize",
+    "unicode": "f2d0",
+    "html": "<i class='fa fas-window-maximize'></i>",
+    "value": "fa fas-window-maximize"
+  },
+  {
+    "icon": "window-minimize",
+    "unicode": "f2d1",
+    "html": "<i class='fa fas-window-minimize'></i>",
+    "value": "fa fas-window-minimize"
+  },
+  {
+    "icon": "window-restore",
+    "unicode": "f2d2",
+    "html": "<i class='fa fas-window-restore'></i>",
+    "value": "fa fas-window-restore"
+  },
+  {
+    "icon": "wine-glass",
+    "unicode": "f4e3",
+    "html": "<i class='fa fas-wine-glass'></i>",
+    "value": "fa fas-wine-glass"
+  },
+  {
+    "icon": "won-sign",
+    "unicode": "f159",
+    "html": "<i class='fa fas-won-sign'></i>",
+    "value": "fa fas-won-sign"
+  },
+  {
+    "icon": "wrench",
+    "unicode": "f0ad",
+    "html": "<i class='fa fas-wrench'></i>",
+    "value": "fa fas-wrench"
+  },
+  {
+    "icon": "x-ray",
+    "unicode": "f497",
+    "html": "<i class='fa fas-x-ray'></i>",
+    "value": "fa fas-x-ray"
+  },
+  {
+    "icon": "yen-sign",
+    "unicode": "f157",
+    "html": "<i class='fa fas-yen-sign'></i>",
+    "value": "fa fas-yen-sign"
+  },
+  {
+    "icon": "address-book",
+    "unicode": "f2b9",
+    "html": "<i class='fa far-address-book'></i>",
+    "value": "fa far-address-book"
+  },
+  {
+    "icon": "address-card",
+    "unicode": "f2bb",
+    "html": "<i class='fa far-address-card'></i>",
+    "value": "fa far-address-card"
+  },
+  {
+    "icon": "arrow-alt-circle-down",
+    "unicode": "f358",
+    "html": "<i class='fa far-arrow-alt-circle-down'></i>",
+    "value": "fa far-arrow-alt-circle-down"
+  },
+  {
+    "icon": "arrow-alt-circle-left",
+    "unicode": "f359",
+    "html": "<i class='fa far-arrow-alt-circle-left'></i>",
+    "value": "fa far-arrow-alt-circle-left"
+  },
+  {
+    "icon": "arrow-alt-circle-right",
+    "unicode": "f35a",
+    "html": "<i class='fa far-arrow-alt-circle-right'></i>",
+    "value": "fa far-arrow-alt-circle-right"
+  },
+  {
+    "icon": "arrow-alt-circle-up",
+    "unicode": "f35b",
+    "html": "<i class='fa far-arrow-alt-circle-up'></i>",
+    "value": "fa far-arrow-alt-circle-up"
+  },
+  {
+    "icon": "bell",
+    "unicode": "f0f3",
+    "html": "<i class='fa far-bell'></i>",
+    "value": "fa far-bell"
+  },
+  {
+    "icon": "bell-slash",
+    "unicode": "f1f6",
+    "html": "<i class='fa far-bell-slash'></i>",
+    "value": "fa far-bell-slash"
+  },
+  {
+    "icon": "bookmark",
+    "unicode": "f02e",
+    "html": "<i class='fa far-bookmark'></i>",
+    "value": "fa far-bookmark"
+  },
+  {
+    "icon": "building",
+    "unicode": "f1ad",
+    "html": "<i class='fa far-building'></i>",
+    "value": "fa far-building"
+  },
+  {
+    "icon": "calendar",
+    "unicode": "f133",
+    "html": "<i class='fa far-calendar'></i>",
+    "value": "fa far-calendar"
+  },
+  {
+    "icon": "calendar-alt",
+    "unicode": "f073",
+    "html": "<i class='fa far-calendar-alt'></i>",
+    "value": "fa far-calendar-alt"
+  },
+  {
+    "icon": "calendar-check",
+    "unicode": "f274",
+    "html": "<i class='fa far-calendar-check'></i>",
+    "value": "fa far-calendar-check"
+  },
+  {
+    "icon": "calendar-minus",
+    "unicode": "f272",
+    "html": "<i class='fa far-calendar-minus'></i>",
+    "value": "fa far-calendar-minus"
+  },
+  {
+    "icon": "calendar-plus",
+    "unicode": "f271",
+    "html": "<i class='fa far-calendar-plus'></i>",
+    "value": "fa far-calendar-plus"
+  },
+  {
+    "icon": "calendar-times",
+    "unicode": "f273",
+    "html": "<i class='fa far-calendar-times'></i>",
+    "value": "fa far-calendar-times"
+  },
+  {
+    "icon": "caret-square-down",
+    "unicode": "f150",
+    "html": "<i class='fa far-caret-square-down'></i>",
+    "value": "fa far-caret-square-down"
+  },
+  {
+    "icon": "caret-square-left",
+    "unicode": "f191",
+    "html": "<i class='fa far-caret-square-left'></i>",
+    "value": "fa far-caret-square-left"
+  },
+  {
+    "icon": "caret-square-right",
+    "unicode": "f152",
+    "html": "<i class='fa far-caret-square-right'></i>",
+    "value": "fa far-caret-square-right"
+  },
+  {
+    "icon": "caret-square-up",
+    "unicode": "f151",
+    "html": "<i class='fa far-caret-square-up'></i>",
+    "value": "fa far-caret-square-up"
+  },
+  {
+    "icon": "chart-bar",
+    "unicode": "f080",
+    "html": "<i class='fa far-chart-bar'></i>",
+    "value": "fa far-chart-bar"
+  },
+  {
+    "icon": "check-circle",
+    "unicode": "f058",
+    "html": "<i class='fa far-check-circle'></i>",
+    "value": "fa far-check-circle"
+  },
+  {
+    "icon": "check-square",
+    "unicode": "f14a",
+    "html": "<i class='fa far-check-square'></i>",
+    "value": "fa far-check-square"
+  },
+  {
+    "icon": "circle",
+    "unicode": "f111",
+    "html": "<i class='fa far-circle'></i>",
+    "value": "fa far-circle"
+  },
+  {
+    "icon": "clipboard",
+    "unicode": "f328",
+    "html": "<i class='fa far-clipboard'></i>",
+    "value": "fa far-clipboard"
+  },
+  {
+    "icon": "clock",
+    "unicode": "f017",
+    "html": "<i class='fa far-clock'></i>",
+    "value": "fa far-clock"
+  },
+  {
+    "icon": "clone",
+    "unicode": "f24d",
+    "html": "<i class='fa far-clone'></i>",
+    "value": "fa far-clone"
+  },
+  {
+    "icon": "closed-captioning",
+    "unicode": "f20a",
+    "html": "<i class='fa far-closed-captioning'></i>",
+    "value": "fa far-closed-captioning"
+  },
+  {
+    "icon": "comment",
+    "unicode": "f075",
+    "html": "<i class='fa far-comment'></i>",
+    "value": "fa far-comment"
+  },
+  {
+    "icon": "comment-alt",
+    "unicode": "f27a",
+    "html": "<i class='fa far-comment-alt'></i>",
+    "value": "fa far-comment-alt"
+  },
+  {
+    "icon": "comment-dots",
+    "unicode": "f4ad",
+    "html": "<i class='fa far-comment-dots'></i>",
+    "value": "fa far-comment-dots"
+  },
+  {
+    "icon": "comments",
+    "unicode": "f086",
+    "html": "<i class='fa far-comments'></i>",
+    "value": "fa far-comments"
+  },
+  {
+    "icon": "compass",
+    "unicode": "f14e",
+    "html": "<i class='fa far-compass'></i>",
+    "value": "fa far-compass"
+  },
+  {
+    "icon": "copy",
+    "unicode": "f0c5",
+    "html": "<i class='fa far-copy'></i>",
+    "value": "fa far-copy"
+  },
+  {
+    "icon": "copyright",
+    "unicode": "f1f9",
+    "html": "<i class='fa far-copyright'></i>",
+    "value": "fa far-copyright"
+  },
+  {
+    "icon": "credit-card",
+    "unicode": "f09d",
+    "html": "<i class='fa far-credit-card'></i>",
+    "value": "fa far-credit-card"
+  },
+  {
+    "icon": "dot-circle",
+    "unicode": "f192",
+    "html": "<i class='fa far-dot-circle'></i>",
+    "value": "fa far-dot-circle"
+  },
+  {
+    "icon": "edit",
+    "unicode": "f044",
+    "html": "<i class='fa far-edit'></i>",
+    "value": "fa far-edit"
+  },
+  {
+    "icon": "envelope",
+    "unicode": "f0e0",
+    "html": "<i class='fa far-envelope'></i>",
+    "value": "fa far-envelope"
+  },
+  {
+    "icon": "envelope-open",
+    "unicode": "f2b6",
+    "html": "<i class='fa far-envelope-open'></i>",
+    "value": "fa far-envelope-open"
+  },
+  {
+    "icon": "eye",
+    "unicode": "f06e",
+    "html": "<i class='fa far-eye'></i>",
+    "value": "fa far-eye"
+  },
+  {
+    "icon": "eye-slash",
+    "unicode": "f070",
+    "html": "<i class='fa far-eye-slash'></i>",
+    "value": "fa far-eye-slash"
+  },
+  {
+    "icon": "file",
+    "unicode": "f15b",
+    "html": "<i class='fa far-file'></i>",
+    "value": "fa far-file"
+  },
+  {
+    "icon": "file-alt",
+    "unicode": "f15c",
+    "html": "<i class='fa far-file-alt'></i>",
+    "value": "fa far-file-alt"
+  },
+  {
+    "icon": "file-archive",
+    "unicode": "f1c6",
+    "html": "<i class='fa far-file-archive'></i>",
+    "value": "fa far-file-archive"
+  },
+  {
+    "icon": "file-audio",
+    "unicode": "f1c7",
+    "html": "<i class='fa far-file-audio'></i>",
+    "value": "fa far-file-audio"
+  },
+  {
+    "icon": "file-code",
+    "unicode": "f1c9",
+    "html": "<i class='fa far-file-code'></i>",
+    "value": "fa far-file-code"
+  },
+  {
+    "icon": "file-excel",
+    "unicode": "f1c3",
+    "html": "<i class='fa far-file-excel'></i>",
+    "value": "fa far-file-excel"
+  },
+  {
+    "icon": "file-image",
+    "unicode": "f1c5",
+    "html": "<i class='fa far-file-image'></i>",
+    "value": "fa far-file-image"
+  },
+  {
+    "icon": "file-pdf",
+    "unicode": "f1c1",
+    "html": "<i class='fa far-file-pdf'></i>",
+    "value": "fa far-file-pdf"
+  },
+  {
+    "icon": "file-powerpoint",
+    "unicode": "f1c4",
+    "html": "<i class='fa far-file-powerpoint'></i>",
+    "value": "fa far-file-powerpoint"
+  },
+  {
+    "icon": "file-video",
+    "unicode": "f1c8",
+    "html": "<i class='fa far-file-video'></i>",
+    "value": "fa far-file-video"
+  },
+  {
+    "icon": "file-word",
+    "unicode": "f1c2",
+    "html": "<i class='fa far-file-word'></i>",
+    "value": "fa far-file-word"
+  },
+  {
+    "icon": "flag",
+    "unicode": "f024",
+    "html": "<i class='fa far-flag'></i>",
+    "value": "fa far-flag"
+  },
+  {
+    "icon": "folder",
+    "unicode": "f07b",
+    "html": "<i class='fa far-folder'></i>",
+    "value": "fa far-folder"
+  },
+  {
+    "icon": "folder-open",
+    "unicode": "f07c",
+    "html": "<i class='fa far-folder-open'></i>",
+    "value": "fa far-folder-open"
+  },
+  {
+    "icon": "font-awesome-logo-full",
+    "unicode": "f4e6",
+    "html": "<i class='fa far-font-awesome-logo-full'></i>",
+    "value": "fa far-font-awesome-logo-full"
+  },
+  {
+    "icon": "frown",
+    "unicode": "f119",
+    "html": "<i class='fa far-frown'></i>",
+    "value": "fa far-frown"
+  },
+  {
+    "icon": "futbol",
+    "unicode": "f1e3",
+    "html": "<i class='fa far-futbol'></i>",
+    "value": "fa far-futbol"
+  },
+  {
+    "icon": "gem",
+    "unicode": "f3a5",
+    "html": "<i class='fa far-gem'></i>",
+    "value": "fa far-gem"
+  },
+  {
+    "icon": "hand-lizard",
+    "unicode": "f258",
+    "html": "<i class='fa far-hand-lizard'></i>",
+    "value": "fa far-hand-lizard"
+  },
+  {
+    "icon": "hand-paper",
+    "unicode": "f256",
+    "html": "<i class='fa far-hand-paper'></i>",
+    "value": "fa far-hand-paper"
+  },
+  {
+    "icon": "hand-peace",
+    "unicode": "f25b",
+    "html": "<i class='fa far-hand-peace'></i>",
+    "value": "fa far-hand-peace"
+  },
+  {
+    "icon": "hand-point-down",
+    "unicode": "f0a7",
+    "html": "<i class='fa far-hand-point-down'></i>",
+    "value": "fa far-hand-point-down"
+  },
+  {
+    "icon": "hand-point-left",
+    "unicode": "f0a5",
+    "html": "<i class='fa far-hand-point-left'></i>",
+    "value": "fa far-hand-point-left"
+  },
+  {
+    "icon": "hand-point-right",
+    "unicode": "f0a4",
+    "html": "<i class='fa far-hand-point-right'></i>",
+    "value": "fa far-hand-point-right"
+  },
+  {
+    "icon": "hand-point-up",
+    "unicode": "f0a6",
+    "html": "<i class='fa far-hand-point-up'></i>",
+    "value": "fa far-hand-point-up"
+  },
+  {
+    "icon": "hand-pointer",
+    "unicode": "f25a",
+    "html": "<i class='fa far-hand-pointer'></i>",
+    "value": "fa far-hand-pointer"
+  },
+  {
+    "icon": "hand-rock",
+    "unicode": "f255",
+    "html": "<i class='fa far-hand-rock'></i>",
+    "value": "fa far-hand-rock"
+  },
+  {
+    "icon": "hand-scissors",
+    "unicode": "f257",
+    "html": "<i class='fa far-hand-scissors'></i>",
+    "value": "fa far-hand-scissors"
+  },
+  {
+    "icon": "hand-spock",
+    "unicode": "f259",
+    "html": "<i class='fa far-hand-spock'></i>",
+    "value": "fa far-hand-spock"
+  },
+  {
+    "icon": "handshake",
+    "unicode": "f2b5",
+    "html": "<i class='fa far-handshake'></i>",
+    "value": "fa far-handshake"
+  },
+  {
+    "icon": "hdd",
+    "unicode": "f0a0",
+    "html": "<i class='fa far-hdd'></i>",
+    "value": "fa far-hdd"
+  },
+  {
+    "icon": "heart",
+    "unicode": "f004",
+    "html": "<i class='fa far-heart'></i>",
+    "value": "fa far-heart"
+  },
+  {
+    "icon": "hospital",
+    "unicode": "f0f8",
+    "html": "<i class='fa far-hospital'></i>",
+    "value": "fa far-hospital"
+  },
+  {
+    "icon": "hourglass",
+    "unicode": "f254",
+    "html": "<i class='fa far-hourglass'></i>",
+    "value": "fa far-hourglass"
+  },
+  {
+    "icon": "id-badge",
+    "unicode": "f2c1",
+    "html": "<i class='fa far-id-badge'></i>",
+    "value": "fa far-id-badge"
+  },
+  {
+    "icon": "id-card",
+    "unicode": "f2c2",
+    "html": "<i class='fa far-id-card'></i>",
+    "value": "fa far-id-card"
+  },
+  {
+    "icon": "image",
+    "unicode": "f03e",
+    "html": "<i class='fa far-image'></i>",
+    "value": "fa far-image"
+  },
+  {
+    "icon": "images",
+    "unicode": "f302",
+    "html": "<i class='fa far-images'></i>",
+    "value": "fa far-images"
+  },
+  {
+    "icon": "keyboard",
+    "unicode": "f11c",
+    "html": "<i class='fa far-keyboard'></i>",
+    "value": "fa far-keyboard"
+  },
+  {
+    "icon": "lemon",
+    "unicode": "f094",
+    "html": "<i class='fa far-lemon'></i>",
+    "value": "fa far-lemon"
+  },
+  {
+    "icon": "life-ring",
+    "unicode": "f1cd",
+    "html": "<i class='fa far-life-ring'></i>",
+    "value": "fa far-life-ring"
+  },
+  {
+    "icon": "lightbulb",
+    "unicode": "f0eb",
+    "html": "<i class='fa far-lightbulb'></i>",
+    "value": "fa far-lightbulb"
+  },
+  {
+    "icon": "list-alt",
+    "unicode": "f022",
+    "html": "<i class='fa far-list-alt'></i>",
+    "value": "fa far-list-alt"
+  },
+  {
+    "icon": "map",
+    "unicode": "f279",
+    "html": "<i class='fa far-map'></i>",
+    "value": "fa far-map"
+  },
+  {
+    "icon": "meh",
+    "unicode": "f11a",
+    "html": "<i class='fa far-meh'></i>",
+    "value": "fa far-meh"
+  },
+  {
+    "icon": "minus-square",
+    "unicode": "f146",
+    "html": "<i class='fa far-minus-square'></i>",
+    "value": "fa far-minus-square"
+  },
+  {
+    "icon": "money-bill-alt",
+    "unicode": "f3d1",
+    "html": "<i class='fa far-money-bill-alt'></i>",
+    "value": "fa far-money-bill-alt"
+  },
+  {
+    "icon": "moon",
+    "unicode": "f186",
+    "html": "<i class='fa far-moon'></i>",
+    "value": "fa far-moon"
+  },
+  {
+    "icon": "newspaper",
+    "unicode": "f1ea",
+    "html": "<i class='fa far-newspaper'></i>",
+    "value": "fa far-newspaper"
+  },
+  {
+    "icon": "object-group",
+    "unicode": "f247",
+    "html": "<i class='fa far-object-group'></i>",
+    "value": "fa far-object-group"
+  },
+  {
+    "icon": "object-ungroup",
+    "unicode": "f248",
+    "html": "<i class='fa far-object-ungroup'></i>",
+    "value": "fa far-object-ungroup"
+  },
+  {
+    "icon": "paper-plane",
+    "unicode": "f1d8",
+    "html": "<i class='fa far-paper-plane'></i>",
+    "value": "fa far-paper-plane"
+  },
+  {
+    "icon": "pause-circle",
+    "unicode": "f28b",
+    "html": "<i class='fa far-pause-circle'></i>",
+    "value": "fa far-pause-circle"
+  },
+  {
+    "icon": "play-circle",
+    "unicode": "f144",
+    "html": "<i class='fa far-play-circle'></i>",
+    "value": "fa far-play-circle"
+  },
+  {
+    "icon": "plus-square",
+    "unicode": "f0fe",
+    "html": "<i class='fa far-plus-square'></i>",
+    "value": "fa far-plus-square"
+  },
+  {
+    "icon": "question-circle",
+    "unicode": "f059",
+    "html": "<i class='fa far-question-circle'></i>",
+    "value": "fa far-question-circle"
+  },
+  {
+    "icon": "registered",
+    "unicode": "f25d",
+    "html": "<i class='fa far-registered'></i>",
+    "value": "fa far-registered"
+  },
+  {
+    "icon": "save",
+    "unicode": "f0c7",
+    "html": "<i class='fa far-save'></i>",
+    "value": "fa far-save"
+  },
+  {
+    "icon": "share-square",
+    "unicode": "f14d",
+    "html": "<i class='fa far-share-square'></i>",
+    "value": "fa far-share-square"
+  },
+  {
+    "icon": "smile",
+    "unicode": "f118",
+    "html": "<i class='fa far-smile'></i>",
+    "value": "fa far-smile"
+  },
+  {
+    "icon": "snowflake",
+    "unicode": "f2dc",
+    "html": "<i class='fa far-snowflake'></i>",
+    "value": "fa far-snowflake"
+  },
+  {
+    "icon": "square",
+    "unicode": "f0c8",
+    "html": "<i class='fa far-square'></i>",
+    "value": "fa far-square"
+  },
+  {
+    "icon": "star",
+    "unicode": "f005",
+    "html": "<i class='fa far-star'></i>",
+    "value": "fa far-star"
+  },
+  {
+    "icon": "star-half",
+    "unicode": "f089",
+    "html": "<i class='fa far-star-half'></i>",
+    "value": "fa far-star-half"
+  },
+  {
+    "icon": "sticky-note",
+    "unicode": "f249",
+    "html": "<i class='fa far-sticky-note'></i>",
+    "value": "fa far-sticky-note"
+  },
+  {
+    "icon": "stop-circle",
+    "unicode": "f28d",
+    "html": "<i class='fa far-stop-circle'></i>",
+    "value": "fa far-stop-circle"
+  },
+  {
+    "icon": "sun",
+    "unicode": "f185",
+    "html": "<i class='fa far-sun'></i>",
+    "value": "fa far-sun"
+  },
+  {
+    "icon": "thumbs-down",
+    "unicode": "f165",
+    "html": "<i class='fa far-thumbs-down'></i>",
+    "value": "fa far-thumbs-down"
+  },
+  {
+    "icon": "thumbs-up",
+    "unicode": "f164",
+    "html": "<i class='fa far-thumbs-up'></i>",
+    "value": "fa far-thumbs-up"
+  },
+  {
+    "icon": "times-circle",
+    "unicode": "f057",
+    "html": "<i class='fa far-times-circle'></i>",
+    "value": "fa far-times-circle"
+  },
+  {
+    "icon": "trash-alt",
+    "unicode": "f2ed",
+    "html": "<i class='fa far-trash-alt'></i>",
+    "value": "fa far-trash-alt"
+  },
+  {
+    "icon": "user",
+    "unicode": "f007",
+    "html": "<i class='fa far-user'></i>",
+    "value": "fa far-user"
+  },
+  {
+    "icon": "user-circle",
+    "unicode": "f2bd",
+    "html": "<i class='fa far-user-circle'></i>",
+    "value": "fa far-user-circle"
+  },
+  {
+    "icon": "window-close",
+    "unicode": "f410",
+    "html": "<i class='fa far-window-close'></i>",
+    "value": "fa far-window-close"
+  },
+  {
+    "icon": "window-maximize",
+    "unicode": "f2d0",
+    "html": "<i class='fa far-window-maximize'></i>",
+    "value": "fa far-window-maximize"
+  },
+  {
+    "icon": "window-minimize",
+    "unicode": "f2d1",
+    "html": "<i class='fa far-window-minimize'></i>",
+    "value": "fa far-window-minimize"
+  },
+  {
+    "icon": "window-restore",
+    "unicode": "f2d2",
+    "html": "<i class='fa far-window-restore'></i>",
+    "value": "fa far-window-restore"
+  },
+  {
+    "icon": "500px",
+    "unicode": "f26e",
+    "html": "<i class='fa fab-500px'></i>",
+    "value": "fa fab-500px"
+  },
+  {
+    "icon": "accessible-icon",
+    "unicode": "f368",
+    "html": "<i class='fa fab-accessible-icon'></i>",
+    "value": "fa fab-accessible-icon"
+  },
+  {
+    "icon": "accusoft",
+    "unicode": "f369",
+    "html": "<i class='fa fab-accusoft'></i>",
+    "value": "fa fab-accusoft"
+  },
+  {
+    "icon": "adn",
+    "unicode": "f170",
+    "html": "<i class='fa fab-adn'></i>",
+    "value": "fa fab-adn"
+  },
+  {
+    "icon": "adversal",
+    "unicode": "f36a",
+    "html": "<i class='fa fab-adversal'></i>",
+    "value": "fa fab-adversal"
+  },
+  {
+    "icon": "affiliatetheme",
+    "unicode": "f36b",
+    "html": "<i class='fa fab-affiliatetheme'></i>",
+    "value": "fa fab-affiliatetheme"
+  },
+  {
+    "icon": "algolia",
+    "unicode": "f36c",
+    "html": "<i class='fa fab-algolia'></i>",
+    "value": "fa fab-algolia"
+  },
+  {
+    "icon": "amazon",
+    "unicode": "f270",
+    "html": "<i class='fa fab-amazon'></i>",
+    "value": "fa fab-amazon"
+  },
+  {
+    "icon": "amazon-pay",
+    "unicode": "f42c",
+    "html": "<i class='fa fab-amazon-pay'></i>",
+    "value": "fa fab-amazon-pay"
+  },
+  {
+    "icon": "amilia",
+    "unicode": "f36d",
+    "html": "<i class='fa fab-amilia'></i>",
+    "value": "fa fab-amilia"
+  },
+  {
+    "icon": "android",
+    "unicode": "f17b",
+    "html": "<i class='fa fab-android'></i>",
+    "value": "fa fab-android"
+  },
+  {
+    "icon": "angellist",
+    "unicode": "f209",
+    "html": "<i class='fa fab-angellist'></i>",
+    "value": "fa fab-angellist"
+  },
+  {
+    "icon": "angrycreative",
+    "unicode": "f36e",
+    "html": "<i class='fa fab-angrycreative'></i>",
+    "value": "fa fab-angrycreative"
+  },
+  {
+    "icon": "angular",
+    "unicode": "f420",
+    "html": "<i class='fa fab-angular'></i>",
+    "value": "fa fab-angular"
+  },
+  {
+    "icon": "app-store",
+    "unicode": "f36f",
+    "html": "<i class='fa fab-app-store'></i>",
+    "value": "fa fab-app-store"
+  },
+  {
+    "icon": "app-store-ios",
+    "unicode": "f370",
+    "html": "<i class='fa fab-app-store-ios'></i>",
+    "value": "fa fab-app-store-ios"
+  },
+  {
+    "icon": "apper",
+    "unicode": "f371",
+    "html": "<i class='fa fab-apper'></i>",
+    "value": "fa fab-apper"
+  },
+  {
+    "icon": "apple",
+    "unicode": "f179",
+    "html": "<i class='fa fab-apple'></i>",
+    "value": "fa fab-apple"
+  },
+  {
+    "icon": "apple-pay",
+    "unicode": "f415",
+    "html": "<i class='fa fab-apple-pay'></i>",
+    "value": "fa fab-apple-pay"
+  },
+  {
+    "icon": "asymmetrik",
+    "unicode": "f372",
+    "html": "<i class='fa fab-asymmetrik'></i>",
+    "value": "fa fab-asymmetrik"
+  },
+  {
+    "icon": "audible",
+    "unicode": "f373",
+    "html": "<i class='fa fab-audible'></i>",
+    "value": "fa fab-audible"
+  },
+  {
+    "icon": "autoprefixer",
+    "unicode": "f41c",
+    "html": "<i class='fa fab-autoprefixer'></i>",
+    "value": "fa fab-autoprefixer"
+  },
+  {
+    "icon": "avianex",
+    "unicode": "f374",
+    "html": "<i class='fa fab-avianex'></i>",
+    "value": "fa fab-avianex"
+  },
+  {
+    "icon": "aviato",
+    "unicode": "f421",
+    "html": "<i class='fa fab-aviato'></i>",
+    "value": "fa fab-aviato"
+  },
+  {
+    "icon": "aws",
+    "unicode": "f375",
+    "html": "<i class='fa fab-aws'></i>",
+    "value": "fa fab-aws"
+  },
+  {
+    "icon": "bandcamp",
+    "unicode": "f2d5",
+    "html": "<i class='fa fab-bandcamp'></i>",
+    "value": "fa fab-bandcamp"
+  },
+  {
+    "icon": "behance",
+    "unicode": "f1b4",
+    "html": "<i class='fa fab-behance'></i>",
+    "value": "fa fab-behance"
+  },
+  {
+    "icon": "behance-square",
+    "unicode": "f1b5",
+    "html": "<i class='fa fab-behance-square'></i>",
+    "value": "fa fab-behance-square"
+  },
+  {
+    "icon": "bimobject",
+    "unicode": "f378",
+    "html": "<i class='fa fab-bimobject'></i>",
+    "value": "fa fab-bimobject"
+  },
+  {
+    "icon": "bitbucket",
+    "unicode": "f171",
+    "html": "<i class='fa fab-bitbucket'></i>",
+    "value": "fa fab-bitbucket"
+  },
+  {
+    "icon": "bitcoin",
+    "unicode": "f379",
+    "html": "<i class='fa fab-bitcoin'></i>",
+    "value": "fa fab-bitcoin"
+  },
+  {
+    "icon": "bity",
+    "unicode": "f37a",
+    "html": "<i class='fa fab-bity'></i>",
+    "value": "fa fab-bity"
+  },
+  {
+    "icon": "black-tie",
+    "unicode": "f27e",
+    "html": "<i class='fa fab-black-tie'></i>",
+    "value": "fa fab-black-tie"
+  },
+  {
+    "icon": "blackberry",
+    "unicode": "f37b",
+    "html": "<i class='fa fab-blackberry'></i>",
+    "value": "fa fab-blackberry"
+  },
+  {
+    "icon": "blogger",
+    "unicode": "f37c",
+    "html": "<i class='fa fab-blogger'></i>",
+    "value": "fa fab-blogger"
+  },
+  {
+    "icon": "blogger-b",
+    "unicode": "f37d",
+    "html": "<i class='fa fab-blogger-b'></i>",
+    "value": "fa fab-blogger-b"
+  },
+  {
+    "icon": "bluetooth",
+    "unicode": "f293",
+    "html": "<i class='fa fab-bluetooth'></i>",
+    "value": "fa fab-bluetooth"
+  },
+  {
+    "icon": "bluetooth-b",
+    "unicode": "f294",
+    "html": "<i class='fa fab-bluetooth-b'></i>",
+    "value": "fa fab-bluetooth-b"
+  },
+  {
+    "icon": "btc",
+    "unicode": "f15a",
+    "html": "<i class='fa fab-btc'></i>",
+    "value": "fa fab-btc"
+  },
+  {
+    "icon": "buromobelexperte",
+    "unicode": "f37f",
+    "html": "<i class='fa fab-buromobelexperte'></i>",
+    "value": "fa fab-buromobelexperte"
+  },
+  {
+    "icon": "buysellads",
+    "unicode": "f20d",
+    "html": "<i class='fa fab-buysellads'></i>",
+    "value": "fa fab-buysellads"
+  },
+  {
+    "icon": "cc-amazon-pay",
+    "unicode": "f42d",
+    "html": "<i class='fa fab-cc-amazon-pay'></i>",
+    "value": "fa fab-cc-amazon-pay"
+  },
+  {
+    "icon": "cc-amex",
+    "unicode": "f1f3",
+    "html": "<i class='fa fab-cc-amex'></i>",
+    "value": "fa fab-cc-amex"
+  },
+  {
+    "icon": "cc-apple-pay",
+    "unicode": "f416",
+    "html": "<i class='fa fab-cc-apple-pay'></i>",
+    "value": "fa fab-cc-apple-pay"
+  },
+  {
+    "icon": "cc-diners-club",
+    "unicode": "f24c",
+    "html": "<i class='fa fab-cc-diners-club'></i>",
+    "value": "fa fab-cc-diners-club"
+  },
+  {
+    "icon": "cc-discover",
+    "unicode": "f1f2",
+    "html": "<i class='fa fab-cc-discover'></i>",
+    "value": "fa fab-cc-discover"
+  },
+  {
+    "icon": "cc-jcb",
+    "unicode": "f24b",
+    "html": "<i class='fa fab-cc-jcb'></i>",
+    "value": "fa fab-cc-jcb"
+  },
+  {
+    "icon": "cc-mastercard",
+    "unicode": "f1f1",
+    "html": "<i class='fa fab-cc-mastercard'></i>",
+    "value": "fa fab-cc-mastercard"
+  },
+  {
+    "icon": "cc-paypal",
+    "unicode": "f1f4",
+    "html": "<i class='fa fab-cc-paypal'></i>",
+    "value": "fa fab-cc-paypal"
+  },
+  {
+    "icon": "cc-stripe",
+    "unicode": "f1f5",
+    "html": "<i class='fa fab-cc-stripe'></i>",
+    "value": "fa fab-cc-stripe"
+  },
+  {
+    "icon": "cc-visa",
+    "unicode": "f1f0",
+    "html": "<i class='fa fab-cc-visa'></i>",
+    "value": "fa fab-cc-visa"
+  },
+  {
+    "icon": "centercode",
+    "unicode": "f380",
+    "html": "<i class='fa fab-centercode'></i>",
+    "value": "fa fab-centercode"
+  },
+  {
+    "icon": "chrome",
+    "unicode": "f268",
+    "html": "<i class='fa fab-chrome'></i>",
+    "value": "fa fab-chrome"
+  },
+  {
+    "icon": "cloudscale",
+    "unicode": "f383",
+    "html": "<i class='fa fab-cloudscale'></i>",
+    "value": "fa fab-cloudscale"
+  },
+  {
+    "icon": "cloudsmith",
+    "unicode": "f384",
+    "html": "<i class='fa fab-cloudsmith'></i>",
+    "value": "fa fab-cloudsmith"
+  },
+  {
+    "icon": "cloudversify",
+    "unicode": "f385",
+    "html": "<i class='fa fab-cloudversify'></i>",
+    "value": "fa fab-cloudversify"
+  },
+  {
+    "icon": "codepen",
+    "unicode": "f1cb",
+    "html": "<i class='fa fab-codepen'></i>",
+    "value": "fa fab-codepen"
+  },
+  {
+    "icon": "codiepie",
+    "unicode": "f284",
+    "html": "<i class='fa fab-codiepie'></i>",
+    "value": "fa fab-codiepie"
+  },
+  {
+    "icon": "connectdevelop",
+    "unicode": "f20e",
+    "html": "<i class='fa fab-connectdevelop'></i>",
+    "value": "fa fab-connectdevelop"
+  },
+  {
+    "icon": "contao",
+    "unicode": "f26d",
+    "html": "<i class='fa fab-contao'></i>",
+    "value": "fa fab-contao"
+  },
+  {
+    "icon": "cpanel",
+    "unicode": "f388",
+    "html": "<i class='fa fab-cpanel'></i>",
+    "value": "fa fab-cpanel"
+  },
+  {
+    "icon": "creative-commons",
+    "unicode": "f25e",
+    "html": "<i class='fa fab-creative-commons'></i>",
+    "value": "fa fab-creative-commons"
+  },
+  {
+    "icon": "creative-commons-by",
+    "unicode": "f4e7",
+    "html": "<i class='fa fab-creative-commons-by'></i>",
+    "value": "fa fab-creative-commons-by"
+  },
+  {
+    "icon": "creative-commons-nc",
+    "unicode": "f4e8",
+    "html": "<i class='fa fab-creative-commons-nc'></i>",
+    "value": "fa fab-creative-commons-nc"
+  },
+  {
+    "icon": "creative-commons-nc-eu",
+    "unicode": "f4e9",
+    "html": "<i class='fa fab-creative-commons-nc-eu'></i>",
+    "value": "fa fab-creative-commons-nc-eu"
+  },
+  {
+    "icon": "creative-commons-nc-jp",
+    "unicode": "f4ea",
+    "html": "<i class='fa fab-creative-commons-nc-jp'></i>",
+    "value": "fa fab-creative-commons-nc-jp"
+  },
+  {
+    "icon": "creative-commons-nd",
+    "unicode": "f4eb",
+    "html": "<i class='fa fab-creative-commons-nd'></i>",
+    "value": "fa fab-creative-commons-nd"
+  },
+  {
+    "icon": "creative-commons-pd",
+    "unicode": "f4ec",
+    "html": "<i class='fa fab-creative-commons-pd'></i>",
+    "value": "fa fab-creative-commons-pd"
+  },
+  {
+    "icon": "creative-commons-pd-alt",
+    "unicode": "f4ed",
+    "html": "<i class='fa fab-creative-commons-pd-alt'></i>",
+    "value": "fa fab-creative-commons-pd-alt"
+  },
+  {
+    "icon": "creative-commons-remix",
+    "unicode": "f4ee",
+    "html": "<i class='fa fab-creative-commons-remix'></i>",
+    "value": "fa fab-creative-commons-remix"
+  },
+  {
+    "icon": "creative-commons-sa",
+    "unicode": "f4ef",
+    "html": "<i class='fa fab-creative-commons-sa'></i>",
+    "value": "fa fab-creative-commons-sa"
+  },
+  {
+    "icon": "creative-commons-sampling",
+    "unicode": "f4f0",
+    "html": "<i class='fa fab-creative-commons-sampling'></i>",
+    "value": "fa fab-creative-commons-sampling"
+  },
+  {
+    "icon": "creative-commons-sampling-plus",
+    "unicode": "f4f1",
+    "html": "<i class='fa fab-creative-commons-sampling-plus'></i>",
+    "value": "fa fab-creative-commons-sampling-plus"
+  },
+  {
+    "icon": "creative-commons-share",
+    "unicode": "f4f2",
+    "html": "<i class='fa fab-creative-commons-share'></i>",
+    "value": "fa fab-creative-commons-share"
+  },
+  {
+    "icon": "css3",
+    "unicode": "f13c",
+    "html": "<i class='fa fab-css3'></i>",
+    "value": "fa fab-css3"
+  },
+  {
+    "icon": "css3-alt",
+    "unicode": "f38b",
+    "html": "<i class='fa fab-css3-alt'></i>",
+    "value": "fa fab-css3-alt"
+  },
+  {
+    "icon": "cuttlefish",
+    "unicode": "f38c",
+    "html": "<i class='fa fab-cuttlefish'></i>",
+    "value": "fa fab-cuttlefish"
+  },
+  {
+    "icon": "d-and-d",
+    "unicode": "f38d",
+    "html": "<i class='fa fab-d-and-d'></i>",
+    "value": "fa fab-d-and-d"
+  },
+  {
+    "icon": "dashcube",
+    "unicode": "f210",
+    "html": "<i class='fa fab-dashcube'></i>",
+    "value": "fa fab-dashcube"
+  },
+  {
+    "icon": "delicious",
+    "unicode": "f1a5",
+    "html": "<i class='fa fab-delicious'></i>",
+    "value": "fa fab-delicious"
+  },
+  {
+    "icon": "deploydog",
+    "unicode": "f38e",
+    "html": "<i class='fa fab-deploydog'></i>",
+    "value": "fa fab-deploydog"
+  },
+  {
+    "icon": "deskpro",
+    "unicode": "f38f",
+    "html": "<i class='fa fab-deskpro'></i>",
+    "value": "fa fab-deskpro"
+  },
+  {
+    "icon": "deviantart",
+    "unicode": "f1bd",
+    "html": "<i class='fa fab-deviantart'></i>",
+    "value": "fa fab-deviantart"
+  },
+  {
+    "icon": "digg",
+    "unicode": "f1a6",
+    "html": "<i class='fa fab-digg'></i>",
+    "value": "fa fab-digg"
+  },
+  {
+    "icon": "digital-ocean",
+    "unicode": "f391",
+    "html": "<i class='fa fab-digital-ocean'></i>",
+    "value": "fa fab-digital-ocean"
+  },
+  {
+    "icon": "discord",
+    "unicode": "f392",
+    "html": "<i class='fa fab-discord'></i>",
+    "value": "fa fab-discord"
+  },
+  {
+    "icon": "discourse",
+    "unicode": "f393",
+    "html": "<i class='fa fab-discourse'></i>",
+    "value": "fa fab-discourse"
+  },
+  {
+    "icon": "dochub",
+    "unicode": "f394",
+    "html": "<i class='fa fab-dochub'></i>",
+    "value": "fa fab-dochub"
+  },
+  {
+    "icon": "docker",
+    "unicode": "f395",
+    "html": "<i class='fa fab-docker'></i>",
+    "value": "fa fab-docker"
+  },
+  {
+    "icon": "draft2digital",
+    "unicode": "f396",
+    "html": "<i class='fa fab-draft2digital'></i>",
+    "value": "fa fab-draft2digital"
+  },
+  {
+    "icon": "dribbble",
+    "unicode": "f17d",
+    "html": "<i class='fa fab-dribbble'></i>",
+    "value": "fa fab-dribbble"
+  },
+  {
+    "icon": "dribbble-square",
+    "unicode": "f397",
+    "html": "<i class='fa fab-dribbble-square'></i>",
+    "value": "fa fab-dribbble-square"
+  },
+  {
+    "icon": "dropbox",
+    "unicode": "f16b",
+    "html": "<i class='fa fab-dropbox'></i>",
+    "value": "fa fab-dropbox"
+  },
+  {
+    "icon": "drupal",
+    "unicode": "f1a9",
+    "html": "<i class='fa fab-drupal'></i>",
+    "value": "fa fab-drupal"
+  },
+  {
+    "icon": "dyalog",
+    "unicode": "f399",
+    "html": "<i class='fa fab-dyalog'></i>",
+    "value": "fa fab-dyalog"
+  },
+  {
+    "icon": "earlybirds",
+    "unicode": "f39a",
+    "html": "<i class='fa fab-earlybirds'></i>",
+    "value": "fa fab-earlybirds"
+  },
+  {
+    "icon": "ebay",
+    "unicode": "f4f4",
+    "html": "<i class='fa fab-ebay'></i>",
+    "value": "fa fab-ebay"
+  },
+  {
+    "icon": "edge",
+    "unicode": "f282",
+    "html": "<i class='fa fab-edge'></i>",
+    "value": "fa fab-edge"
+  },
+  {
+    "icon": "elementor",
+    "unicode": "f430",
+    "html": "<i class='fa fab-elementor'></i>",
+    "value": "fa fab-elementor"
+  },
+  {
+    "icon": "ember",
+    "unicode": "f423",
+    "html": "<i class='fa fab-ember'></i>",
+    "value": "fa fab-ember"
+  },
+  {
+    "icon": "empire",
+    "unicode": "f1d1",
+    "html": "<i class='fa fab-empire'></i>",
+    "value": "fa fab-empire"
+  },
+  {
+    "icon": "envira",
+    "unicode": "f299",
+    "html": "<i class='fa fab-envira'></i>",
+    "value": "fa fab-envira"
+  },
+  {
+    "icon": "erlang",
+    "unicode": "f39d",
+    "html": "<i class='fa fab-erlang'></i>",
+    "value": "fa fab-erlang"
+  },
+  {
+    "icon": "ethereum",
+    "unicode": "f42e",
+    "html": "<i class='fa fab-ethereum'></i>",
+    "value": "fa fab-ethereum"
+  },
+  {
+    "icon": "etsy",
+    "unicode": "f2d7",
+    "html": "<i class='fa fab-etsy'></i>",
+    "value": "fa fab-etsy"
+  },
+  {
+    "icon": "expeditedssl",
+    "unicode": "f23e",
+    "html": "<i class='fa fab-expeditedssl'></i>",
+    "value": "fa fab-expeditedssl"
+  },
+  {
+    "icon": "facebook",
+    "unicode": "f09a",
+    "html": "<i class='fa fab-facebook'></i>",
+    "value": "fa fab-facebook"
+  },
+  {
+    "icon": "facebook-f",
+    "unicode": "f39e",
+    "html": "<i class='fa fab-facebook-f'></i>",
+    "value": "fa fab-facebook-f"
+  },
+  {
+    "icon": "facebook-messenger",
+    "unicode": "f39f",
+    "html": "<i class='fa fab-facebook-messenger'></i>",
+    "value": "fa fab-facebook-messenger"
+  },
+  {
+    "icon": "facebook-square",
+    "unicode": "f082",
+    "html": "<i class='fa fab-facebook-square'></i>",
+    "value": "fa fab-facebook-square"
+  },
+  {
+    "icon": "firefox",
+    "unicode": "f269",
+    "html": "<i class='fa fab-firefox'></i>",
+    "value": "fa fab-firefox"
+  },
+  {
+    "icon": "first-order",
+    "unicode": "f2b0",
+    "html": "<i class='fa fab-first-order'></i>",
+    "value": "fa fab-first-order"
+  },
+  {
+    "icon": "first-order-alt",
+    "unicode": "f50a",
+    "html": "<i class='fa fab-first-order-alt'></i>",
+    "value": "fa fab-first-order-alt"
+  },
+  {
+    "icon": "firstdraft",
+    "unicode": "f3a1",
+    "html": "<i class='fa fab-firstdraft'></i>",
+    "value": "fa fab-firstdraft"
+  },
+  {
+    "icon": "flickr",
+    "unicode": "f16e",
+    "html": "<i class='fa fab-flickr'></i>",
+    "value": "fa fab-flickr"
+  },
+  {
+    "icon": "flipboard",
+    "unicode": "f44d",
+    "html": "<i class='fa fab-flipboard'></i>",
+    "value": "fa fab-flipboard"
+  },
+  {
+    "icon": "fly",
+    "unicode": "f417",
+    "html": "<i class='fa fab-fly'></i>",
+    "value": "fa fab-fly"
+  },
+  {
+    "icon": "font-awesome",
+    "unicode": "f2b4",
+    "html": "<i class='fa fab-font-awesome'></i>",
+    "value": "fa fab-font-awesome"
+  },
+  {
+    "icon": "font-awesome-alt",
+    "unicode": "f35c",
+    "html": "<i class='fa fab-font-awesome-alt'></i>",
+    "value": "fa fab-font-awesome-alt"
+  },
+  {
+    "icon": "font-awesome-flag",
+    "unicode": "f425",
+    "html": "<i class='fa fab-font-awesome-flag'></i>",
+    "value": "fa fab-font-awesome-flag"
+  },
+  {
+    "icon": "font-awesome-logo-full",
+    "unicode": "f4e6",
+    "html": "<i class='fa fab-font-awesome-logo-full'></i>",
+    "value": "fa fab-font-awesome-logo-full"
+  },
+  {
+    "icon": "fonticons",
+    "unicode": "f280",
+    "html": "<i class='fa fab-fonticons'></i>",
+    "value": "fa fab-fonticons"
+  },
+  {
+    "icon": "fonticons-fi",
+    "unicode": "f3a2",
+    "html": "<i class='fa fab-fonticons-fi'></i>",
+    "value": "fa fab-fonticons-fi"
+  },
+  {
+    "icon": "fort-awesome",
+    "unicode": "f286",
+    "html": "<i class='fa fab-fort-awesome'></i>",
+    "value": "fa fab-fort-awesome"
+  },
+  {
+    "icon": "fort-awesome-alt",
+    "unicode": "f3a3",
+    "html": "<i class='fa fab-fort-awesome-alt'></i>",
+    "value": "fa fab-fort-awesome-alt"
+  },
+  {
+    "icon": "forumbee",
+    "unicode": "f211",
+    "html": "<i class='fa fab-forumbee'></i>",
+    "value": "fa fab-forumbee"
+  },
+  {
+    "icon": "foursquare",
+    "unicode": "f180",
+    "html": "<i class='fa fab-foursquare'></i>",
+    "value": "fa fab-foursquare"
+  },
+  {
+    "icon": "free-code-camp",
+    "unicode": "f2c5",
+    "html": "<i class='fa fab-free-code-camp'></i>",
+    "value": "fa fab-free-code-camp"
+  },
+  {
+    "icon": "freebsd",
+    "unicode": "f3a4",
+    "html": "<i class='fa fab-freebsd'></i>",
+    "value": "fa fab-freebsd"
+  },
+  {
+    "icon": "fulcrum",
+    "unicode": "f50b",
+    "html": "<i class='fa fab-fulcrum'></i>",
+    "value": "fa fab-fulcrum"
+  },
+  {
+    "icon": "galactic-republic",
+    "unicode": "f50c",
+    "html": "<i class='fa fab-galactic-republic'></i>",
+    "value": "fa fab-galactic-republic"
+  },
+  {
+    "icon": "galactic-senate",
+    "unicode": "f50d",
+    "html": "<i class='fa fab-galactic-senate'></i>",
+    "value": "fa fab-galactic-senate"
+  },
+  {
+    "icon": "get-pocket",
+    "unicode": "f265",
+    "html": "<i class='fa fab-get-pocket'></i>",
+    "value": "fa fab-get-pocket"
+  },
+  {
+    "icon": "gg",
+    "unicode": "f260",
+    "html": "<i class='fa fab-gg'></i>",
+    "value": "fa fab-gg"
+  },
+  {
+    "icon": "gg-circle",
+    "unicode": "f261",
+    "html": "<i class='fa fab-gg-circle'></i>",
+    "value": "fa fab-gg-circle"
+  },
+  {
+    "icon": "git",
+    "unicode": "f1d3",
+    "html": "<i class='fa fab-git'></i>",
+    "value": "fa fab-git"
+  },
+  {
+    "icon": "git-square",
+    "unicode": "f1d2",
+    "html": "<i class='fa fab-git-square'></i>",
+    "value": "fa fab-git-square"
+  },
+  {
+    "icon": "github",
+    "unicode": "f09b",
+    "html": "<i class='fa fab-github'></i>",
+    "value": "fa fab-github"
+  },
+  {
+    "icon": "github-alt",
+    "unicode": "f113",
+    "html": "<i class='fa fab-github-alt'></i>",
+    "value": "fa fab-github-alt"
+  },
+  {
+    "icon": "github-square",
+    "unicode": "f092",
+    "html": "<i class='fa fab-github-square'></i>",
+    "value": "fa fab-github-square"
+  },
+  {
+    "icon": "gitkraken",
+    "unicode": "f3a6",
+    "html": "<i class='fa fab-gitkraken'></i>",
+    "value": "fa fab-gitkraken"
+  },
+  {
+    "icon": "gitlab",
+    "unicode": "f296",
+    "html": "<i class='fa fab-gitlab'></i>",
+    "value": "fa fab-gitlab"
+  },
+  {
+    "icon": "gitter",
+    "unicode": "f426",
+    "html": "<i class='fa fab-gitter'></i>",
+    "value": "fa fab-gitter"
+  },
+  {
+    "icon": "glide",
+    "unicode": "f2a5",
+    "html": "<i class='fa fab-glide'></i>",
+    "value": "fa fab-glide"
+  },
+  {
+    "icon": "glide-g",
+    "unicode": "f2a6",
+    "html": "<i class='fa fab-glide-g'></i>",
+    "value": "fa fab-glide-g"
+  },
+  {
+    "icon": "gofore",
+    "unicode": "f3a7",
+    "html": "<i class='fa fab-gofore'></i>",
+    "value": "fa fab-gofore"
+  },
+  {
+    "icon": "goodreads",
+    "unicode": "f3a8",
+    "html": "<i class='fa fab-goodreads'></i>",
+    "value": "fa fab-goodreads"
+  },
+  {
+    "icon": "goodreads-g",
+    "unicode": "f3a9",
+    "html": "<i class='fa fab-goodreads-g'></i>",
+    "value": "fa fab-goodreads-g"
+  },
+  {
+    "icon": "google",
+    "unicode": "f1a0",
+    "html": "<i class='fa fab-google'></i>",
+    "value": "fa fab-google"
+  },
+  {
+    "icon": "google-drive",
+    "unicode": "f3aa",
+    "html": "<i class='fa fab-google-drive'></i>",
+    "value": "fa fab-google-drive"
+  },
+  {
+    "icon": "google-play",
+    "unicode": "f3ab",
+    "html": "<i class='fa fab-google-play'></i>",
+    "value": "fa fab-google-play"
+  },
+  {
+    "icon": "google-plus",
+    "unicode": "f2b3",
+    "html": "<i class='fa fab-google-plus'></i>",
+    "value": "fa fab-google-plus"
+  },
+  {
+    "icon": "google-plus-g",
+    "unicode": "f0d5",
+    "html": "<i class='fa fab-google-plus-g'></i>",
+    "value": "fa fab-google-plus-g"
+  },
+  {
+    "icon": "google-plus-square",
+    "unicode": "f0d4",
+    "html": "<i class='fa fab-google-plus-square'></i>",
+    "value": "fa fab-google-plus-square"
+  },
+  {
+    "icon": "google-wallet",
+    "unicode": "f1ee",
+    "html": "<i class='fa fab-google-wallet'></i>",
+    "value": "fa fab-google-wallet"
+  },
+  {
+    "icon": "gratipay",
+    "unicode": "f184",
+    "html": "<i class='fa fab-gratipay'></i>",
+    "value": "fa fab-gratipay"
+  },
+  {
+    "icon": "grav",
+    "unicode": "f2d6",
+    "html": "<i class='fa fab-grav'></i>",
+    "value": "fa fab-grav"
+  },
+  {
+    "icon": "gripfire",
+    "unicode": "f3ac",
+    "html": "<i class='fa fab-gripfire'></i>",
+    "value": "fa fab-gripfire"
+  },
+  {
+    "icon": "grunt",
+    "unicode": "f3ad",
+    "html": "<i class='fa fab-grunt'></i>",
+    "value": "fa fab-grunt"
+  },
+  {
+    "icon": "gulp",
+    "unicode": "f3ae",
+    "html": "<i class='fa fab-gulp'></i>",
+    "value": "fa fab-gulp"
+  },
+  {
+    "icon": "hacker-news",
+    "unicode": "f1d4",
+    "html": "<i class='fa fab-hacker-news'></i>",
+    "value": "fa fab-hacker-news"
+  },
+  {
+    "icon": "hacker-news-square",
+    "unicode": "f3af",
+    "html": "<i class='fa fab-hacker-news-square'></i>",
+    "value": "fa fab-hacker-news-square"
+  },
+  {
+    "icon": "hips",
+    "unicode": "f452",
+    "html": "<i class='fa fab-hips'></i>",
+    "value": "fa fab-hips"
+  },
+  {
+    "icon": "hire-a-helper",
+    "unicode": "f3b0",
+    "html": "<i class='fa fab-hire-a-helper'></i>",
+    "value": "fa fab-hire-a-helper"
+  },
+  {
+    "icon": "hooli",
+    "unicode": "f427",
+    "html": "<i class='fa fab-hooli'></i>",
+    "value": "fa fab-hooli"
+  },
+  {
+    "icon": "hotjar",
+    "unicode": "f3b1",
+    "html": "<i class='fa fab-hotjar'></i>",
+    "value": "fa fab-hotjar"
+  },
+  {
+    "icon": "houzz",
+    "unicode": "f27c",
+    "html": "<i class='fa fab-houzz'></i>",
+    "value": "fa fab-houzz"
+  },
+  {
+    "icon": "html5",
+    "unicode": "f13b",
+    "html": "<i class='fa fab-html5'></i>",
+    "value": "fa fab-html5"
+  },
+  {
+    "icon": "hubspot",
+    "unicode": "f3b2",
+    "html": "<i class='fa fab-hubspot'></i>",
+    "value": "fa fab-hubspot"
+  },
+  {
+    "icon": "imdb",
+    "unicode": "f2d8",
+    "html": "<i class='fa fab-imdb'></i>",
+    "value": "fa fab-imdb"
+  },
+  {
+    "icon": "instagram",
+    "unicode": "f16d",
+    "html": "<i class='fa fab-instagram'></i>",
+    "value": "fa fab-instagram"
+  },
+  {
+    "icon": "internet-explorer",
+    "unicode": "f26b",
+    "html": "<i class='fa fab-internet-explorer'></i>",
+    "value": "fa fab-internet-explorer"
+  },
+  {
+    "icon": "ioxhost",
+    "unicode": "f208",
+    "html": "<i class='fa fab-ioxhost'></i>",
+    "value": "fa fab-ioxhost"
+  },
+  {
+    "icon": "itunes",
+    "unicode": "f3b4",
+    "html": "<i class='fa fab-itunes'></i>",
+    "value": "fa fab-itunes"
+  },
+  {
+    "icon": "itunes-note",
+    "unicode": "f3b5",
+    "html": "<i class='fa fab-itunes-note'></i>",
+    "value": "fa fab-itunes-note"
+  },
+  {
+    "icon": "java",
+    "unicode": "f4e4",
+    "html": "<i class='fa fab-java'></i>",
+    "value": "fa fab-java"
+  },
+  {
+    "icon": "jedi-order",
+    "unicode": "f50e",
+    "html": "<i class='fa fab-jedi-order'></i>",
+    "value": "fa fab-jedi-order"
+  },
+  {
+    "icon": "jenkins",
+    "unicode": "f3b6",
+    "html": "<i class='fa fab-jenkins'></i>",
+    "value": "fa fab-jenkins"
+  },
+  {
+    "icon": "joget",
+    "unicode": "f3b7",
+    "html": "<i class='fa fab-joget'></i>",
+    "value": "fa fab-joget"
+  },
+  {
+    "icon": "joomla",
+    "unicode": "f1aa",
+    "html": "<i class='fa fab-joomla'></i>",
+    "value": "fa fab-joomla"
+  },
+  {
+    "icon": "js",
+    "unicode": "f3b8",
+    "html": "<i class='fa fab-js'></i>",
+    "value": "fa fab-js"
+  },
+  {
+    "icon": "js-square",
+    "unicode": "f3b9",
+    "html": "<i class='fa fab-js-square'></i>",
+    "value": "fa fab-js-square"
+  },
+  {
+    "icon": "jsfiddle",
+    "unicode": "f1cc",
+    "html": "<i class='fa fab-jsfiddle'></i>",
+    "value": "fa fab-jsfiddle"
+  },
+  {
+    "icon": "keybase",
+    "unicode": "f4f5",
+    "html": "<i class='fa fab-keybase'></i>",
+    "value": "fa fab-keybase"
+  },
+  {
+    "icon": "keycdn",
+    "unicode": "f3ba",
+    "html": "<i class='fa fab-keycdn'></i>",
+    "value": "fa fab-keycdn"
+  },
+  {
+    "icon": "kickstarter",
+    "unicode": "f3bb",
+    "html": "<i class='fa fab-kickstarter'></i>",
+    "value": "fa fab-kickstarter"
+  },
+  {
+    "icon": "kickstarter-k",
+    "unicode": "f3bc",
+    "html": "<i class='fa fab-kickstarter-k'></i>",
+    "value": "fa fab-kickstarter-k"
+  },
+  {
+    "icon": "korvue",
+    "unicode": "f42f",
+    "html": "<i class='fa fab-korvue'></i>",
+    "value": "fa fab-korvue"
+  },
+  {
+    "icon": "laravel",
+    "unicode": "f3bd",
+    "html": "<i class='fa fab-laravel'></i>",
+    "value": "fa fab-laravel"
+  },
+  {
+    "icon": "lastfm",
+    "unicode": "f202",
+    "html": "<i class='fa fab-lastfm'></i>",
+    "value": "fa fab-lastfm"
+  },
+  {
+    "icon": "lastfm-square",
+    "unicode": "f203",
+    "html": "<i class='fa fab-lastfm-square'></i>",
+    "value": "fa fab-lastfm-square"
+  },
+  {
+    "icon": "leanpub",
+    "unicode": "f212",
+    "html": "<i class='fa fab-leanpub'></i>",
+    "value": "fa fab-leanpub"
+  },
+  {
+    "icon": "less",
+    "unicode": "f41d",
+    "html": "<i class='fa fab-less'></i>",
+    "value": "fa fab-less"
+  },
+  {
+    "icon": "line",
+    "unicode": "f3c0",
+    "html": "<i class='fa fab-line'></i>",
+    "value": "fa fab-line"
+  },
+  {
+    "icon": "linkedin",
+    "unicode": "f08c",
+    "html": "<i class='fa fab-linkedin'></i>",
+    "value": "fa fab-linkedin"
+  },
+  {
+    "icon": "linkedin-in",
+    "unicode": "f0e1",
+    "html": "<i class='fa fab-linkedin-in'></i>",
+    "value": "fa fab-linkedin-in"
+  },
+  {
+    "icon": "linode",
+    "unicode": "f2b8",
+    "html": "<i class='fa fab-linode'></i>",
+    "value": "fa fab-linode"
+  },
+  {
+    "icon": "linux",
+    "unicode": "f17c",
+    "html": "<i class='fa fab-linux'></i>",
+    "value": "fa fab-linux"
+  },
+  {
+    "icon": "lyft",
+    "unicode": "f3c3",
+    "html": "<i class='fa fab-lyft'></i>",
+    "value": "fa fab-lyft"
+  },
+  {
+    "icon": "magento",
+    "unicode": "f3c4",
+    "html": "<i class='fa fab-magento'></i>",
+    "value": "fa fab-magento"
+  },
+  {
+    "icon": "mandalorian",
+    "unicode": "f50f",
+    "html": "<i class='fa fab-mandalorian'></i>",
+    "value": "fa fab-mandalorian"
+  },
+  {
+    "icon": "mastodon",
+    "unicode": "f4f6",
+    "html": "<i class='fa fab-mastodon'></i>",
+    "value": "fa fab-mastodon"
+  },
+  {
+    "icon": "maxcdn",
+    "unicode": "f136",
+    "html": "<i class='fa fab-maxcdn'></i>",
+    "value": "fa fab-maxcdn"
+  },
+  {
+    "icon": "medapps",
+    "unicode": "f3c6",
+    "html": "<i class='fa fab-medapps'></i>",
+    "value": "fa fab-medapps"
+  },
+  {
+    "icon": "medium",
+    "unicode": "f23a",
+    "html": "<i class='fa fab-medium'></i>",
+    "value": "fa fab-medium"
+  },
+  {
+    "icon": "medium-m",
+    "unicode": "f3c7",
+    "html": "<i class='fa fab-medium-m'></i>",
+    "value": "fa fab-medium-m"
+  },
+  {
+    "icon": "medrt",
+    "unicode": "f3c8",
+    "html": "<i class='fa fab-medrt'></i>",
+    "value": "fa fab-medrt"
+  },
+  {
+    "icon": "meetup",
+    "unicode": "f2e0",
+    "html": "<i class='fa fab-meetup'></i>",
+    "value": "fa fab-meetup"
+  },
+  {
+    "icon": "microsoft",
+    "unicode": "f3ca",
+    "html": "<i class='fa fab-microsoft'></i>",
+    "value": "fa fab-microsoft"
+  },
+  {
+    "icon": "mix",
+    "unicode": "f3cb",
+    "html": "<i class='fa fab-mix'></i>",
+    "value": "fa fab-mix"
+  },
+  {
+    "icon": "mixcloud",
+    "unicode": "f289",
+    "html": "<i class='fa fab-mixcloud'></i>",
+    "value": "fa fab-mixcloud"
+  },
+  {
+    "icon": "mizuni",
+    "unicode": "f3cc",
+    "html": "<i class='fa fab-mizuni'></i>",
+    "value": "fa fab-mizuni"
+  },
+  {
+    "icon": "modx",
+    "unicode": "f285",
+    "html": "<i class='fa fab-modx'></i>",
+    "value": "fa fab-modx"
+  },
+  {
+    "icon": "monero",
+    "unicode": "f3d0",
+    "html": "<i class='fa fab-monero'></i>",
+    "value": "fa fab-monero"
+  },
+  {
+    "icon": "napster",
+    "unicode": "f3d2",
+    "html": "<i class='fa fab-napster'></i>",
+    "value": "fa fab-napster"
+  },
+  {
+    "icon": "nintendo-switch",
+    "unicode": "f418",
+    "html": "<i class='fa fab-nintendo-switch'></i>",
+    "value": "fa fab-nintendo-switch"
+  },
+  {
+    "icon": "node",
+    "unicode": "f419",
+    "html": "<i class='fa fab-node'></i>",
+    "value": "fa fab-node"
+  },
+  {
+    "icon": "node-js",
+    "unicode": "f3d3",
+    "html": "<i class='fa fab-node-js'></i>",
+    "value": "fa fab-node-js"
+  },
+  {
+    "icon": "npm",
+    "unicode": "f3d4",
+    "html": "<i class='fa fab-npm'></i>",
+    "value": "fa fab-npm"
+  },
+  {
+    "icon": "ns8",
+    "unicode": "f3d5",
+    "html": "<i class='fa fab-ns8'></i>",
+    "value": "fa fab-ns8"
+  },
+  {
+    "icon": "nutritionix",
+    "unicode": "f3d6",
+    "html": "<i class='fa fab-nutritionix'></i>",
+    "value": "fa fab-nutritionix"
+  },
+  {
+    "icon": "odnoklassniki",
+    "unicode": "f263",
+    "html": "<i class='fa fab-odnoklassniki'></i>",
+    "value": "fa fab-odnoklassniki"
+  },
+  {
+    "icon": "odnoklassniki-square",
+    "unicode": "f264",
+    "html": "<i class='fa fab-odnoklassniki-square'></i>",
+    "value": "fa fab-odnoklassniki-square"
+  },
+  {
+    "icon": "old-republic",
+    "unicode": "f510",
+    "html": "<i class='fa fab-old-republic'></i>",
+    "value": "fa fab-old-republic"
+  },
+  {
+    "icon": "opencart",
+    "unicode": "f23d",
+    "html": "<i class='fa fab-opencart'></i>",
+    "value": "fa fab-opencart"
+  },
+  {
+    "icon": "openid",
+    "unicode": "f19b",
+    "html": "<i class='fa fab-openid'></i>",
+    "value": "fa fab-openid"
+  },
+  {
+    "icon": "opera",
+    "unicode": "f26a",
+    "html": "<i class='fa fab-opera'></i>",
+    "value": "fa fab-opera"
+  },
+  {
+    "icon": "optin-monster",
+    "unicode": "f23c",
+    "html": "<i class='fa fab-optin-monster'></i>",
+    "value": "fa fab-optin-monster"
+  },
+  {
+    "icon": "osi",
+    "unicode": "f41a",
+    "html": "<i class='fa fab-osi'></i>",
+    "value": "fa fab-osi"
+  },
+  {
+    "icon": "page4",
+    "unicode": "f3d7",
+    "html": "<i class='fa fab-page4'></i>",
+    "value": "fa fab-page4"
+  },
+  {
+    "icon": "pagelines",
+    "unicode": "f18c",
+    "html": "<i class='fa fab-pagelines'></i>",
+    "value": "fa fab-pagelines"
+  },
+  {
+    "icon": "palfed",
+    "unicode": "f3d8",
+    "html": "<i class='fa fab-palfed'></i>",
+    "value": "fa fab-palfed"
+  },
+  {
+    "icon": "patreon",
+    "unicode": "f3d9",
+    "html": "<i class='fa fab-patreon'></i>",
+    "value": "fa fab-patreon"
+  },
+  {
+    "icon": "paypal",
+    "unicode": "f1ed",
+    "html": "<i class='fa fab-paypal'></i>",
+    "value": "fa fab-paypal"
+  },
+  {
+    "icon": "periscope",
+    "unicode": "f3da",
+    "html": "<i class='fa fab-periscope'></i>",
+    "value": "fa fab-periscope"
+  },
+  {
+    "icon": "phabricator",
+    "unicode": "f3db",
+    "html": "<i class='fa fab-phabricator'></i>",
+    "value": "fa fab-phabricator"
+  },
+  {
+    "icon": "phoenix-framework",
+    "unicode": "f3dc",
+    "html": "<i class='fa fab-phoenix-framework'></i>",
+    "value": "fa fab-phoenix-framework"
+  },
+  {
+    "icon": "phoenix-squadron",
+    "unicode": "f511",
+    "html": "<i class='fa fab-phoenix-squadron'></i>",
+    "value": "fa fab-phoenix-squadron"
+  },
+  {
+    "icon": "php",
+    "unicode": "f457",
+    "html": "<i class='fa fab-php'></i>",
+    "value": "fa fab-php"
+  },
+  {
+    "icon": "pied-piper",
+    "unicode": "f2ae",
+    "html": "<i class='fa fab-pied-piper'></i>",
+    "value": "fa fab-pied-piper"
+  },
+  {
+    "icon": "pied-piper-alt",
+    "unicode": "f1a8",
+    "html": "<i class='fa fab-pied-piper-alt'></i>",
+    "value": "fa fab-pied-piper-alt"
+  },
+  {
+    "icon": "pied-piper-hat",
+    "unicode": "f4e5",
+    "html": "<i class='fa fab-pied-piper-hat'></i>",
+    "value": "fa fab-pied-piper-hat"
+  },
+  {
+    "icon": "pied-piper-pp",
+    "unicode": "f1a7",
+    "html": "<i class='fa fab-pied-piper-pp'></i>",
+    "value": "fa fab-pied-piper-pp"
+  },
+  {
+    "icon": "pinterest",
+    "unicode": "f0d2",
+    "html": "<i class='fa fab-pinterest'></i>",
+    "value": "fa fab-pinterest"
+  },
+  {
+    "icon": "pinterest-p",
+    "unicode": "f231",
+    "html": "<i class='fa fab-pinterest-p'></i>",
+    "value": "fa fab-pinterest-p"
+  },
+  {
+    "icon": "pinterest-square",
+    "unicode": "f0d3",
+    "html": "<i class='fa fab-pinterest-square'></i>",
+    "value": "fa fab-pinterest-square"
+  },
+  {
+    "icon": "playstation",
+    "unicode": "f3df",
+    "html": "<i class='fa fab-playstation'></i>",
+    "value": "fa fab-playstation"
+  },
+  {
+    "icon": "product-hunt",
+    "unicode": "f288",
+    "html": "<i class='fa fab-product-hunt'></i>",
+    "value": "fa fab-product-hunt"
+  },
+  {
+    "icon": "pushed",
+    "unicode": "f3e1",
+    "html": "<i class='fa fab-pushed'></i>",
+    "value": "fa fab-pushed"
+  },
+  {
+    "icon": "python",
+    "unicode": "f3e2",
+    "html": "<i class='fa fab-python'></i>",
+    "value": "fa fab-python"
+  },
+  {
+    "icon": "qq",
+    "unicode": "f1d6",
+    "html": "<i class='fa fab-qq'></i>",
+    "value": "fa fab-qq"
+  },
+  {
+    "icon": "quinscape",
+    "unicode": "f459",
+    "html": "<i class='fa fab-quinscape'></i>",
+    "value": "fa fab-quinscape"
+  },
+  {
+    "icon": "quora",
+    "unicode": "f2c4",
+    "html": "<i class='fa fab-quora'></i>",
+    "value": "fa fab-quora"
+  },
+  {
+    "icon": "r-project",
+    "unicode": "f4f7",
+    "html": "<i class='fa fab-r-project'></i>",
+    "value": "fa fab-r-project"
+  },
+  {
+    "icon": "ravelry",
+    "unicode": "f2d9",
+    "html": "<i class='fa fab-ravelry'></i>",
+    "value": "fa fab-ravelry"
+  },
+  {
+    "icon": "react",
+    "unicode": "f41b",
+    "html": "<i class='fa fab-react'></i>",
+    "value": "fa fab-react"
+  },
+  {
+    "icon": "readme",
+    "unicode": "f4d5",
+    "html": "<i class='fa fab-readme'></i>",
+    "value": "fa fab-readme"
+  },
+  {
+    "icon": "rebel",
+    "unicode": "f1d0",
+    "html": "<i class='fa fab-rebel'></i>",
+    "value": "fa fab-rebel"
+  },
+  {
+    "icon": "red-river",
+    "unicode": "f3e3",
+    "html": "<i class='fa fab-red-river'></i>",
+    "value": "fa fab-red-river"
+  },
+  {
+    "icon": "reddit",
+    "unicode": "f1a1",
+    "html": "<i class='fa fab-reddit'></i>",
+    "value": "fa fab-reddit"
+  },
+  {
+    "icon": "reddit-alien",
+    "unicode": "f281",
+    "html": "<i class='fa fab-reddit-alien'></i>",
+    "value": "fa fab-reddit-alien"
+  },
+  {
+    "icon": "reddit-square",
+    "unicode": "f1a2",
+    "html": "<i class='fa fab-reddit-square'></i>",
+    "value": "fa fab-reddit-square"
+  },
+  {
+    "icon": "rendact",
+    "unicode": "f3e4",
+    "html": "<i class='fa fab-rendact'></i>",
+    "value": "fa fab-rendact"
+  },
+  {
+    "icon": "renren",
+    "unicode": "f18b",
+    "html": "<i class='fa fab-renren'></i>",
+    "value": "fa fab-renren"
+  },
+  {
+    "icon": "replyd",
+    "unicode": "f3e6",
+    "html": "<i class='fa fab-replyd'></i>",
+    "value": "fa fab-replyd"
+  },
+  {
+    "icon": "researchgate",
+    "unicode": "f4f8",
+    "html": "<i class='fa fab-researchgate'></i>",
+    "value": "fa fab-researchgate"
+  },
+  {
+    "icon": "resolving",
+    "unicode": "f3e7",
+    "html": "<i class='fa fab-resolving'></i>",
+    "value": "fa fab-resolving"
+  },
+  {
+    "icon": "rocketchat",
+    "unicode": "f3e8",
+    "html": "<i class='fa fab-rocketchat'></i>",
+    "value": "fa fab-rocketchat"
+  },
+  {
+    "icon": "rockrms",
+    "unicode": "f3e9",
+    "html": "<i class='fa fab-rockrms'></i>",
+    "value": "fa fab-rockrms"
+  },
+  {
+    "icon": "safari",
+    "unicode": "f267",
+    "html": "<i class='fa fab-safari'></i>",
+    "value": "fa fab-safari"
+  },
+  {
+    "icon": "sass",
+    "unicode": "f41e",
+    "html": "<i class='fa fab-sass'></i>",
+    "value": "fa fab-sass"
+  },
+  {
+    "icon": "schlix",
+    "unicode": "f3ea",
+    "html": "<i class='fa fab-schlix'></i>",
+    "value": "fa fab-schlix"
+  },
+  {
+    "icon": "scribd",
+    "unicode": "f28a",
+    "html": "<i class='fa fab-scribd'></i>",
+    "value": "fa fab-scribd"
+  },
+  {
+    "icon": "searchengin",
+    "unicode": "f3eb",
+    "html": "<i class='fa fab-searchengin'></i>",
+    "value": "fa fab-searchengin"
+  },
+  {
+    "icon": "sellcast",
+    "unicode": "f2da",
+    "html": "<i class='fa fab-sellcast'></i>",
+    "value": "fa fab-sellcast"
+  },
+  {
+    "icon": "sellsy",
+    "unicode": "f213",
+    "html": "<i class='fa fab-sellsy'></i>",
+    "value": "fa fab-sellsy"
+  },
+  {
+    "icon": "servicestack",
+    "unicode": "f3ec",
+    "html": "<i class='fa fab-servicestack'></i>",
+    "value": "fa fab-servicestack"
+  },
+  {
+    "icon": "shirtsinbulk",
+    "unicode": "f214",
+    "html": "<i class='fa fab-shirtsinbulk'></i>",
+    "value": "fa fab-shirtsinbulk"
+  },
+  {
+    "icon": "simplybuilt",
+    "unicode": "f215",
+    "html": "<i class='fa fab-simplybuilt'></i>",
+    "value": "fa fab-simplybuilt"
+  },
+  {
+    "icon": "sistrix",
+    "unicode": "f3ee",
+    "html": "<i class='fa fab-sistrix'></i>",
+    "value": "fa fab-sistrix"
+  },
+  {
+    "icon": "sith",
+    "unicode": "f512",
+    "html": "<i class='fa fab-sith'></i>",
+    "value": "fa fab-sith"
+  },
+  {
+    "icon": "skyatlas",
+    "unicode": "f216",
+    "html": "<i class='fa fab-skyatlas'></i>",
+    "value": "fa fab-skyatlas"
+  },
+  {
+    "icon": "skype",
+    "unicode": "f17e",
+    "html": "<i class='fa fab-skype'></i>",
+    "value": "fa fab-skype"
+  },
+  {
+    "icon": "slack",
+    "unicode": "f198",
+    "html": "<i class='fa fab-slack'></i>",
+    "value": "fa fab-slack"
+  },
+  {
+    "icon": "slack-hash",
+    "unicode": "f3ef",
+    "html": "<i class='fa fab-slack-hash'></i>",
+    "value": "fa fab-slack-hash"
+  },
+  {
+    "icon": "slideshare",
+    "unicode": "f1e7",
+    "html": "<i class='fa fab-slideshare'></i>",
+    "value": "fa fab-slideshare"
+  },
+  {
+    "icon": "snapchat",
+    "unicode": "f2ab",
+    "html": "<i class='fa fab-snapchat'></i>",
+    "value": "fa fab-snapchat"
+  },
+  {
+    "icon": "snapchat-ghost",
+    "unicode": "f2ac",
+    "html": "<i class='fa fab-snapchat-ghost'></i>",
+    "value": "fa fab-snapchat-ghost"
+  },
+  {
+    "icon": "snapchat-square",
+    "unicode": "f2ad",
+    "html": "<i class='fa fab-snapchat-square'></i>",
+    "value": "fa fab-snapchat-square"
+  },
+  {
+    "icon": "soundcloud",
+    "unicode": "f1be",
+    "html": "<i class='fa fab-soundcloud'></i>",
+    "value": "fa fab-soundcloud"
+  },
+  {
+    "icon": "speakap",
+    "unicode": "f3f3",
+    "html": "<i class='fa fab-speakap'></i>",
+    "value": "fa fab-speakap"
+  },
+  {
+    "icon": "spotify",
+    "unicode": "f1bc",
+    "html": "<i class='fa fab-spotify'></i>",
+    "value": "fa fab-spotify"
+  },
+  {
+    "icon": "stack-exchange",
+    "unicode": "f18d",
+    "html": "<i class='fa fab-stack-exchange'></i>",
+    "value": "fa fab-stack-exchange"
+  },
+  {
+    "icon": "stack-overflow",
+    "unicode": "f16c",
+    "html": "<i class='fa fab-stack-overflow'></i>",
+    "value": "fa fab-stack-overflow"
+  },
+  {
+    "icon": "staylinked",
+    "unicode": "f3f5",
+    "html": "<i class='fa fab-staylinked'></i>",
+    "value": "fa fab-staylinked"
+  },
+  {
+    "icon": "steam",
+    "unicode": "f1b6",
+    "html": "<i class='fa fab-steam'></i>",
+    "value": "fa fab-steam"
+  },
+  {
+    "icon": "steam-square",
+    "unicode": "f1b7",
+    "html": "<i class='fa fab-steam-square'></i>",
+    "value": "fa fab-steam-square"
+  },
+  {
+    "icon": "steam-symbol",
+    "unicode": "f3f6",
+    "html": "<i class='fa fab-steam-symbol'></i>",
+    "value": "fa fab-steam-symbol"
+  },
+  {
+    "icon": "sticker-mule",
+    "unicode": "f3f7",
+    "html": "<i class='fa fab-sticker-mule'></i>",
+    "value": "fa fab-sticker-mule"
+  },
+  {
+    "icon": "strava",
+    "unicode": "f428",
+    "html": "<i class='fa fab-strava'></i>",
+    "value": "fa fab-strava"
+  },
+  {
+    "icon": "stripe",
+    "unicode": "f429",
+    "html": "<i class='fa fab-stripe'></i>",
+    "value": "fa fab-stripe"
+  },
+  {
+    "icon": "stripe-s",
+    "unicode": "f42a",
+    "html": "<i class='fa fab-stripe-s'></i>",
+    "value": "fa fab-stripe-s"
+  },
+  {
+    "icon": "studiovinari",
+    "unicode": "f3f8",
+    "html": "<i class='fa fab-studiovinari'></i>",
+    "value": "fa fab-studiovinari"
+  },
+  {
+    "icon": "stumbleupon",
+    "unicode": "f1a4",
+    "html": "<i class='fa fab-stumbleupon'></i>",
+    "value": "fa fab-stumbleupon"
+  },
+  {
+    "icon": "stumbleupon-circle",
+    "unicode": "f1a3",
+    "html": "<i class='fa fab-stumbleupon-circle'></i>",
+    "value": "fa fab-stumbleupon-circle"
+  },
+  {
+    "icon": "superpowers",
+    "unicode": "f2dd",
+    "html": "<i class='fa fab-superpowers'></i>",
+    "value": "fa fab-superpowers"
+  },
+  {
+    "icon": "supple",
+    "unicode": "f3f9",
+    "html": "<i class='fa fab-supple'></i>",
+    "value": "fa fab-supple"
+  },
+  {
+    "icon": "teamspeak",
+    "unicode": "f4f9",
+    "html": "<i class='fa fab-teamspeak'></i>",
+    "value": "fa fab-teamspeak"
+  },
+  {
+    "icon": "telegram",
+    "unicode": "f2c6",
+    "html": "<i class='fa fab-telegram'></i>",
+    "value": "fa fab-telegram"
+  },
+  {
+    "icon": "telegram-plane",
+    "unicode": "f3fe",
+    "html": "<i class='fa fab-telegram-plane'></i>",
+    "value": "fa fab-telegram-plane"
+  },
+  {
+    "icon": "tencent-weibo",
+    "unicode": "f1d5",
+    "html": "<i class='fa fab-tencent-weibo'></i>",
+    "value": "fa fab-tencent-weibo"
+  },
+  {
+    "icon": "themeisle",
+    "unicode": "f2b2",
+    "html": "<i class='fa fab-themeisle'></i>",
+    "value": "fa fab-themeisle"
+  },
+  {
+    "icon": "trade-federation",
+    "unicode": "f513",
+    "html": "<i class='fa fab-trade-federation'></i>",
+    "value": "fa fab-trade-federation"
+  },
+  {
+    "icon": "trello",
+    "unicode": "f181",
+    "html": "<i class='fa fab-trello'></i>",
+    "value": "fa fab-trello"
+  },
+  {
+    "icon": "tripadvisor",
+    "unicode": "f262",
+    "html": "<i class='fa fab-tripadvisor'></i>",
+    "value": "fa fab-tripadvisor"
+  },
+  {
+    "icon": "tumblr",
+    "unicode": "f173",
+    "html": "<i class='fa fab-tumblr'></i>",
+    "value": "fa fab-tumblr"
+  },
+  {
+    "icon": "tumblr-square",
+    "unicode": "f174",
+    "html": "<i class='fa fab-tumblr-square'></i>",
+    "value": "fa fab-tumblr-square"
+  },
+  {
+    "icon": "twitch",
+    "unicode": "f1e8",
+    "html": "<i class='fa fab-twitch'></i>",
+    "value": "fa fab-twitch"
+  },
+  {
+    "icon": "twitter",
+    "unicode": "f099",
+    "html": "<i class='fa fab-twitter'></i>",
+    "value": "fa fab-twitter"
+  },
+  {
+    "icon": "twitter-square",
+    "unicode": "f081",
+    "html": "<i class='fa fab-twitter-square'></i>",
+    "value": "fa fab-twitter-square"
+  },
+  {
+    "icon": "typo3",
+    "unicode": "f42b",
+    "html": "<i class='fa fab-typo3'></i>",
+    "value": "fa fab-typo3"
+  },
+  {
+    "icon": "uber",
+    "unicode": "f402",
+    "html": "<i class='fa fab-uber'></i>",
+    "value": "fa fab-uber"
+  },
+  {
+    "icon": "uikit",
+    "unicode": "f403",
+    "html": "<i class='fa fab-uikit'></i>",
+    "value": "fa fab-uikit"
+  },
+  {
+    "icon": "uniregistry",
+    "unicode": "f404",
+    "html": "<i class='fa fab-uniregistry'></i>",
+    "value": "fa fab-uniregistry"
+  },
+  {
+    "icon": "untappd",
+    "unicode": "f405",
+    "html": "<i class='fa fab-untappd'></i>",
+    "value": "fa fab-untappd"
+  },
+  {
+    "icon": "usb",
+    "unicode": "f287",
+    "html": "<i class='fa fab-usb'></i>",
+    "value": "fa fab-usb"
+  },
+  {
+    "icon": "ussunnah",
+    "unicode": "f407",
+    "html": "<i class='fa fab-ussunnah'></i>",
+    "value": "fa fab-ussunnah"
+  },
+  {
+    "icon": "vaadin",
+    "unicode": "f408",
+    "html": "<i class='fa fab-vaadin'></i>",
+    "value": "fa fab-vaadin"
+  },
+  {
+    "icon": "viacoin",
+    "unicode": "f237",
+    "html": "<i class='fa fab-viacoin'></i>",
+    "value": "fa fab-viacoin"
+  },
+  {
+    "icon": "viadeo",
+    "unicode": "f2a9",
+    "html": "<i class='fa fab-viadeo'></i>",
+    "value": "fa fab-viadeo"
+  },
+  {
+    "icon": "viadeo-square",
+    "unicode": "f2aa",
+    "html": "<i class='fa fab-viadeo-square'></i>",
+    "value": "fa fab-viadeo-square"
+  },
+  {
+    "icon": "viber",
+    "unicode": "f409",
+    "html": "<i class='fa fab-viber'></i>",
+    "value": "fa fab-viber"
+  },
+  {
+    "icon": "vimeo",
+    "unicode": "f40a",
+    "html": "<i class='fa fab-vimeo'></i>",
+    "value": "fa fab-vimeo"
+  },
+  {
+    "icon": "vimeo-square",
+    "unicode": "f194",
+    "html": "<i class='fa fab-vimeo-square'></i>",
+    "value": "fa fab-vimeo-square"
+  },
+  {
+    "icon": "vimeo-v",
+    "unicode": "f27d",
+    "html": "<i class='fa fab-vimeo-v'></i>",
+    "value": "fa fab-vimeo-v"
+  },
+  {
+    "icon": "vine",
+    "unicode": "f1ca",
+    "html": "<i class='fa fab-vine'></i>",
+    "value": "fa fab-vine"
+  },
+  {
+    "icon": "vk",
+    "unicode": "f189",
+    "html": "<i class='fa fab-vk'></i>",
+    "value": "fa fab-vk"
+  },
+  {
+    "icon": "vnv",
+    "unicode": "f40b",
+    "html": "<i class='fa fab-vnv'></i>",
+    "value": "fa fab-vnv"
+  },
+  {
+    "icon": "vuejs",
+    "unicode": "f41f",
+    "html": "<i class='fa fab-vuejs'></i>",
+    "value": "fa fab-vuejs"
+  },
+  {
+    "icon": "weibo",
+    "unicode": "f18a",
+    "html": "<i class='fa fab-weibo'></i>",
+    "value": "fa fab-weibo"
+  },
+  {
+    "icon": "weixin",
+    "unicode": "f1d7",
+    "html": "<i class='fa fab-weixin'></i>",
+    "value": "fa fab-weixin"
+  },
+  {
+    "icon": "whatsapp",
+    "unicode": "f232",
+    "html": "<i class='fa fab-whatsapp'></i>",
+    "value": "fa fab-whatsapp"
+  },
+  {
+    "icon": "whatsapp-square",
+    "unicode": "f40c",
+    "html": "<i class='fa fab-whatsapp-square'></i>",
+    "value": "fa fab-whatsapp-square"
+  },
+  {
+    "icon": "whmcs",
+    "unicode": "f40d",
+    "html": "<i class='fa fab-whmcs'></i>",
+    "value": "fa fab-whmcs"
+  },
+  {
+    "icon": "wikipedia-w",
+    "unicode": "f266",
+    "html": "<i class='fa fab-wikipedia-w'></i>",
+    "value": "fa fab-wikipedia-w"
+  },
+  {
+    "icon": "windows",
+    "unicode": "f17a",
+    "html": "<i class='fa fab-windows'></i>",
+    "value": "fa fab-windows"
+  },
+  {
+    "icon": "wolf-pack-battalion",
+    "unicode": "f514",
+    "html": "<i class='fa fab-wolf-pack-battalion'></i>",
+    "value": "fa fab-wolf-pack-battalion"
+  },
+  {
+    "icon": "wordpress",
+    "unicode": "f19a",
+    "html": "<i class='fa fab-wordpress'></i>",
+    "value": "fa fab-wordpress"
+  },
+  {
+    "icon": "wordpress-simple",
+    "unicode": "f411",
+    "html": "<i class='fa fab-wordpress-simple'></i>",
+    "value": "fa fab-wordpress-simple"
+  },
+  {
+    "icon": "wpbeginner",
+    "unicode": "f297",
+    "html": "<i class='fa fab-wpbeginner'></i>",
+    "value": "fa fab-wpbeginner"
+  },
+  {
+    "icon": "wpexplorer",
+    "unicode": "f2de",
+    "html": "<i class='fa fab-wpexplorer'></i>",
+    "value": "fa fab-wpexplorer"
+  },
+  {
+    "icon": "wpforms",
+    "unicode": "f298",
+    "html": "<i class='fa fab-wpforms'></i>",
+    "value": "fa fab-wpforms"
+  },
+  {
+    "icon": "xbox",
+    "unicode": "f412",
+    "html": "<i class='fa fab-xbox'></i>",
+    "value": "fa fab-xbox"
+  },
+  {
+    "icon": "xing",
+    "unicode": "f168",
+    "html": "<i class='fa fab-xing'></i>",
+    "value": "fa fab-xing"
+  },
+  {
+    "icon": "xing-square",
+    "unicode": "f169",
+    "html": "<i class='fa fab-xing-square'></i>",
+    "value": "fa fab-xing-square"
+  },
+  {
+    "icon": "y-combinator",
+    "unicode": "f23b",
+    "html": "<i class='fa fab-y-combinator'></i>",
+    "value": "fa fab-y-combinator"
+  },
+  {
+    "icon": "yahoo",
+    "unicode": "f19e",
+    "html": "<i class='fa fab-yahoo'></i>",
+    "value": "fa fab-yahoo"
+  },
+  {
+    "icon": "yandex",
+    "unicode": "f413",
+    "html": "<i class='fa fab-yandex'></i>",
+    "value": "fa fab-yandex"
+  },
+  {
+    "icon": "yandex-international",
+    "unicode": "f414",
+    "html": "<i class='fa fab-yandex-international'></i>",
+    "value": "fa fab-yandex-international"
+  },
+  {
+    "icon": "yelp",
+    "unicode": "f1e9",
+    "html": "<i class='fa fab-yelp'></i>",
+    "value": "fa fab-yelp"
+  },
+  {
+    "icon": "yoast",
+    "unicode": "f2b1",
+    "html": "<i class='fa fab-yoast'></i>",
+    "value": "fa fab-yoast"
+  },
+  {
+    "icon": "youtube",
+    "unicode": "f167",
+    "html": "<i class='fa fab-youtube'></i>",
+    "value": "fa fab-youtube"
+  },
+  {
+    "icon": "youtube-square",
+    "unicode": "f431",
+    "html": "<i class='fa fab-youtube-square'></i>",
+    "value": "fa fab-youtube-square"
+  }
+]
