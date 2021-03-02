@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 01, 2021 at 09:26 AM
--- Server version: 10.4.13-MariaDB
--- PHP Version: 5.6.36
+-- Generation Time: Mar 02, 2021 at 03:21 PM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.2.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_keuangan_new`
 --
+CREATE DATABASE IF NOT EXISTS `db_keuangan_new` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `db_keuangan_new`;
 
 -- --------------------------------------------------------
 
@@ -28,6 +30,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `tbl_alur`
 --
 
+DROP TABLE IF EXISTS `tbl_alur`;
 CREATE TABLE `tbl_alur` (
   `_id` int(11) NOT NULL,
   `id_progress` int(11) NOT NULL,
@@ -56,11 +59,12 @@ INSERT INTO `tbl_alur` (`_id`, `id_progress`, `ordinal`, `status`) VALUES
 -- Table structure for table `tbl_bidang`
 --
 
+DROP TABLE IF EXISTS `tbl_bidang`;
 CREATE TABLE `tbl_bidang` (
   `_id` int(11) NOT NULL,
   `nama_bidang` varchar(50) NOT NULL,
   `status` enum('0','1') NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -80,11 +84,12 @@ INSERT INTO `tbl_bidang` (`_id`, `nama_bidang`, `status`, `created_at`) VALUES
 -- Table structure for table `tbl_jabatan`
 --
 
+DROP TABLE IF EXISTS `tbl_jabatan`;
 CREATE TABLE `tbl_jabatan` (
   `_id` int(11) NOT NULL,
   `nama_jabatan` varchar(50) NOT NULL,
   `status` enum('0','1') NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -106,13 +111,14 @@ INSERT INTO `tbl_jabatan` (`_id`, `nama_jabatan`, `status`, `created_at`) VALUES
 -- Table structure for table `tbl_kegiatan`
 --
 
+DROP TABLE IF EXISTS `tbl_kegiatan`;
 CREATE TABLE `tbl_kegiatan` (
   `_id` int(11) NOT NULL,
   `nama_kegiatan` text NOT NULL,
   `id_program` int(11) NOT NULL,
   `kode_kegiatan` varchar(15) NOT NULL,
   `status` enum('0','1') NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -132,6 +138,7 @@ INSERT INTO `tbl_kegiatan` (`_id`, `nama_kegiatan`, `id_program`, `kode_kegiatan
 -- Table structure for table `tbl_levels`
 --
 
+DROP TABLE IF EXISTS `tbl_levels`;
 CREATE TABLE `tbl_levels` (
   `_id` int(11) NOT NULL,
   `id_jabatan` int(11) NOT NULL,
@@ -236,7 +243,23 @@ INSERT INTO `tbl_levels` (`_id`, `id_jabatan`, `id_menu`) VALUES
 (95, 1, 20),
 (96, 2, 20),
 (97, 6, 20),
-(98, 4, 21);
+(98, 4, 21),
+(99, 2, 2),
+(100, 2, 3),
+(101, 2, 4),
+(102, 2, 5),
+(103, 2, 6),
+(104, 2, 7),
+(105, 2, 8),
+(107, 2, 11),
+(108, 2, 12),
+(109, 2, 13),
+(110, 2, 14),
+(111, 2, 17),
+(112, 2, 19),
+(113, 2, 21),
+(114, 1, 15),
+(115, 1, 21);
 
 -- --------------------------------------------------------
 
@@ -244,6 +267,7 @@ INSERT INTO `tbl_levels` (`_id`, `id_jabatan`, `id_menu`) VALUES
 -- Table structure for table `tbl_menus`
 --
 
+DROP TABLE IF EXISTS `tbl_menus`;
 CREATE TABLE `tbl_menus` (
   `_id` int(11) NOT NULL,
   `judul` varchar(100) NOT NULL,
@@ -287,6 +311,7 @@ INSERT INTO `tbl_menus` (`_id`, `judul`, `link`, `icon`, `id_main`, `status`, `o
 -- Table structure for table `tbl_pencairan`
 --
 
+DROP TABLE IF EXISTS `tbl_pencairan`;
 CREATE TABLE `tbl_pencairan` (
   `_id` int(11) NOT NULL,
   `id_pengajuan` int(11) NOT NULL,
@@ -296,7 +321,7 @@ CREATE TABLE `tbl_pencairan` (
   `id_auditor` int(11) NOT NULL,
   `tgl_pencairan` date NOT NULL,
   `prefix` varchar(100) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -304,8 +329,9 @@ CREATE TABLE `tbl_pencairan` (
 --
 
 INSERT INTO `tbl_pencairan` (`_id`, `id_pengajuan`, `kode_pencairan`, `kode_pengajuan`, `total`, `id_auditor`, `tgl_pencairan`, `prefix`, `created_at`) VALUES
-(1, 1, '900/1-2.06./03/2021', 'P-60389086db798', 1000000, 1, '2021-03-01', '2.06.', '2021-03-01 02:22:39'),
-(2, 4, '900/2-2.06./03/2021', 'P-603c67667842a', 20000000, 14, '2021-03-01', '2.06.', '2021-03-01 07:46:59');
+(1, 1, '900/1-2.06./03/2021', 'P-603e5314dcc28', 2000000, 1, '2021-03-02', '2.06.', '2021-03-02 15:00:58'),
+(2, 2, '900/2-2.06./03/2021', 'P-603e53584cc48', 2000000, 1, '2021-03-02', '2.06.', '2021-03-02 15:01:54'),
+(3, 3, '900/3-2.06./03/2021', 'P-603e54de021b4', 2000000, 1, '2021-03-02', '2.06.', '2021-03-02 15:08:28');
 
 -- --------------------------------------------------------
 
@@ -313,6 +339,7 @@ INSERT INTO `tbl_pencairan` (`_id`, `id_pengajuan`, `kode_pencairan`, `kode_peng
 -- Table structure for table `tbl_pengajuan`
 --
 
+DROP TABLE IF EXISTS `tbl_pengajuan`;
 CREATE TABLE `tbl_pengajuan` (
   `_id` int(11) NOT NULL,
   `kode_pengajuan` varchar(15) NOT NULL,
@@ -321,9 +348,9 @@ CREATE TABLE `tbl_pengajuan` (
   `id_user` int(11) NOT NULL,
   `id_pptk` int(11) NOT NULL,
   `status` char(11) NOT NULL DEFAULT '0',
-  `catatan` text DEFAULT NULL,
-  `last_update` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp(),
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `catatan` text,
+  `last_update` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -331,12 +358,9 @@ CREATE TABLE `tbl_pengajuan` (
 --
 
 INSERT INTO `tbl_pengajuan` (`_id`, `kode_pengajuan`, `total`, `id_bidang`, `id_user`, `id_pptk`, `status`, `catatan`, `last_update`, `created_at`) VALUES
-(1, 'P-60389086db798', 1000000, 4, 8, 12, '8', NULL, '2021-03-01 02:25:30', '2021-02-26 06:09:10'),
-(2, 'P-603c614e2a814', 2000000, 3, 1, 16, '1', NULL, '2021-03-01 03:48:47', '2021-03-01 03:36:46'),
-(3, 'P-603c6322e6027', 1000000, 2, 1, 19, '1', NULL, '2021-03-01 07:26:20', '2021-03-01 03:44:35'),
-(4, 'P-603c67667842a', 20000000, 5, 1, 17, '8', NULL, '2021-03-01 07:52:44', '2021-03-01 04:02:46'),
-(5, 'P-603c965070deb', 1000000, 2, 1, 12, '0', NULL, '2021-03-01 07:28:06', '2021-03-01 07:22:56'),
-(6, 'P-603c97ea678a0', 1000000, 5, 8, 12, '0', NULL, '2021-03-01 07:30:00', '2021-03-01 07:29:46');
+(1, 'P-603e5314dcc28', 2000000, 5, 1, 12, '6', NULL, '2021-03-02 15:01:06', '2021-03-02 15:00:36'),
+(2, 'P-603e53584cc48', 2000000, 5, 1, 19, '6', NULL, '2021-03-02 15:01:54', '2021-03-02 15:01:44'),
+(3, 'P-603e54de021b4', 2000000, 5, 1, 12, '6', NULL, '2021-03-02 15:08:28', '2021-03-02 15:08:14');
 
 -- --------------------------------------------------------
 
@@ -344,6 +368,7 @@ INSERT INTO `tbl_pengajuan` (`_id`, `kode_pengajuan`, `total`, `id_bidang`, `id_
 -- Table structure for table `tbl_pengajuan_detail`
 --
 
+DROP TABLE IF EXISTS `tbl_pengajuan_detail`;
 CREATE TABLE `tbl_pengajuan_detail` (
   `_id` int(11) NOT NULL,
   `kode_pengajuan` varchar(15) NOT NULL,
@@ -352,7 +377,7 @@ CREATE TABLE `tbl_pengajuan_detail` (
   `id_sub` int(11) NOT NULL,
   `id_rekening` int(11) NOT NULL,
   `jumlah` bigint(20) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -360,12 +385,9 @@ CREATE TABLE `tbl_pengajuan_detail` (
 --
 
 INSERT INTO `tbl_pengajuan_detail` (`_id`, `kode_pengajuan`, `id_program`, `id_kegiatan`, `id_sub`, `id_rekening`, `jumlah`, `created_at`) VALUES
-(1, 'P-60389086db798', 127, 19, 5, 4, 1000000, '2021-02-26 06:09:10'),
-(2, 'P-603c614e2a814', 130, 22, 9, 10, 2000000, '2021-03-01 03:36:46'),
-(3, 'P-603c6322e6027', 131, 23, 10, 11, 1000000, '2021-03-01 03:44:34'),
-(4, 'P-603c67667842a', 127, 19, 5, 4, 20000000, '2021-03-01 04:02:46'),
-(5, 'P-603c965070deb', 131, 23, 10, 11, 1000000, '2021-03-01 07:22:56'),
-(6, 'P-603c97ea678a0', 127, 19, 5, 4, 1000000, '2021-03-01 07:29:46');
+(1, 'P-603e5314dcc28', 127, 19, 5, 4, 2000000, '2021-03-02 15:00:36'),
+(2, 'P-603e53584cc48', 127, 19, 5, 4, 2000000, '2021-03-02 15:01:44'),
+(3, 'P-603e54de021b4', 127, 19, 5, 4, 2000000, '2021-03-02 15:08:14');
 
 -- --------------------------------------------------------
 
@@ -373,6 +395,7 @@ INSERT INTO `tbl_pengajuan_detail` (`_id`, `kode_pengajuan`, `id_program`, `id_k
 -- Table structure for table `tbl_pengajuan_rincian`
 --
 
+DROP TABLE IF EXISTS `tbl_pengajuan_rincian`;
 CREATE TABLE `tbl_pengajuan_rincian` (
   `_id` int(11) NOT NULL,
   `id_pengajuan_detail` int(11) NOT NULL,
@@ -388,9 +411,9 @@ CREATE TABLE `tbl_pengajuan_rincian` (
   `pphd` int(11) DEFAULT NULL,
   `ppn` int(11) DEFAULT NULL,
   `jumlah` bigint(20) NOT NULL,
-  `bukti` text DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `bukti` text,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -398,12 +421,9 @@ CREATE TABLE `tbl_pengajuan_rincian` (
 --
 
 INSERT INTO `tbl_pengajuan_rincian` (`_id`, `id_pengajuan_detail`, `keterangan`, `satuan`, `harga`, `penerima`, `total`, `subtotal`, `pph21`, `pph22`, `pph23`, `pphd`, `ppn`, `jumlah`, `bukti`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Beli Teajus', 'lembar', 50000, 'Mang Ateng', 20, 900000, 20000, 20000, 20000, 20000, 20000, 1000000, 'def2b06e0d6b67275eb45b9e2dc45ed8.pdf', '2021-02-26 06:09:10', '2021-03-01 02:24:39'),
-(2, 2, 'Beli Teajus', 'lembar', 50000, NULL, 40, NULL, NULL, NULL, NULL, NULL, NULL, 2000000, NULL, '2021-03-01 03:36:46', '2021-03-01 03:36:46'),
-(3, 3, 'Beli Teajus', 'lembar', 50000, NULL, 20, NULL, NULL, NULL, NULL, NULL, NULL, 1000000, NULL, '2021-03-01 03:44:35', '2021-03-01 03:44:35'),
-(4, 4, 'Beli Teajus', 'lembar', 1000000, 'Mang Ateng', 20, 19700000, 200000, 20000, 20000, 30000, 30000, 20000000, '5c76caee8f88fb8e5a63df565d7284d4.pdf', '2021-03-01 04:02:46', '2021-03-01 07:48:00'),
-(5, 5, 'Beli Teajus', 'lembar', 50000, NULL, 20, NULL, NULL, NULL, NULL, NULL, NULL, 1000000, NULL, '2021-03-01 07:22:56', '2021-03-01 07:22:56'),
-(6, 6, 'Beli Teajus', 'lembar', 50000, NULL, 20, NULL, NULL, NULL, NULL, NULL, NULL, 1000000, NULL, '2021-03-01 07:29:46', '2021-03-01 07:29:46');
+(1, 1, 'satu', 'satu', 100000, NULL, 20, NULL, NULL, NULL, NULL, NULL, NULL, 2000000, NULL, '2021-03-02 15:00:36', '2021-03-02 15:00:36'),
+(2, 2, 'dua', 'dua', 100000, NULL, 20, NULL, NULL, NULL, NULL, NULL, NULL, 2000000, NULL, '2021-03-02 15:01:44', '2021-03-02 15:01:44'),
+(3, 3, 'satu', 'satu', 100000, NULL, 20, NULL, NULL, NULL, NULL, NULL, NULL, 2000000, NULL, '2021-03-02 15:08:14', '2021-03-02 15:08:14');
 
 -- --------------------------------------------------------
 
@@ -411,6 +431,7 @@ INSERT INTO `tbl_pengajuan_rincian` (`_id`, `id_pengajuan_detail`, `keterangan`,
 -- Table structure for table `tbl_privilege`
 --
 
+DROP TABLE IF EXISTS `tbl_privilege`;
 CREATE TABLE `tbl_privilege` (
   `_id` int(11) NOT NULL,
   `id_jabatan` int(11) NOT NULL,
@@ -454,13 +475,14 @@ INSERT INTO `tbl_privilege` (`_id`, `id_jabatan`, `id_progress`) VALUES
 -- Table structure for table `tbl_program`
 --
 
+DROP TABLE IF EXISTS `tbl_program`;
 CREATE TABLE `tbl_program` (
   `_id` int(11) NOT NULL,
   `nama_program` text NOT NULL,
   `kode_program` varchar(15) NOT NULL,
   `status` char(5) NOT NULL,
   `id_bidang` int(11) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -480,6 +502,7 @@ INSERT INTO `tbl_program` (`_id`, `nama_program`, `kode_program`, `status`, `id_
 -- Table structure for table `tbl_progress`
 --
 
+DROP TABLE IF EXISTS `tbl_progress`;
 CREATE TABLE `tbl_progress` (
   `_id` int(11) NOT NULL,
   `nama_progress` varchar(100) NOT NULL
@@ -511,13 +534,14 @@ INSERT INTO `tbl_progress` (`_id`, `nama_progress`) VALUES
 -- Table structure for table `tbl_progress_pengajuan`
 --
 
+DROP TABLE IF EXISTS `tbl_progress_pengajuan`;
 CREATE TABLE `tbl_progress_pengajuan` (
   `_id` int(11) NOT NULL,
   `id_pengajuan` int(11) NOT NULL,
   `ordinal` int(11) NOT NULL,
   `id_user` int(11) NOT NULL,
   `catatan` varchar(255) DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -525,39 +549,26 @@ CREATE TABLE `tbl_progress_pengajuan` (
 --
 
 INSERT INTO `tbl_progress_pengajuan` (`_id`, `id_pengajuan`, `ordinal`, `id_user`, `catatan`, `created_at`) VALUES
-(1, 1, 1, 8, NULL, '2021-02-26 06:09:11'),
-(2, 1, 2, 12, '', '2021-02-26 06:30:35'),
-(3, 1, 3, 13, '', '2021-02-26 06:30:49'),
-(4, 1, 4, 14, '', '2021-02-26 06:31:06'),
-(5, 1, 5, 9, '', '2021-02-26 06:31:17'),
-(6, 1, 6, 1, '', '2021-03-01 02:22:39'),
-(7, 1, 7, 1, NULL, '2021-03-01 02:25:14'),
-(8, 1, 8, 1, '', '2021-03-01 02:25:30'),
-(9, 2, 1, 1, NULL, '2021-03-01 03:36:46'),
-(10, 3, 1, 1, NULL, '2021-03-01 03:44:35'),
-(11, 2, 2, 1, '', '2021-03-01 03:46:25'),
-(12, 2, 3, 1, '', '2021-03-01 03:46:27'),
-(13, 3, 2, 1, '', '2021-03-01 03:46:34'),
-(14, 3, 0, 1, '', '2021-03-01 03:48:42'),
-(15, 2, 0, 1, '', '2021-03-01 03:48:43'),
-(16, 3, 1, 1, '', '2021-03-01 03:48:45'),
-(17, 2, 1, 1, '', '2021-03-01 03:48:47'),
-(18, 3, 2, 19, '', '2021-03-01 03:48:58'),
-(19, 3, 0, 1, '', '2021-03-01 03:51:55'),
-(20, 4, 1, 1, NULL, '2021-03-01 04:02:46'),
-(21, 5, 1, 1, NULL, '2021-03-01 07:22:56'),
-(22, 5, 2, 12, '', '2021-03-01 07:24:26'),
-(23, 3, 1, 1, '', '2021-03-01 07:26:20'),
-(24, 5, 0, 1, '', '2021-03-01 07:28:06'),
-(25, 6, 1, 8, NULL, '2021-03-01 07:29:46'),
-(26, 6, 0, 1, '', '2021-03-01 07:30:00'),
-(27, 4, 2, 17, '', '2021-03-01 07:44:25'),
-(28, 4, 3, 21, '', '2021-03-01 07:46:20'),
-(29, 4, 4, 14, '', '2021-03-01 07:46:31'),
-(30, 4, 5, 9, '', '2021-03-01 07:46:43'),
-(31, 4, 6, 14, '', '2021-03-01 07:46:59'),
-(32, 4, 7, 1, NULL, '2021-03-01 07:52:21'),
-(33, 4, 8, 14, '', '2021-03-01 07:52:44');
+(1, 1, 1, 1, NULL, '2021-03-02 15:00:36'),
+(2, 1, 2, 1, '', '2021-03-02 15:00:51'),
+(3, 1, 3, 1, '', '2021-03-02 15:00:53'),
+(4, 1, 4, 1, '', '2021-03-02 15:00:55'),
+(5, 1, 5, 1, '', '2021-03-02 15:00:56'),
+(6, 1, 6, 1, '', '2021-03-02 15:00:58'),
+(7, 1, 7, 1, '', '2021-03-02 15:00:58'),
+(8, 1, 6, 1, '', '2021-03-02 15:01:06'),
+(9, 2, 1, 1, NULL, '2021-03-02 15:01:44'),
+(10, 2, 2, 1, '', '2021-03-02 15:01:48'),
+(11, 2, 3, 1, '', '2021-03-02 15:01:49'),
+(12, 2, 4, 1, '', '2021-03-02 15:01:51'),
+(13, 2, 5, 1, '', '2021-03-02 15:01:52'),
+(14, 2, 6, 1, '', '2021-03-02 15:01:54'),
+(15, 3, 1, 1, NULL, '2021-03-02 15:08:14'),
+(16, 3, 2, 1, '', '2021-03-02 15:08:19'),
+(17, 3, 3, 1, '', '2021-03-02 15:08:23'),
+(18, 3, 4, 1, '', '2021-03-02 15:08:25'),
+(19, 3, 5, 1, '', '2021-03-02 15:08:26'),
+(20, 3, 6, 1, '', '2021-03-02 15:08:28');
 
 -- --------------------------------------------------------
 
@@ -565,6 +576,7 @@ INSERT INTO `tbl_progress_pengajuan` (`_id`, `id_pengajuan`, `ordinal`, `id_user
 -- Table structure for table `tbl_rekening_kegiatan`
 --
 
+DROP TABLE IF EXISTS `tbl_rekening_kegiatan`;
 CREATE TABLE `tbl_rekening_kegiatan` (
   `_id` int(11) NOT NULL,
   `kode_rekening` char(11) NOT NULL,
@@ -574,7 +586,7 @@ CREATE TABLE `tbl_rekening_kegiatan` (
   `id_kegiatan` int(11) NOT NULL,
   `status` enum('1','2') NOT NULL,
   `pagu` bigint(20) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -597,6 +609,7 @@ INSERT INTO `tbl_rekening_kegiatan` (`_id`, `kode_rekening`, `nama_rekening`, `i
 -- Table structure for table `tbl_sub_kegiatan`
 --
 
+DROP TABLE IF EXISTS `tbl_sub_kegiatan`;
 CREATE TABLE `tbl_sub_kegiatan` (
   `_id` int(11) NOT NULL,
   `nama_sub` text NOT NULL,
@@ -604,7 +617,7 @@ CREATE TABLE `tbl_sub_kegiatan` (
   `id_kegiatan` int(11) NOT NULL,
   `kode_sub` varchar(15) NOT NULL,
   `status` enum('0','1') NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -625,6 +638,7 @@ INSERT INTO `tbl_sub_kegiatan` (`_id`, `nama_sub`, `id_program`, `id_kegiatan`, 
 -- Table structure for table `tbl_users`
 --
 
+DROP TABLE IF EXISTS `tbl_users`;
 CREATE TABLE `tbl_users` (
   `_id` int(11) NOT NULL,
   `nama_user` varchar(100) NOT NULL,
@@ -637,7 +651,7 @@ CREATE TABLE `tbl_users` (
   `alamat` text NOT NULL,
   `id_bidang` int(11) NOT NULL,
   `status` enum('0','1') NOT NULL DEFAULT '0',
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -716,13 +730,15 @@ ALTER TABLE `tbl_pengajuan`
 -- Indexes for table `tbl_pengajuan_detail`
 --
 ALTER TABLE `tbl_pengajuan_detail`
-  ADD PRIMARY KEY (`_id`);
+  ADD PRIMARY KEY (`_id`),
+  ADD KEY `kode_pengajuan` (`kode_pengajuan`);
 
 --
 -- Indexes for table `tbl_pengajuan_rincian`
 --
 ALTER TABLE `tbl_pengajuan_rincian`
-  ADD PRIMARY KEY (`_id`);
+  ADD PRIMARY KEY (`_id`),
+  ADD KEY `id_pengajuan_detail` (`id_pengajuan_detail`);
 
 --
 -- Indexes for table `tbl_privilege`
@@ -746,7 +762,8 @@ ALTER TABLE `tbl_progress`
 -- Indexes for table `tbl_progress_pengajuan`
 --
 ALTER TABLE `tbl_progress_pengajuan`
-  ADD PRIMARY KEY (`_id`);
+  ADD PRIMARY KEY (`_id`),
+  ADD KEY `id_pengajuan` (`id_pengajuan`);
 
 --
 -- Indexes for table `tbl_rekening_kegiatan`
@@ -798,7 +815,7 @@ ALTER TABLE `tbl_kegiatan`
 -- AUTO_INCREMENT for table `tbl_levels`
 --
 ALTER TABLE `tbl_levels`
-  MODIFY `_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=99;
+  MODIFY `_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
 
 --
 -- AUTO_INCREMENT for table `tbl_menus`
@@ -810,25 +827,25 @@ ALTER TABLE `tbl_menus`
 -- AUTO_INCREMENT for table `tbl_pencairan`
 --
 ALTER TABLE `tbl_pencairan`
-  MODIFY `_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tbl_pengajuan`
 --
 ALTER TABLE `tbl_pengajuan`
-  MODIFY `_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tbl_pengajuan_detail`
 --
 ALTER TABLE `tbl_pengajuan_detail`
-  MODIFY `_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tbl_pengajuan_rincian`
 --
 ALTER TABLE `tbl_pengajuan_rincian`
-  MODIFY `_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tbl_privilege`
@@ -852,7 +869,7 @@ ALTER TABLE `tbl_progress`
 -- AUTO_INCREMENT for table `tbl_progress_pengajuan`
 --
 ALTER TABLE `tbl_progress_pengajuan`
-  MODIFY `_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `tbl_rekening_kegiatan`
@@ -871,6 +888,22 @@ ALTER TABLE `tbl_sub_kegiatan`
 --
 ALTER TABLE `tbl_users`
   MODIFY `_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `tbl_pengajuan_rincian`
+--
+ALTER TABLE `tbl_pengajuan_rincian`
+  ADD CONSTRAINT `tbl_pengajuan_rincian_ibfk_1` FOREIGN KEY (`id_pengajuan_detail`) REFERENCES `tbl_pengajuan_detail` (`_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `tbl_progress_pengajuan`
+--
+ALTER TABLE `tbl_progress_pengajuan`
+  ADD CONSTRAINT `tbl_progress_pengajuan_ibfk_1` FOREIGN KEY (`id_pengajuan`) REFERENCES `tbl_pengajuan` (`_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

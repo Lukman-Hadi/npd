@@ -152,7 +152,7 @@
         </tr>
     </tfoot>
 </table>
-<table id="table" data-toolbar="#toolbar" data-toggle="table" data-url="/npd/approve/getdetailbku/<?= $permohonan->kode_pengajuan ?>" data-pagination="false" data-single-select="true" data-search="false" data-click-to-select="true" data-group-by="true" data-group-by-field="nama_rekening" class="table table-bordered table-sm" data-show-footer="true" data-side-pagination="client">
+<table id="table" data-toolbar="#toolbar" data-toggle="table" data-url="../approve/getdetailbku/<?= $permohonan->kode_pengajuan ?>" data-pagination="false" data-single-select="true" data-search="false" data-click-to-select="true" data-group-by="true" data-group-by-field="nama_rekening" class="table table-bordered table-sm" data-show-footer="true" data-side-pagination="client">
     <thead class="thead-light table-bordered text-center">
         <tr>
             <th data-field="kode_rekening" data-width="5" data-width-unit="%" data-valign="middle" rowspan="2">Kode Rekening</th>

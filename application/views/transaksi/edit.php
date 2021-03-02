@@ -242,6 +242,8 @@
     }
 
     function save() {
+        const id = $('#table').bootstrapTable('getData')[0].id_pengajuan;
+        console.log('id', id)
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -251,7 +253,7 @@
             confirmButtonText: 'Yes, Submit!'
         }).then((result) => {
             if (result.value) {
-                $.get('transaksi/save', function(result) {
+                $.post('../approve/approve',{id}, function(result) {
                     if (result.errorMsg) {
                         Toast.fire({
                             type: 'error',
@@ -263,6 +265,7 @@
                             title: '' + result.message + '.'
                         })
                         $('#table').bootstrapTable('refresh');
+                        window.location.replace('../approve');
                     }
                 }, 'json');
             }

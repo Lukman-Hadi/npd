@@ -10,13 +10,6 @@ class Transaksi extends CI_Controller {
         $this->load->model('Transaksi_model','tmodel');
     }
 
-	// function index(){
-    //     $data['title']  = 'DATA PROGRAM';
-    //     $data['collapsed'] = '';
-    //     $data['css_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.css';
-    //     $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
-    //     $this->template->load('template','master/program',$data);
-    // }
 	function index(){
         $data['title']  = 'ENTRY PENGAJUAN';
         $data['collapsed'] = '';
@@ -521,6 +514,17 @@ class Transaksi extends CI_Controller {
         $data = $this->db->get_where('tbl_pengajuan_rincian',array('_id'=>$id))->row();
         $up = $this->tmodel->updateDelete($data->jumlah,$data->id_pengajuan_detail,$id,$idPengajuan);
         if($up){
+            echo json_encode(array('message'=> 'Delete Success'));
+        }else{
+            echo json_encode(array('errorMsg'=>'Some errors occured.'));
+        }
+    }
+    function destroyPengajuanMaster(){
+        $id = $this->input->post('id');
+        $kodePengajuan = $this->input->post('kodePengajuan');
+        $res = $this->gmodel->delete('tbl_pengajuan',array('_id'=>$id));
+        $res = $this->gmodel->delete('tbl_pengajuan_detail',array('kode_pengajuan'=>$kodePengajuan));
+        if($res){
             echo json_encode(array('message'=> 'Delete Success'));
         }else{
             echo json_encode(array('errorMsg'=>'Some errors occured.'));

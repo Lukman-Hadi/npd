@@ -193,7 +193,7 @@
                             </tfoot>
                         </table>
                     <?php }else{?>
-                        <table id="table" data-toolbar="#toolbar" data-toggle="table" data-url="/npd/approve/getDetail/<?= $permohonan->kode_pengajuan ?>" data-pagination="false" data-search="false" data-click-to-select="false" class="table table-flush" data-show-footer="true" data-group-by="true" data-group-by-field="nama_rekening" data-side-pagination="client">
+                        <table id="table" data-toolbar="#toolbar" data-toggle="table" data-url="../../approve/getDetail/<?= $permohonan->kode_pengajuan ?>" data-pagination="false" data-search="false" data-click-to-select="false" class="table table-flush" data-show-footer="true" data-group-by="true" data-group-by-field="nama_rekening" data-side-pagination="client">
                             <thead class="thead-light text-center" style="white-space: normal;word-wrap:break-word;">
                                 <tr>
                                     <!-- <th data-field="no" data-formatter="nomerFormatter" data-width="5" data-width-unit="%">No</th> -->

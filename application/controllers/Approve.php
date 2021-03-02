@@ -79,7 +79,12 @@ class Approve extends CI_Controller {
         $note           = $this->input->post('catatan');
         $idUser         = $this->session->_id;
         $old            = $this->db->get_where('tbl_pengajuan',array('_id'=>$idPengajuan))->row();
-        $status         = $old->status+1;
+        if($old->status == 0){
+            $status     = $old->status+2;
+        }else{
+            $status     = $old->status+1;
+        }
+        
         if(cekAlur($status)->status != null){
             $kegiatan = $this->tmodel->getDetail($old->kode_pengajuan)->row();
             $pencairan = $this->db->get_where('tbl_pencairan',array('prefix'=>$kegiatan->kode_kegiatan))->num_rows();

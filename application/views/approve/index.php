@@ -169,7 +169,7 @@
 			<div class="col-12 p-0 text-center">
 			<div class="row d-flex justify-content-around">
 				<button class="btn btn-primary btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" title="Edit Pengajuan" onclick="edit('${row.kode_pengajuan}')"><span class="btn-inner--icon"><i class="fa fa-edit"></i></span></button>
-				<button class="btn btn-danger btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" title="Hapus Pengajuan" onclick="destroy('${row._id}')"><span class="btn-inner--icon"><i class="fa fa-window-close"></i></span></button>
+				<button class="btn btn-danger btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" title="Hapus Pengajuan" onclick="destroy('${row._id}','${row.kode_pengajuan}')"><span class="btn-inner--icon"><i class="fa fa-window-close"></i></span></button>
 				<button class="btn btn-outline-primary btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" title="Track Pengajuan"><span class="btn-inner--icon"><i class="fa fa-poll"></i></span></button>
 			</div>
 			</div>`
@@ -194,7 +194,36 @@
 	function edit(id){
 		window.location.replace("transaksi/edit?id="+id);
 	}
-	function destroy(id){
-
+	function destroy(id, kodePengajuan){
+		const data = {
+			id,
+			kodePengajuan
+		}
+		console.log('data', data)
+		Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, Delete!'
+        }).then((result) => {
+            if (result.value) {
+                $.post('transaksi/destroypengajuanmaster',data,function(result) {
+                    if (result.errorMsg) {
+                        Toast.fire({
+                            type: 'error',
+                            title: '' + result.errorMsg + '.'
+                        })
+                    } else {
+                        Toast.fire({
+                            type: 'success',
+                            title: '' + result.message + '.'
+                        })
+                        $('#table').bootstrapTable('refresh');
+                    }
+                }, 'json');
+            }
+        })
 	}
 </script>
