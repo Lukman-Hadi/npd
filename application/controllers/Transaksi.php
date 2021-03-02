@@ -352,22 +352,6 @@ class Transaksi extends CI_Controller {
         $this->template->load('template','transaksi/detail',$data);
     }
 
-    function update(){
-        $kode = $this->input->post('kode_program', TRUE);
-        $nama = $this->input->post('nama_program', TRUE);
-        $data = array();
-        $data = array(
-            'kode_program' => $kode,
-            'nama_program' => $nama
-        );
-        $where = array('_id'=>$this->input->get('id'));
-        $result = $this->gmodel->update('tbl_program',$data,$where);
-        if ($result){
-            echo json_encode(array('message'=>'Save Success'));
-        } else {
-            echo json_encode(array('errorMsg'=>'Some errors occured.'));
-        }
-    }
     function delete(){
         $data = $this->input->post('id',TRUE);
         $result = $this->gmodel->deleteBatch('tbl_program',$data);
@@ -472,5 +456,74 @@ class Transaksi extends CI_Controller {
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.js';
         $this->template->load('templateprint','print/detail',$data);
+    }
+
+    function edit(){
+        $data['title']  = 'ENTRY PENGAJUAN';
+        $data['kode']   = $this->input->get('id');
+        $data['collapsed'] = '';
+        $data['css_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.css';
+        $data['css_files'][] = base_url() . 'assets/admin/vendor/select2/dist/css/select2.min.css';
+        $data['css_files'][] = base_url() . 'assets/admin/vendor/select2/dist/css/select2-bootstrap.css';
+        $data['css_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.css';
+        $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/vendor/select2/dist/js/select2.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/vendor/form/form.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/vendor/pdfobject/pdfobject.min.js';
+        $this->template->load('template','transaksi/edit',$data);
+    }
+    function showEdit(){
+        $kode = $this->input->get('id');
+        $data = $this->tmodel->getPengajuanEdit($kode)->result();
+        $this->output->set_content_type('application/json');
+        echo json_encode($data);
+    }
+    function updatePengajuan(){
+        $input = $this->input->post();
+        $jumlahLama = intval($input['jumlah_lama'],10);
+        $idPengajuan = $input['id_pengajuan'];
+        $idPengajuanDetail = $input['id_pengajuan_detail'];
+        $idPengajuanRincian = $input['id_pengajuan_rincian'];
+        $keterangan = $input['keterangan'];
+        $satuan = $input['satuan'];
+        $total = $input['total'];
+        $harga = intval(str_replace('.','',$input['harga']),10);
+        $jumlahBaru = $input['jumlah']?intval(str_replace('.','',$input['jumlah']),10):$total*$harga;
+        $mines = $jumlahLama-$jumlahBaru;
+        $data = array(
+            'keterangan'=>$keterangan,
+            'jumlah'=>$jumlahBaru,
+            'satuan'=>$satuan,
+            'harga'=>$harga,
+            'total'=>$total,
+        );
+        $up = $this->gmodel->update('tbl_pengajuan_rincian',$data,array('_id'=>$idPengajuanRincian));
+        if($up){
+            $jumlahDetailLama = $this->db->get_where('tbl_pengajuan_detail',array('_id'=>$idPengajuanDetail))->row()->jumlah;
+            $jumlahDetailBaru = $jumlahDetailLama - $mines;
+            $upup = $this->gmodel->update('tbl_pengajuan_detail',array('jumlah'=>$jumlahDetailBaru),array('_id'=>$idPengajuanDetail));
+            if($upup){
+                $jumlahPengajuanLama = $this->db->get_where('tbl_pengajuan',array('_id'=>$idPengajuan))->row()->total;
+                $jumlahPengajuanBaru = $jumlahPengajuanLama - $mines;
+                $upupup = $this->gmodel->update('tbl_pengajuan',array('total'=>$jumlahPengajuanBaru),array('_id'=>$idPengajuan));
+                if($upupup){
+                    echo json_encode(array('message'=> 'Update Success'));
+                }
+            }
+        }else{
+            echo json_encode(array('errorMsg'=>'Some errors occured.'));
+        }
+    }
+    function destroyPengajuan(){
+        $id = $this->input->post('id');
+        $idPengajuan = $this->input->post('idpengajuan');
+        $data = $this->db->get_where('tbl_pengajuan_rincian',array('_id'=>$id))->row();
+        $up = $this->tmodel->updateDelete($data->jumlah,$data->id_pengajuan_detail,$id,$idPengajuan);
+        if($up){
+            echo json_encode(array('message'=> 'Delete Success'));
+        }else{
+            echo json_encode(array('errorMsg'=>'Some errors occured.'));
+        }
     }
 }

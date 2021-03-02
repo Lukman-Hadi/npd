@@ -108,6 +108,19 @@ class Transaksi_model extends CI_Model
         $this->db->where('tp.kode_pengajuan',$nPermohonan);
         return $this->db->get();
     }
+    function getPengajuanEdit($nPermohonan){
+        $this->db->select('pd.id_rekening, kode_rekening, nama_rekening, kode_sub, kode_kegiatan, kode_program, keterangan, satuan, harga, pr.total, pj._id as id_pengajuan, pd._id as id_pengajuan_detail, pr._id as id_pengajuan_rincian, pr.jumlah');
+        $this->db->from('tbl_pengajuan_rincian pr');
+        $this->db->join('tbl_pengajuan_detail pd','pd._id = pr.id_pengajuan_detail');
+        $this->db->join('tbl_pengajuan pj','pj.kode_pengajuan = pd.kode_pengajuan');
+        $this->db->join('tbl_users us','us._id = pj.id_pptk');
+        $this->db->join('tbl_program prg','prg._id = pd.id_program');
+        $this->db->join('tbl_kegiatan keg','keg._id = pd.id_kegiatan');
+        $this->db->join('tbl_sub_kegiatan sub','sub._id = pd.id_sub');
+        $this->db->join('tbl_rekening_kegiatan rkeg','rkeg._id = pd.id_rekening');
+        $this->db->where('pd.kode_pengajuan',$nPermohonan);
+        return $this->db->get();
+    }
     function getStatusProgress(){
         $this->db->select('*');
         $this->db->from('tbl_alur');
@@ -164,5 +177,21 @@ class Transaksi_model extends CI_Model
         $this->db->from('tbl_users');
         $this->db->where('id_jabatan',3);
         return $this->db->get();
+    }
+
+    function updateDelete($jumlah, $idPengajuanDetail, $idPengajuanRincian, $idPengajuan){
+        $del1 = $this->db->query('UPDATE tbl_pengajuan SET total = (total - "'.$jumlah.'") WHERE _id = "'.$idPengajuan.'"');
+        $count = $this->db->get_where('tbl_pengajuan_detail',array('_id'=>$idPengajuanDetail))->num_rows();
+        if($count>1){
+            $del2 = $this->db->query('UPDATE tbl_pengajuan_detail SET jumlah = (jumlah - "'.$jumlah.'") WHERE _id = "'.$idPengajuanDetail.'"');
+        }else{
+            $del2 = $this->db->delete('tbl_pengajuan_detail',array('_id'=>$idPengajuanDetail));
+        }
+        $del3 = $this->db->delete('tbl_pengajuan_rincian',array('_id'=>$idPengajuanRincian));
+        if($del1 && $del2 && $del3){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
