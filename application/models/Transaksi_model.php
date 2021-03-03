@@ -191,7 +191,7 @@ class Transaksi_model extends CI_Model
         return $result;
     }
     function getPPTK(){
-        $this->db->select('_id as idpptk, nama_user as nama');
+        $this->db->select('_id as idpptk, nama_user as nama, uname');
         $this->db->from('tbl_users');
         $this->db->where('id_jabatan',3);
         return $this->db->get();

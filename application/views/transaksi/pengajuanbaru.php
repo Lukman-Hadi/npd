@@ -226,7 +226,7 @@
                 let res = data.map((d) => {
                     return {
                         id: d.idpptk,
-                        text: d.nama,
+                        text: `${d.uname} - ${d.nama}`,
                         nm: d.nama
                     }
                 })
