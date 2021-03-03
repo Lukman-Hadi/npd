@@ -440,7 +440,7 @@ class Transaksi extends CI_Controller {
 
     function generatePDF(){
         $kode = $this->input->get('kode');
-        $data['permohonan']= $this->tmodel->getPengajuan($kode)->row();
+        $data['permohonan']= $this->tmodel->getPengajuanPencairan($kode)->row();
         $data['detail']= $this->tmodel->getDetail($kode)->result();
         $data['title']  = 'PENGAJUAN NO'.$kode;
         $data['collapsed'] = '';

@@ -115,6 +115,17 @@ class Transaksi_model extends CI_Model
         $this->db->where('tp.kode_pengajuan',$nPermohonan);
         return $this->db->get();
     }
+    function getPengajuanPencairan($nPermohonan){
+        $this->db->select('tp.*,us.nama_user,bd.nama_bidang,nama_progress, kode_pencairan');
+        $this->db->from('tbl_pengajuan tp');
+        $this->db->join('tbl_pencairan pc','pc.id_pengajuan = tp._id');
+        $this->db->join('tbl_users us', 'us._id = tp.id_pptk','LEFT');
+        $this->db->join('tbl_bidang bd', 'bd._id = tp.id_bidang','LEFT');
+        $this->db->join('tbl_alur al', 'al.ordinal = tp.status','LEFT');
+        $this->db->join('tbl_progress prg', 'prg._id = al.id_progress','LEFT');
+        $this->db->where('tp.kode_pengajuan',$nPermohonan);
+        return $this->db->get();
+    }
     function getPengajuanEdit($nPermohonan){
         $this->db->select('pd.id_rekening, kode_rekening, nama_rekening, kode_sub, kode_kegiatan, kode_program, keterangan, satuan, harga, pr.total, pj._id as id_pengajuan, pd._id as id_pengajuan_detail, pr._id as id_pengajuan_rincian, pr.jumlah');
         $this->db->from('tbl_pengajuan_rincian pr');

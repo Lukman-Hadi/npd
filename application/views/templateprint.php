@@ -15,7 +15,6 @@
     foreach($css_files as $file) { ?>
         <link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
   <?php } ?>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
   <script src="<?= base_url() ?>/assets/admin/vendor/jquery/dist/jquery.min.js"></script>
   <script src="<?= base_url() ?>/assets/admin/js/jquery.mask.min.js"></script>
   <?php foreach($js_files as $file) { ?>

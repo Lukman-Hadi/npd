@@ -1,100 +1,134 @@
-<div class="header">
-    <h1>INI UNTUK KOP SURAT</h1>
-</div>
-<hr>
-<div class="container">
-    <div class="row">
-        <div class="col-12 text-center">
-            <h2>NOTA PENCAIRAN DANA</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 text-center">
-            <h2>INI NOMOR PENCAIRAN</h2>
-        </div>
-    </div>
-</div>
-<hr>
-<div class="col-12">
-    <div class="row">
-        <div class="col-12">Bersama Ini Kami Mengajukan Pencairan Dana</div>
-    </div>
-    <div class="row">
-        <div class="col-12">Dengan Uraian Pencairan Sebagai Berikut</div>
-    </div>
-</div>
-<hr>
-<div class="col-12">
-    <div class="row">
-        <div class="col-sm-3 col-md-3">
-            Pejabat Pelaksana Teknis Kegiatan
-        </div>
-        <div class="col-sm-9 col-md-9">
-            : <?= $permohonan->nama_user ?>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3 col-md-3">
-            Program
-        </div>
-        <div class="col-sm-9 col-md-9">
-            : <?= $detail[0]->nama_program ?>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3 col-md-3">
-            Kegiatan
-        </div>
-        <div class="col-sm-9 col-md-9">
-            : <?= $detail[0]->nama_kegiatan ?>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3 col-md-3">
-            Nomor DPA-/DPAL-/DPPA-SKPD
-        </div>
-        <div class="col-sm-9 col-md-9">
-            : no prog/kegiatan/subkegiatan
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3 col-md-3">
-            Tahun Anggaran
-        </div>
-        <div class="col-sm-9 col-md-9">
-            : <?= date('Y', strtotime($permohonan->created_at)) ?>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3 col-md-3">
-            Jumlah yang diminta
-        </div>
-        <div class="col-sm-9 col-md-9">
-        <div class="row">
-        <div class="col-12">
-        : Rp. <?= number_format($permohonan->total, 2, ',', '.') ?> 
-        </div>
-        </div>
-        <div class="row">
-        <div class="col-12">
-          (<?= terbilang($permohonan->total) ?> Rupiah)
-        </div>
-        </div>
-        </div>
-    </div>
-</div>
-
-<table class="table table-bordered align-items-center table-hover table-sm">
-    <thead class="thead-light text-center">
-        <tr>
-            <th width="1%">No</th>
-            <th width="10%">Kode Rekening</th>
-            <th>Uraian</th>
-            <th width="10%">Anggaran</th>
-            <th width="10%">Akumulasi Pencairan</th>
-            <th width="10%">Pencairan Saat Ini</th>
-            <th width="10%">Sisa</th>
-        </tr>
+<!-- kop -->
+<style>
+    .kop{
+        text-align: center;
+        font-family: 'Bookman Old Style';
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    table{
+        width: 100%;
+    }
+    .body{
+        font-family: 'Arial';
+        margin: 0 0 0 0;
+    }
+    .no{
+        width: 5%;
+        text-align: center;
+    }
+    .title{
+        width: 30%;
+    }
+    .br{
+        margin-top: 10px;
+    }
+    .text{
+        font-family: arial;
+        font-size: 10pt;
+    }
+</style>
+<table border="1">
+    <tr>
+        <td style="width: 15%;" rowspan="5"><img style="float: right;" src="<?= base_url().'assets/avatars/logoh.png' ?>" alt="" width="100px"></td>
+        <td style="width: 80%;"><h1 class="kop" style="font-size: 14pt;"><b>PEMERINTAH KABUPATEN PANDEGLANG</b></h1></td>
+        <td style="width: 5%;" rowspan="5"><img src="" alt=""></td>
+    </tr>
+    <tr>
+        <td><h2 class="kop" style="font-size: 18pt;"><b>DINAS PENANAMAN MODAL DAN PELAYANAN</b></h2></td>
+    </tr>
+    <tr>
+        <td><h2 class="kop" style="font-size: 18pt;"><b>TERPADU SATU PINTU<b></h2></td>
+    </tr>
+    <tr>
+        <td><h5 class="kop" style="font-size: 9pt;">Jl. KH. TB. Abdul Halim No. 3 Pandeglang, Kode Pos 42213, Telp/Fax : (0253) 201030</h5></td>
+    </tr>
+    <tr>
+        <td><h5 class="kop" style="font-size: 9pt;">Website : www.dpmptsp.pandeglangkab.go.id, e-mail : bpptpandeglangkab.go.id</h5></td>
+    </tr>
+</table>
+<hr style="margin: 2px 0 0 0;">
+<hr style="margin: 2px 0 0 0;">
+<hr style="margin: 2px 0 0 0;">
+<table border="1">
+    <tr>
+        <td><div class="br"></div></td>
+    </tr>
+    <tr>
+        <td><p class="body kop" style="font-size: 12pt; font-weight: bold">NOTA PENCAIRAN DANA (NPD)</p></td>
+    </tr>
+    <tr>
+        <td><p class="body kop" style="font-size: 12pt; font-weight: bold"><?= $permohonan->kode_pencairan?></p></td>
+    </tr>
+    <tr>
+        <td><div class="br"></div></td>
+    </tr>
+</table>
+<table border="1">
+    <tr>
+        <td style="text-align: left; font-size: 11pt;">Bersama Ini Kami Mengajukan Pencairan Dana</td>
+    </tr>
+    <tr>
+        <td style="text-align: left; font-size: 11pt;">Dengan Uraian Pencairan Sebagai Berikut :</td>
+    </tr>
+</table>
+<table border="1">
+    <tr>
+        <td class="no text">1</td>
+        <td class="title"><div class="text">Pejabat Pelaksana Teknis Kegiatan</div></td>
+        <td><div class="text">: <?= $permohonan->nama_user ?></div></td>
+    </tr>
+    <tr>
+        <td class="no text">2</td>
+        <td class="text">Bidang</td>
+        <td class="text">: <?= $permohonan->nama_bidang ?></td>
+    </tr>
+    <tr class="text">
+        <td class="no">3</td>
+        <td>Program</td>
+        <td>: <?= $detail[0]->nama_program ?></td>
+    </tr>
+    <tr class="text">
+        <td class="no">4</td>
+        <td>Kegiatan</td>
+        <td>: <?= $detail[0]->nama_kegiatan ?></td>
+    </tr>
+    <tr class="text">
+        <td class="no">5</td>
+        <td>Sub Kegiatan</td>
+        <td>: <?= $detail[0]->nama_sub ?></td>
+    </tr>
+    <tr class="text">
+        <td class="no">6</td>
+        <td>Tahun Anggaran</td>
+        <td>: <?= date('Y', strtotime($permohonan->created_at)) ?></td>
+    </tr>
+    <tr class="text">
+        <td class="no">7</td>
+        <td>Jumlah yang diminta</td>
+        <td>: Rp. <?= number_format($permohonan->total, 2, ',', '.') ?></td>
+    </tr>
+    <tr class="text">
+        <td class="no"></td>
+        <td colspan="2"><i>(Terbilang : <?= terbilang($permohonan->total) ?> Rupiah)</i></td>
+    </tr>
+</table>
+<table border="1">
+    <tr>
+        <td class="body kop"><h5 style="margin: 10px 10px 10px 10px;">Pembebanan Pada Kode Rekening : </h5></td>
+    </tr>
+</table>
+<table border="1" class="text" >
+    <thead>
+    <tr style="text-align: center;">
+        <th width="1%">No</th>
+        <th width="8%">Kode Rekening</th>
+        <th>Uraian</th>
+        <th width="12%">Anggaran</th>
+        <th width="12%">Akumulasi Pencairan</th>
+        <th width="12%">Pencairan Saat Ini</th>
+        <th width="12%">Sisa</th>
+    </tr>
     </thead>
     <tbody>
         <?php
@@ -105,33 +139,33 @@
         $jsisa = 0;
         foreach ($detail as $d) {
             $sisa = $d->pagu - ($d->jumlah + $d->total);
-            $pagu = number_format($d->pagu, 2, ',', '.');
-            $total = number_format($d->total, 2, ',', '.');
-            $jumlah = number_format($d->jumlah, 2, ',', '.');
-            $sisaF = number_format($sisa, 2, ',', '.');
+            $pagu = number_format($d->pagu, 0, ',', '.');
+            $total = number_format($d->total, 0, ',', '.');
+            $jumlah = number_format($d->jumlah, 0, ',', '.');
+            $sisaF = number_format($sisa, 0, ',', '.');
             echo "<tr>
-                                    <td>
-                                        $no
-                                    </td>
-                                    <td>
-                                        $d->kode_rekening
-                                    </td>
-                                    <td>
-                                        $d->nama_rekening
-                                    </td>
-                                    <td class='text-right'>
-                                        Rp. $pagu
-                                    </td>
-                                    <td class='text-right'>
-                                        Rp. $total
-                                    </td>
-                                    <td class='text-right'>
-                                        Rp. $jumlah
-                                    </td>
-                                    <td class='text-right'>
-                                        Rp. $sisaF
-                                    </td>
-                                </tr>";
+            <td>
+                $no
+            </td>
+            <td>
+                $d->kode_rekening
+            </td>
+            <td>
+                $d->nama_rekening
+            </td>
+            <td class='text-right'>
+                Rp. $pagu
+            </td>
+            <td class='text-right'>
+                Rp. $total
+            </td>
+            <td class='text-right'>
+                Rp. $jumlah
+            </td>
+            <td class='text-right'>
+                Rp. $sisaF
+            </td>
+        </tr>";
             $no++;
             $jpagu += $d->pagu;
             $jtotal += $d->total;
@@ -142,44 +176,16 @@
     </tbody>
     <tfoot>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="text-right"><b>Rp. <?= number_format($jpagu, 2, ',', '.'); ?></b></td>
-            <td class="text-right"><b>Rp. <?= number_format($jtotal, 2, ',', '.'); ?></b></td>
-            <td class="text-right"><b>Rp. <?= number_format($jjumlah, 2, ',', '.'); ?></b></td>
-            <td class="text-right"><b>Rp. <?= number_format($jsisa, 2, ',', '.'); ?></b></td>
+            <td colspan="3" style="text-align: right;">Jumlah</td>
+            <td class="text-right"><b>Rp. <?= number_format($jpagu, 0, ',', '.'); ?></b></td>
+            <td class="text-right"><b>Rp. <?= number_format($jtotal, 0, ',', '.'); ?></b></td>
+            <td class="text-right"><b>Rp. <?= number_format($jjumlah, 0, ',', '.'); ?></b></td>
+            <td class="text-right"><b>Rp. <?= number_format($jsisa, 0, ',', '.'); ?></b></td>
         </tr>
     </tfoot>
 </table>
-<table id="table" data-toolbar="#toolbar" data-toggle="table" data-url="../approve/getdetailbku/<?= $permohonan->kode_pengajuan ?>" data-pagination="false" data-single-select="true" data-search="false" data-click-to-select="true" data-group-by="true" data-group-by-field="nama_rekening" class="table table-bordered table-sm" data-show-footer="true" data-side-pagination="client">
-    <thead class="thead-light table-bordered text-center">
-        <tr>
-            <th data-field="kode_rekening" data-width="5" data-width-unit="%" data-valign="middle" rowspan="2">Kode Rekening</th>
-            <!-- <th data-field="nmRekening" data-width="5" data-width-unit="%" >Nama Rekening</th> -->
-            <th data-field="keterangan" data-width="5" data-width-unit="%" data-valign="middle" rowspan="2">Keterangan</th>
-            <th data-field="penerima" data-width="5" data-width-unit="%" data-valign="middle" rowspan="2">Penerima</th>
-            <th colspan="3">Item Detail</th>
-            <th data-field="jumlah" data-width="20" data-width-unit="%" data-formatter="formatRupiah" data-valign="middle" data-footer-formatter="footerJumlah" rowspan="2">Jumlah Pengajuan</th>
-            <th colspan="5">Pajak Detail</th>
-            <th data-field="subtotal" rowspan="2" data-formatter="formatRupiah" data-valign="middle" data-footer-formatter="footerRupiah">Jumlah Yang Diterima</th>
-            <th data-field="bukti" data-width="5" data-width-unit="%" data-valign="middle" rowspan="2" data-formatter="buktiFormatter">Bukti</th>
-        </tr>
-        <tr>
-            <th data-field="satuan" data-width="5" data-width-unit="%">Satuan</th>
-            <th data-field="harga" data-width="50" data-width-unit="%" data-formatter="formatRupiah">Harga</th>
-            <th data-field="total" data-width="50" data-width-unit="%">Total</th>
-            <th data-field="pph21" data-width="50" data-width-unit="%" data-formatter="formatRupiah">Pph 21</th>
-            <th data-field="pph22" data-width="50" data-width-unit="%" data-formatter="formatRupiah">Pph 22</th>
-            <th data-field="pph23" data-width="50" data-width-unit="%" data-formatter="formatRupiah">Pph 23</th>
-            <th data-field="pphd" data-width="50" data-width-unit="%" data-formatter="formatRupiah">Pphd</th>
-            <th data-field="ppn" data-width="50" data-width-unit="%" data-formatter="formatRupiah">Ppn</th>
-        </tr>
-    </thead>
-    <tfoot>
-        <td colspan="6">Total</td>
-        <td colspan="1"></td>
-        <td colspan="5"></td>
-        <td colspan="2"></td>
-    </tfoot>
+<table border="1" class="text">
+    <tr>
+        <td><b>Potongan-Potongan</b></td>
+    </tr>
 </table>

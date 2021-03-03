@@ -273,18 +273,46 @@ class Approve extends CI_Controller {
         $ppn            = str_replace('.','',$this->input->post('ppn'));
         $jumlah         = str_replace('.','',$this->input->post('jumlah'));
         $subtotal       = $jumlah-($pph21+$pph22+$pph23+$pphd+$ppn);
+        $buktiOld       = $this->db->get_where('tbl_pengajuan_rincian',array('_id'=>$idPengajuan))->row()->bukti;
         $bukti          = $this->uploadBukti();
-        $data = array();
-        $data = array(
-            'penerima'=>$penerima,
-            'pph21'=>$pph21,
-            'pph22'=>$pph22,
-            'pph23'=>$pph23,
-            'pphd'=>$pphd,
-            'ppn'=>$ppn,
-            'subtotal'=>$subtotal,
-            'bukti'=>$bukti['file_name']
-        );
+        $data           = array();
+        if($buktiOld != ''){
+            if($bukti['file_name']!=''){
+                $path = './assets/bukti/';
+                unlink($path.$buktiOld);
+                $data = array(
+                    'penerima'=>$penerima,
+                    'pph21'=>$pph21,
+                    'pph22'=>$pph22,
+                    'pph23'=>$pph23,
+                    'pphd'=>$pphd,
+                    'ppn'=>$ppn,
+                    'subtotal'=>$subtotal,
+                    'bukti'=>$bukti['file_name']
+                );
+            }else{
+                $data = array(
+                    'penerima'=>$penerima,
+                    'pph21'=>$pph21,
+                    'pph22'=>$pph22,
+                    'pph23'=>$pph23,
+                    'pphd'=>$pphd,
+                    'ppn'=>$ppn,
+                    'subtotal'=>$subtotal,
+                );
+            }
+        }else{
+            $data = array(
+                'penerima'=>$penerima,
+                'pph21'=>$pph21,
+                'pph22'=>$pph22,
+                'pph23'=>$pph23,
+                'pphd'=>$pphd,
+                'ppn'=>$ppn,
+                'subtotal'=>$subtotal,
+                'bukti'=>$bukti['file_name']
+            );
+        }
         $result = $this->gmodel->update('tbl_pengajuan_rincian',$data,array('_id'=>$idPengajuan));
         if($result){
             echo json_encode(array('message'=>'Add Success'));
@@ -396,7 +424,7 @@ class Approve extends CI_Controller {
     }
 
     function deleteTemp(){
-        $files = glob('./assets/temp/bukti/*');
+        $files = glob('./assets/temp/bukti /*');
         foreach($files as $file){
             if(is_file($file)){
                 unlink($file);

@@ -143,7 +143,7 @@
             <h3 class="mb-0">Detail Bku</h3>
             <div class="table-responsive py-2 px-2">
                 <div id="toolbar">
-                    <button id="Edit" class="btn btn-info btn-rounded" onclick="remove()">
+                    <button id="Edit" class="btn btn-info btn-rounded" onclick="edit()">
                         <i class="fa fa-edit"></i> Edit
                     </button>
                 </div>
@@ -203,6 +203,7 @@
         minimumFractionDigits: 0
     });
     const url = '<?= "isrekening?kode=" . $permohonan->kode_pengajuan ?>';
+    let urlForm = 
     $(document).ready(function() {
         $.fn.select2.defaults.set("theme", "bootstrap");
         $('#table1').bootstrapTable();
@@ -295,14 +296,18 @@
         calculate();
         const file = $("#fileBukti").val();
         const ext = file.split('.').pop().toLowerCase();
-        if (ext == 'pdf') {
+        if(file){
+            if (ext == 'pdf') {
+                return true;
+            } else {
+                Toast.fire({
+                    type: 'error',
+                    title: 'File Harus Pdf'
+                })
+                return false;
+            }
+        }else{
             return true;
-        } else {
-            Toast.fire({
-                type: 'error',
-                title: 'File Harus Pdf'
-            })
-            return false;
         }
     }
     $('#id_pengajuan').on('select2:closing', function(e) {
@@ -391,6 +396,32 @@
             })
         }
     }
+
+    function edit(){
+        const row = $('#table').bootstrapTable('getSelections')[0];
+        console.log('row', row);
+        $('input[name=keterangan]').val(row.keterangan);
+        $('input[name=id_pengajuan_detail]').val(row.id_pengajuan_detail);
+        $('#id_pengajuan').prop('disabled',true);
+        $('input[name=satuan]').val(row.satuan);
+        $('input[name=id_pengajuan_rincian]').val(row._id);
+        $('input[name=harga]').val(new Intl.NumberFormat('ID-id').format(row.harga));
+        $('input[name=total]').val(row.total);
+        $('input[name=jumlah]').val(new Intl.NumberFormat('ID-id').format(row.jumlah));
+        $('input[name=penerima]').prop('readonly', false);
+        $('input[name=pph21]').prop('readonly', false);
+        $('input[name=pph22]').prop('readonly', false);
+        $('input[name=pph23]').prop('readonly', false);
+        $('input[name=pphd]').prop('readonly', false);
+        $('input[name=ppn]').prop('readonly', false);
+        $('input[name=penerima]').val(row.penerima);
+        $('input[name=pph21]').val(row.pph21);
+        $('input[name=pph22]').val(row.pph22);
+        $('input[name=pph23]').val(row.pph23);
+        $('input[name=pphd]').val(row.pphd);
+        $('input[name=ppn]').val(row.ppn);
+        $('input[name=bukti]').prop('required',false);
+    } 
 
     function save(kode) {
         console.log('kode', kode)
