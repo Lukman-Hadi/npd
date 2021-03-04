@@ -4,6 +4,7 @@
 			<div class="row align-items-center py-4">
 				<div class="col-lg-6 col-7">
 					<h6 class="h2 text-white d-inline-block mb-0"><?= $title ?></h6>
+					<button class="btn btn-neutral" onclick="openMod()"> TES T</button>
 				</div>
 			</div>
 		</div>
@@ -19,27 +20,20 @@
 				<div class="card-header">
 					<h3 class="mb-0"><?= $subtitle ?></h3>
 					<p class="text-sm mb-0">
-                    <?= $description; ?>, 
+						<?= $description; ?>,
 					</p>
 				</div>
 
 				<div class="table-responsive py-2 px-4">
-					<table id="table"
-						   data-toggle="table"
-						   data-url="approve/getApprove"
-						   data-pagination="true" 
-						   data-search="true"
-						   data-click-to-select="true"
-						   class="table table-sm" 
-						   data-side-pagination="server">
+					<table id="table" data-toggle="table" data-url="approve/getApprove" data-pagination="true" data-search="true" data-click-to-select="true" class="table table-sm" data-side-pagination="server">
 						<thead class="thead-light">
 							<tr>
 								<!-- <th data-checkbox="true" data-width="1" data-width-unit="%"></th> -->
 								<th data-field="no" data-formatter="nomerFormatter" data-width="1" data-width-unit="%">No</th>
-								<th data-field="kode_pengajuan" data-sortable="true" data-width="15" data-width-unit="%" >Nomor Permohonan</th>
-								<th data-field="nama_bidang" data-sortable="true" data-width="10" data-width-unit="%" >Bidang</th>
-								<th data-field="nama_user" data-sortable="true" data-width="10" data-width-unit="%" >Diajukan Oleh</th>
-								<th data-field="nama_pptk" data-sortable="true" data-width="10" data-width-unit="%" >PPTK</th>
+								<th data-field="kode_pengajuan" data-sortable="true" data-width="15" data-width-unit="%">Nomor Permohonan</th>
+								<th data-field="nama_bidang" data-sortable="true" data-width="10" data-width-unit="%">Bidang</th>
+								<th data-field="nama_user" data-sortable="true" data-width="10" data-width-unit="%">Diajukan Oleh</th>
+								<th data-field="nama_pptk" data-sortable="true" data-width="10" data-width-unit="%">PPTK</th>
 								<th data-field="total" data-width="15" data-width-unit="%" data-formatter="formatRupiah">Total Permintaan</th>
 								<th data-field="nama_progress" data-width="5" data-width-unit="%">Status</th>
 								<th data-field="status" data-width="10" data-width-unit="%" data-formatter="statusFormatter">Action</th>
@@ -99,64 +93,118 @@
 		</div>
 	</div>
 </div>
+<div class="modal fade" id="modal-form-timeline" role="dialog" aria-labelledby="modal-form" aria-hidden="true" data-focus="false">
+	<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+		<div class="modal-content">
+			<div class="modal-body p-0">
+				<div class="card">
+					<div class="card-header bg-transparent">
+						<h5 class="mb-0">Riwayat Pengajuan</h5>
+					</div>
+					<div class="card-body">
+						<div class="timeline timeline-one-side" data-timeline-content="axis" data-timeline-axis-style="dashed">
+							<div class="timeline-block mt-0 mb-0">
+								<span class="timeline-step badge-success">
+									<i class="ni ni-bell-55"></i>
+								</span>
+								<div class="timeline-content">
+									<small class="text-muted font-weight-bold">Tanggal</small>
+									<h5 class=" mt-1 mb-0">Di ACCC  OLEH</h5>
+									<p class=" text-sm mt-0 mb-0">Catatan</p>
+								</div>
+							</div>
+							<div class="timeline-block mt-0 mb-0">
+								<span class="timeline-step badge-danger">
+									<i class="ni ni-bell-55"></i>
+								</span>
+								<div class="timeline-content">
+									<small class="text-muted font-weight-bold">Tanggal</small>
+									<h5 class=" mt-1 mb-0">Di REJ  OLEH</h5>
+									<p class=" text-sm mt-0 mb-0">Catatan</p>
+								</div>
+							</div>
+							<div class="timeline-block mt-0 mb-0">
+								<span class="timeline-step badge-info">
+									<i class="ni ni-bell-55"></i>
+								</span>
+								<div class="timeline-content">
+									<small class="text-muted font-weight-bold">Tanggal</small>
+									<h5 class=" mt-1 mb-0">Input BKU  OLEH</h5>
+									<p class=" text-sm mt-0 mb-0">Catatan</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <script>
-	function approve(id){
+function openMod(){
+	$('#modal-form-timeline').modal('toggle');
+}
+	function approve(id) {
 		$('#modal-form').modal('toggle');
 		$('#ff').trigger("reset");
 		$('#id_pengajuan').val(id);
-		url='approve/approve';
+		url = 'approve/approve';
 	}
-	function reject(id){
+
+	function reject(id) {
 		$('#modal-form').modal('toggle');
 		$('#ff').trigger("reset");
 		$('#id_pengajuan').val(id);
-		url='approve/reject';
+		url = 'approve/reject';
 	}
-	$('#ff').on('submit', function (e) {
-	e.preventDefault();
-	const string = $('#ff').serialize();
+	$('#ff').on('submit', function(e) {
+		e.preventDefault();
+		const string = $('#ff').serialize();
 		$.ajax({
 			type: "POST",
 			url: url,
 			data: string,
-			success: (result)=>{
-				var result = eval('('+result+')');
+			success: (result) => {
+				var result = eval('(' + result + ')');
 				console.log('result', result)
-				if (result.errorMsg){
+				if (result.errorMsg) {
 					Toast.fire({
-					type: 'error',
-					title: ''+result.errorMsg+'.'
+						type: 'error',
+						title: '' + result.errorMsg + '.'
 					})
-				}else if(result.openMsg){
+				} else if (result.openMsg) {
 					console.log('testttttt');
-					$('#modal-form').modal('toggle');	
-					$('#modal-form-acc').modal('toggle');	
-				}else {
+					$('#modal-form').modal('toggle');
+					$('#modal-form-acc').modal('toggle');
+				} else {
 					Toast.fire({
-					type: 'success',
-					title: ''+result.message+'.'
+						type: 'success',
+						title: '' + result.message + '.'
 					})
-					$('#modal-form').modal('toggle');		// close the dialog
+					$('#modal-form').modal('toggle'); // close the dialog
 					$('#table').bootstrapTable('refresh');
 				}
 			},
 		})
 	})
-    const uang = new Intl.NumberFormat('ID-id', {
-        style: 'currency',
-        currency: 'IDR'
-    });
-    function nomerFormatter(value, row, i) {
-		return i+1;
+	const uang = new Intl.NumberFormat('ID-id', {
+		style: 'currency',
+		currency: 'IDR'
+	});
+
+	function nomerFormatter(value, row, i) {
+		return i + 1;
 	}
-    function formatRupiah(val, row){
-        // let num = row.jumlah
-        // let numFor = 'Rp ' + num.replace(/(\d)(?=(\d{3})+(?:\.\d+)?$)/g, "$1.");
-	    return uang.format(row.total);
-    };
-    function statusFormatter(val, row){
+
+	function formatRupiah(val, row) {
+		// let num = row.jumlah
+		// let numFor = 'Rp ' + num.replace(/(\d)(?=(\d{3})+(?:\.\d+)?$)/g, "$1.");
+		return uang.format(row.total);
+	};
+
+	function statusFormatter(val, row) {
 		console.log('row', row)
-		if(row.kunci ==1){
+		if (row.kunci == 1) {
 			return `
 			<div class="col-12 p-0 text-center">
 			<div class="row d-flex justify-content-around">
@@ -164,7 +212,7 @@
 				<button class="btn btn-outline-primary btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" title="Track Pengajuan"><span class="btn-inner--icon"><i class="fa fa-poll"></i></span></button>
 			</div>
 			</div>`
-		}else if(row.kunci == 0 ){
+		} else if (row.kunci == 0) {
 			return `
 			<div class="col-12 p-0 text-center">
 			<div class="row d-flex justify-content-around">
@@ -173,7 +221,7 @@
 				<button class="btn btn-outline-primary btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" title="Track Pengajuan"><span class="btn-inner--icon"><i class="fa fa-poll"></i></span></button>
 			</div>
 			</div>`
-		}else{
+		} else {
 			return `
 			<div class="col-12 p-0 text-center">
 			<div class="row d-flex justify-content-around">
@@ -185,45 +233,49 @@
 			</div>`
 		}
 	}
-	function detail(n){
-		window.location.replace("approve/detail/"+n);
+
+	function detail(n) {
+		window.location.replace("approve/detail/" + n);
 	}
-	function bku(id){
-		window.location.replace("approve/bku?id="+id);
+
+	function bku(id) {
+		window.location.replace("approve/bku?id=" + id);
 	}
-	function edit(id){
-		window.location.replace("transaksi/edit?id="+id);
+
+	function edit(id) {
+		window.location.replace("transaksi/edit?id=" + id);
 	}
-	function destroy(id, kodePengajuan){
+
+	function destroy(id, kodePengajuan) {
 		const data = {
 			id,
 			kodePengajuan
 		}
 		console.log('data', data)
 		Swal.fire({
-            title: 'Are you sure?',
-            text: "You won't be able to revert this!",
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, Delete!'
-        }).then((result) => {
-            if (result.value) {
-                $.post('transaksi/destroypengajuanmaster',data,function(result) {
-                    if (result.errorMsg) {
-                        Toast.fire({
-                            type: 'error',
-                            title: '' + result.errorMsg + '.'
-                        })
-                    } else {
-                        Toast.fire({
-                            type: 'success',
-                            title: '' + result.message + '.'
-                        })
-                        $('#table').bootstrapTable('refresh');
-                    }
-                }, 'json');
-            }
-        })
+			title: 'Are you sure?',
+			text: "You won't be able to revert this!",
+			showCancelButton: true,
+			confirmButtonColor: '#3085d6',
+			cancelButtonColor: '#d33',
+			confirmButtonText: 'Yes, Delete!'
+		}).then((result) => {
+			if (result.value) {
+				$.post('transaksi/destroypengajuanmaster', data, function(result) {
+					if (result.errorMsg) {
+						Toast.fire({
+							type: 'error',
+							title: '' + result.errorMsg + '.'
+						})
+					} else {
+						Toast.fire({
+							type: 'success',
+							title: '' + result.message + '.'
+						})
+						$('#table').bootstrapTable('refresh');
+					}
+				}, 'json');
+			}
+		})
 	}
 </script>

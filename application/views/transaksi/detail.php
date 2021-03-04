@@ -37,6 +37,14 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-3 col-md-3">
+                            PPTK
+                        </div>
+                        <div class="col-sm-9 col-md-9">
+                            : <?= $permohonan->nama_pptk ?>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 col-md-3">
                             Bidang
                         </div>
                         <div class="col-sm-9 col-md-9">

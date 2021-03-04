@@ -49,10 +49,12 @@ class Kegiatan extends CI_Controller {
 
     function update(){
         $kode = $this->input->post('kode_kegiatan', TRUE);
+        $id_program = $this->input->post('id_program', TRUE);
         $nama = $this->input->post('nama_kegiatan', TRUE);
         $data = array();
         $data = array(
             'kode_kegiatan' => $kode,
+            'id_program' => $id_program,
             'nama_kegiatan' => $nama
         );
         $where = array('_id'=>$this->input->get('id'));

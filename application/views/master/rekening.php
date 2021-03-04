@@ -59,7 +59,7 @@
 								<th data-field="kode_sub" data-sortable="true" data-width="5" data-width-unit="%" >Kode Sub Kegiatan</th>
 								<th data-field="kode_rekening" data-sortable="true" data-width="5" data-width-unit="%" >Kode Rekening Kegiatan</th>
 								<th data-field="nama_rekening" data-width="50" data-width-unit="%" >Nama Rekening Kegiatan</th>
-								<th data-field="pagu" data-width="20" data-width-unit="%" data-formatter="formatRupiah">Pagu Kegiatan</th>
+								<th data-field="pagu" data-width="20" data-width-unit="%" data-sortable="true" data-formatter="formatRupiah">Pagu Kegiatan</th>
 								<th data-field="status" data-width="10" data-width-unit="%" data-formatter="statusFormatter">Status</th>
 							</tr>
 						</thead>
@@ -118,6 +118,7 @@
 		$.fn.select2.defaults.set( "theme", "bootstrap" );
         $('#table').bootstrapTable();
         $('#pagu').mask('000.000.000.000.000', {reverse: true});
+		fetchProgram();
     })
     function onChng(){
         console.log($('#pagu').val());
@@ -198,10 +199,18 @@
 	}
 	function editForm(){
 		var row = $("#table").bootstrapTable('getSelections')[0];
-		console.log('row', row)
+		console.log('row', row);
+
 		if (row){
 			$('#modal-form').modal('toggle');
-			$('textarea[name=nama_kegiatan]').val(row.nama_kegiatan);
+			$('#kd_program').val(row.id_program).trigger('change.select2');
+			fetchKegiatan(row.id_program);
+			$('#kd_kegiatan').val(row.id_kegiatan).trigger('change.select2');
+			fetchSub(row.id_kegiatan);
+			$('#kd_sub').val(row.id_sub).trigger('change.select2');
+			$('input[name=pagu]').val(new Intl.NumberFormat('id-ID').format(row.pagu))
+			$('input[name=kode_rekening]').val(row.kode_rekening);
+			$('textarea[name=nama_rekening]').val(row.nama_rekening);
 			url = 'rekening/update?id='+row._id;
 		}
 	}
@@ -209,6 +218,8 @@
 		$('#modal-form').modal('toggle');
 		$('#ff').trigger("reset");
 		url = 'rekening/save';
+	}
+	function fetchProgram(){
 		$.ajax({
 			url: 'kegiatan/isprogram',
 			type: 'get',
@@ -224,33 +235,27 @@
 				});
 			}
         });
-        $('#kd_program').on('select2:closing', function (e) {
-            $('#kd_kegiatan').empty().trigger("change");
-            // let id = e.params.originalSelect2Event.data.id;
-            let id = $('#kd_program').val();
-            console.log('id', id)
-            $.ajax({
+	}
+	function fetchKegiatan(id){
+		$.ajax({
 			url: `subkegiatan/iskegiatan?id=${id}`,
 			type: 'get',
 			dataType: 'json',
 			success: function (data){
 				let res = data.map((d)=>{
 					return {id:d._id,text:`(${d.kode_kegiatan}) - ${d.nama_kegiatan}`}
-                })
-                console.log('res', res);
+				})
+				console.log('res', res);
 				$('#kd_kegiatan').select2({
 					placeholder: "Pilih Kode Kegiatan",
 					allowClear: false,
-					data: res
-				})}
-            });
-         });
-        $('#kd_kegiatan').on('select2:closing', function (e) {
-            $('#kd_sub').empty().trigger("change");
-            // let id = e.params.originalSelect2Event.data.id;
-            let id = $('#kd_kegiatan').val();
-            console.log('id', id)
-            $.ajax({
+					data: [{id:'', text:''},...res]
+				})
+			}
+		});
+	}
+	function fetchSub(id){
+		$.ajax({
 			url: `rekening/issub?id=${id}`,
 			type: 'get',
 			dataType: 'json',
@@ -262,12 +267,22 @@
 				$('#kd_sub').select2({
 					placeholder: "Pilih Kode Sub Kegiatan",
 					allowClear: false,
-					data: res
+					data: [{id:'', text:''},...res]
 				});
                 }
             })
-        });
-    }
+	}
+		
+	$('#kd_program').on('select2:closing', function (e) {
+		$('#kd_kegiatan').empty().trigger("change");
+		let id = $('#kd_program').val();
+		fetchKegiatan(id);
+	});
+	$('#kd_kegiatan').on('select2:closing', function (e) {
+		$('#kd_sub').empty().trigger("change");
+		let id = $('#kd_kegiatan').val();
+		fetchSub(id);
+	});
 	$('#ff').on('submit', function (e) {
 	e.preventDefault();
 	const string = $('#ff').serialize();

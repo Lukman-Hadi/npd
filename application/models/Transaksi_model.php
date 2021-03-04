@@ -106,7 +106,7 @@ class Transaksi_model extends CI_Model
         return $this->db->get();
     }
     function getPengajuan($nPermohonan){
-        $this->db->select('tp.*,us.nama_user,bd.nama_bidang,nama_progress');
+        $this->db->select('tp.*,us.nama_user,bd.nama_bidang,nama_progress, (SELECT nama_user from tbl_users where _id = tp.id_pptk) as nama_pptk');
         $this->db->from('tbl_pengajuan tp');
         $this->db->join('tbl_users us', 'us._id = tp.id_user','LEFT');
         $this->db->join('tbl_bidang bd', 'bd._id = tp.id_bidang','LEFT');

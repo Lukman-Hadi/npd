@@ -48,6 +48,7 @@
 						   data-pagination="true" 
 						   data-search="true"
 						   data-click-to-select="true"
+						   data-single-select="true"
 						   class="table table-sm" 
 						   data-side-pagination="server">
 						<thead class="thead-light">
@@ -86,7 +87,7 @@
 							</div>
 							<div class="form-group">
 								<label>Nama Bidang</label>
-								<select id="bidang" name="id_bidang" class="form-control select2-single" required><option></option></select>
+								<select id="bidang" name="id_bidang" class="form-control select2-single" required></select>
 							</div>
 							<div class="form-group">
 								<label>Nama Program</label>
@@ -105,6 +106,7 @@
 <script>
 	$(document).ready(function(){
 		$.fn.select2.defaults.set( "theme", "bootstrap" );
+		fetchData();
 		// $('#table').bootstrapTable();
 	})
 	function nomerFormatter(value, row, i) {
@@ -186,18 +188,22 @@
 	}
 	function editForm(){
 		var row = $("#table").bootstrapTable('getSelections')[0];
-		console.log('row', row)
+		console.log('row', row);
+		fetchData();
 		if (row){
 			$('#modal-form').modal('toggle');
 			$('input[name=kode_program]').val(row.kode_program);
+			$('#bidang').val(row.id_bidang).trigger('change.select2');
 			$('textarea[name=nama_program]').val(row.nama_program);
 			url = 'program/update?id='+row._id;
 		}
 	}
 	function newForm(){
 		$('#modal-form').modal('toggle');
-		$('#ff').trigger("reset");
+		$('#ff').reset();
 		url = 'program/save';
+	}
+	function fetchData(){
 		$.ajax({
 			url: 'bidang/isbidang',
 			type: 'get',
@@ -209,7 +215,7 @@
 				$('#bidang').select2({
 					placeholder: "Pilih Bidang",
 					allowClear: false,
-					data: res
+					data: [{id:'',text:''},...res]
 				});
 			}
 		});

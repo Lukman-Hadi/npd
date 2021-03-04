@@ -47,11 +47,12 @@
 						   data-pagination="true"
 						   data-search="true"
 						   data-click-to-select="true"
+						   data-single-select="true"
 						   class="table table-sm"
 						   data-side-pagination="server">
 						<thead class="thead-light">
 							<tr>
-								<th data-checkbox="true"></th>
+								<th data-radio="true"></th>
 								<!-- <th data-field="no" data-formatter="nomerFormatter" data-width="5" data-width-unit="%">No</th> -->
 								<th data-field="kode_program" data-sortable="true" data-width="10" data-width-unit="%" >Kode Program</th>
 								<th data-field="kode_kegiatan" data-sortable="true" data-width="10" data-width-unit="%" >Kode kegiatan</th>
@@ -182,10 +183,12 @@
 	}
 	function editForm(){
 		var row = $("#table").bootstrapTable('getSelections')[0];
-		console.log('row', row)
+		console.log('row', row);
+		fetchData();
 		if (row){
 			$('#modal-form').modal('toggle');
 			$('input[name=kode_kegiatan]').val(row.kode_kegiatan);
+			$('#kd_program').val(row.id_program).trigger('change.select2');
 			$('textarea[name=nama_kegiatan]').val(row.nama_kegiatan);
 			url = 'kegiatan/update?id='+row._id;
 		}
@@ -194,6 +197,9 @@
 		$('#modal-form').modal('toggle');
 		$('#ff').trigger("reset");
 		url = 'kegiatan/save';
+		fetchData();
+	}
+	function fetchData(){
 		$.ajax({
 			url: 'kegiatan/isprogram',
 			type: 'get',

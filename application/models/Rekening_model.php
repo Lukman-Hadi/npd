@@ -25,7 +25,7 @@ class Rekening_model extends CI_Model
         if($this->input->get('search')){
             $this->db->group_start();
             $this->db->like('r.kode_rekening',$search,'both');
-            $this->db->or_like('s.nama_rekening',$search,'both');
+            $this->db->or_like('r.nama_rekening',$search,'both');
             $this->db->or_like('s.kode_sub',$search,'both');
             $this->db->or_like('k.kode_kegiatan',$search,'both');
             $this->db->or_like('p.kode_program',$search,'both');
@@ -41,7 +41,7 @@ class Rekening_model extends CI_Model
         if($this->input->get('search')){
             $this->db->group_start();
             $this->db->like('r.kode_rekening',$search,'both');
-            $this->db->or_like('s.nama_rekening',$search,'both');
+            $this->db->or_like('r.nama_rekening',$search,'both');
             $this->db->or_like('s.kode_sub',$search,'both');
             $this->db->or_like('k.kode_kegiatan',$search,'both');
             $this->db->or_like('p.kode_program',$search,'both');

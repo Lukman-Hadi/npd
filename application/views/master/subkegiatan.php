@@ -48,6 +48,7 @@
 						   data-pagination="true"
 						   data-search="true"
 						   data-click-to-select="true"
+						   data-single-select="true"
 						   class="table "
 						   data-side-pagination="server">
 						<thead class="thead-light">
@@ -55,7 +56,7 @@
 								<th data-checkbox="true"></th>
 								<!-- <th data-field="no" data-formatter="nomerFormatter" data-width="5" data-width-unit="%">No</th> -->
 								<th data-field="kode_program" data-sortable="true" data-width="10" data-width-unit="%" >Kode Program</th>
-								<th data-field="kode_program" data-sortable="true" data-width="10" data-width-unit="%" >Kode Kegiatan</th>
+								<th data-field="kode_kegiatan" data-sortable="true" data-width="10" data-width-unit="%" >Kode Kegiatan</th>
 								<th data-field="kode_sub" data-sortable="true" data-width="10" data-width-unit="%" >Kode Sub Kegiatan</th>
 								<th data-field="nama_sub" data-width="50" data-width-unit="%" >Nama Sub Kegiatan</th>
 								<th data-field="total" data-width="10" data-width-unit="%" data-formatter="formatRupiah">Total Pagu</th>
@@ -113,7 +114,6 @@
 		return i+1;
 	}
 	function formatRupiah(val, row){
-		console.log('row', row)
 		if(row.total){
 			let num = 'Rp ' + (row.total).replace(/(\d)(?=(\d{3})+(?:\.\d+)?$)/g, "$1.");
 			return num;
@@ -137,7 +137,6 @@
 				}).then((result) => {
 				if (result.value) {
 					let data = row.map(r=>r._id);
-					console.log('data', data)
 					$.post('subkegiatan/delete',{id:data},function(result){
 						if (result.errorMsg){
 							Toast.fire({
@@ -158,7 +157,6 @@
 	}
 	function aktif(){
         let row = $("#table").bootstrapTable('getSelections')[0];
-        console.log('row', row)
 		if(row){
 			Swal.fire({
 				title: 'Are you sure?',
@@ -189,18 +187,28 @@
 	}
 	function editForm(){
 		var row = $("#table").bootstrapTable('getSelections')[0];
-		console.log('row', row)
+		fetchData();
 		if (row){
 			$('#modal-form').modal('toggle');
-			$('input[name=kode_kegiatan]').val(row.kode_kegiatan);
-			$('textarea[name=nama_kegiatan]').val(row.nama_kegiatan);
+			$('#kd_program').val(row.id_program).trigger('change.select2');
+			fetchKegiatan(row.id_program);
+			$('#kd_kegiatan').val(row.id_kegiatan).trigger('change.select2');
+			$('input[name=kode_sub]').val(row.kode_sub);
+			$('textarea[name=nama_sub]').val(row.nama_sub);
 			url = 'subkegiatan/update?id='+row._id;
 		}
 	}
+	$('#modal-form').on('hidden.bs.modal',function(){
+		$('#ff').trigger("reset");
+		$('#ff').trigger("clear");
+	})
 	function newForm(){
 		$('#modal-form').modal('toggle');
 		$('#ff').trigger("reset");
 		url = 'subkegiatan/save';
+		fetchData();
+	}
+	function fetchData(){
 		$.ajax({
 			url: 'kegiatan/isprogram',
 			type: 'get',
@@ -216,12 +224,9 @@
 				});
 			}
         });
-        $('#kd_program').on('change', function (e) {
-            $('#kd_kegiatan').empty().trigger("change");
-            // let id = e.params.originalSelect2Event.data.id;
-            let id = $('#kd_program').val();
-            console.log('id', id)
-            $.ajax({
+	}
+	function fetchKegiatan(id){
+		$.ajax({
 			url: `subkegiatan/iskegiatan?id=${id}`,
 			type: 'get',
 			dataType: 'json',
@@ -229,25 +234,28 @@
 				let res = data.map((d)=>{
 					return {id:d._id,text:`(${d.kode_kegiatan}) - ${d.nama_kegiatan}`}
                 })
-                console.log('res', res);
 				$('#kd_kegiatan').select2({
 					placeholder: "Pilih Kode Kegiatan",
 					allowClear: false,
-					data: res
+					data: [{id:'',text:''},...res]
 				});
 			}
         });
-        });
 	}
+	$('#kd_program').on('change', function (e) {
+		$('#kd_kegiatan').empty().trigger("change");
+		let id = $('#kd_program').val();
+		fetchKegiatan(id);
+	});
+
 	$('#ff').on('submit', function (e) {
-	e.preventDefault();
-	const string = $('#ff').serialize();
+		e.preventDefault();
+		const string = $('#ff').serialize();
 		$.ajax({
 			type: "POST",
 			url: url,
 			data: string,
 			success: (result)=>{
-				console.log('result', result)
 				var result = eval('('+result+')');
 				if (result.errorMsg){
 					Toast.fire({
