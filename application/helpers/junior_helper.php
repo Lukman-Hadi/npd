@@ -156,6 +156,30 @@ function pptkCheck(){
         return false;
     }
 }
+function getJabatan($nama){
+    $ci = get_instance();
+    $bidang = $ci->db->get_where('tbl_jabatan',array('nama_jabatan'=>$nama))->row();
+    return $bidang->_id;
+}
+function kepalaBidang($id){
+    $ci = get_instance();
+    $jabatan = getJabatan('Kepala Bidang');
+    $ci->db->select('uname, nama_user');
+    $ci->db->from('tbl_users');
+    $ci->db->where('id_jabatan',$jabatan);
+    $ci->db->where('id_bidang',$id);
+    return $ci->db->get()->row();
+}
+function kepalaDinas(){
+    $ci = get_instance();
+    $jabatan = getJabatan('Kepala Dinas');
+    return $ci->db->get_where('tbl_users',array('id_jabatan'=>$jabatan))->row();
+}
+function auditor(){
+    $ci = get_instance();
+    $jabatan = getJabatan('Auditor');
+    return $ci->db->get_where('tbl_users',array('id_jabatan'=>$jabatan))->row();
+}
 
 function superCheck(){
     $can = privilegeCheck();

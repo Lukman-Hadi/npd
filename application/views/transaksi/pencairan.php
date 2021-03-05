@@ -37,6 +37,7 @@
 								<th data-field="kode_pencairan" data-width="10" data-width-unit="%" >No Pencairan</th>
 								<th data-field="kode_pengajuan" data-width="10" data-width-unit="%" >No Pengajuan</th>
 								<th data-field="nama_user" data-sortable="true" >Diajukan Oleh</th>
+								<th data-field="nama_pptk" data-sortable="true" >PPTK</th>
 								<th data-field="nama_bidang" data-sortable="true" data-width="10" data-width-unit="%" >Bidang</th>
 								<th data-field="total" data-width="15" data-width-unit="%" data-formatter="rupiahFormatter" >Total yang Diminta</th>
 								<th data-field="tgl_pengajuan" data-width="5" data-width-unit="%" data-formatter="tglFormatter">Diajukan Tanggal</th>

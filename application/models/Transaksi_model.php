@@ -83,6 +83,13 @@ class Transaksi_model extends CI_Model
         $this->db->where('pc.id_pengajuan',$id);
         return $this->db->get();
     }
+    function getRincian($kode){
+        $this->db->select('tpr.*');
+        $this->db->from('tbl_pengajuan_rincian tpr');
+        $this->db->join('tbl_pengajuan_detail pd','pd._id = tpr.id_pengajuan_detail');
+        $this->db->where('pd.kode_pengajuan',$kode);
+        return $this->db->get();
+    }
     function getDetailNew($nPermohonan){
         $this->db->select('kode_rekening, kode_program, kode_sub, kode_kegiatan, nama_rekening, keterangan, satuan, harga, total, pr.jumlah');
         $this->db->from('tbl_pengajuan_detail pd');
@@ -116,10 +123,10 @@ class Transaksi_model extends CI_Model
         return $this->db->get();
     }
     function getPengajuanPencairan($nPermohonan){
-        $this->db->select('tp.*,us.nama_user,bd.nama_bidang,nama_progress, kode_pencairan');
+        $this->db->select('tp.*,us.uname as uname_user, us.nama_user,bd.nama_bidang,nama_progress, kode_pencairan, tgl_pencairan, (SELECT nama_user from tbl_users where _id = tp.id_pptk) as nama_pptk, (SELECT uname from tbl_users where _id = tp.id_pptk) as uname_pptk');
         $this->db->from('tbl_pengajuan tp');
         $this->db->join('tbl_pencairan pc','pc.id_pengajuan = tp._id');
-        $this->db->join('tbl_users us', 'us._id = tp.id_pptk','LEFT');
+        $this->db->join('tbl_users us', 'us._id = tp.id_user','LEFT');
         $this->db->join('tbl_bidang bd', 'bd._id = tp.id_bidang','LEFT');
         $this->db->join('tbl_alur al', 'al.ordinal = tp.status','LEFT');
         $this->db->join('tbl_progress prg', 'prg._id = al.id_progress','LEFT');
@@ -152,7 +159,7 @@ class Transaksi_model extends CI_Model
         $sort = $this->input->get('sort')!=null ? strval($this->input->get('sort')) : 'pr._id';
         $order = $this->input->get('order')!=null ? strval($this->input->get('order')) : 'DESC';
         $search = $this->input->get('search')!=null ? strval($this->input->get('search')) : '';
-        $this->db->select('pr.*, nama_user, nama_bidang, pg.nama_progress as status, pj.created_at as tgl_pengajuan');
+        $this->db->select('pr.*, nama_user, nama_bidang, pg.nama_progress as status, pj.created_at as tgl_pengajuan, (SELECT nama_user FROM tbl_users WHERE _id = pj.id_pptk) as nama_pptk');
         $this->db->from('tbl_pencairan pr');
         $this->db->join('tbl_pengajuan pj','pj._id = pr.id_pengajuan');
         $this->db->join('tbl_users u','u._id = pj.id_user');
@@ -168,7 +175,7 @@ class Transaksi_model extends CI_Model
             $this->db->group_end();
         }
         $result['total'] = $this->db->get()->num_rows();
-        $this->db->select('pr.*, nama_user, nama_bidang, pg.nama_progress as status, pj.created_at as tgl_pengajuan');
+        $this->db->select('pr.*, nama_user, nama_bidang, pg.nama_progress as status, pj.created_at as tgl_pengajuan, (SELECT nama_user FROM tbl_users WHERE _id = pj.id_pptk) as nama_pptk');
         $this->db->from('tbl_pencairan pr');
         $this->db->join('tbl_pengajuan pj','pj._id = pr.id_pengajuan');
         $this->db->join('tbl_users u','u._id = pj.id_user');
