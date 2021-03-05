@@ -349,3 +349,8 @@ foreach ($rincian as $r) {
         </tbody>
     </table>
 </div>
+<script>
+   $(document).ready(function(){
+       window.print();
+   })
+</script>
