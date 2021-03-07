@@ -450,11 +450,6 @@ class Transaksi extends CI_Controller {
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.js';
         $this->template->load('templateprint','print/detail',$data);
-    //     $this->load->library('pdfgenerator');
-    //     $paper = 'F4';
-    //     $file_pdf = 'TEST';
-    //     $orientation = "potrait";
-    //     $this->pdfgenerator->generate($this->load->view('print/detail',$data), $file_pdf, $paper, $orientation);
     }
 
     function edit(){

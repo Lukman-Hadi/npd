@@ -1,19 +1,19 @@
 <?php
-
+function ci(){
+    return get_instance();
+}
 function getInfo($field)
 {
-    $ci = get_instance();
-    $ci->db->where('id_perusahaan', 1);
-    $rs = $ci->db->get('tbl_perusahaan')->row_array();
+    ci()->db->where('id_perusahaan', 1);
+    $rs = ci()->db->get('tbl_perusahaan')->row_array();
     return $rs[$field];
 }
 function nomorPengajuan($idSub,$bidang){
     //P-bidang-nmkeg/no/bulan/tahun
-    $ci = get_instance();
     $prefixx = 'P';
-    $bidang = $ci->db->get_where('tbl_bidang',array('_id'=>$bidang))->row();
-    $sub = $ci->db->get_where('tbl_sub_kegiatan',array('_id'=>$idSub))->row();
-    $kode = $ci->db->get('tbl_pengajuan',array('id_bidang'=>$bidang->_id))->num_rows();
+    $bidang = ci()->db->get_where('tbl_bidang',array('_id'=>$bidang))->row();
+    $sub = ci()->db->get_where('tbl_sub_kegiatan',array('_id'=>$idSub))->row();
+    $kode = ci()->db->get('tbl_pengajuan',array('id_bidang'=>$bidang->_id))->num_rows();
     $bulan  = date('m');
     $tahun  = date('Y');
     $no = $prefixx.'-'.$bidang->alias.'-'.singkat($sub->nama_sub).'/'.($kode+1).'/'.$bulan.'/'.$tahun;
@@ -100,8 +100,7 @@ function terbilang($angka)
 
 function is_login()
 {
-    $ci = get_instance();
-    if (!$ci->session->userdata('_id')) {
+    if (!ci()->session->userdata('_id')) {
         return false;
     } else {
         return true;
@@ -118,38 +117,34 @@ function alert($class, $title, $description)
 // untuk chek akses level pada modul peberian akses
 function checked_akses($id_user_level, $id_menu)
 {
-    $ci = get_instance();
-    $ci->db->where('id_jabatan', $id_user_level);
-    $ci->db->where('id_menu', $id_menu);
-    $data = $ci->db->get('tbl_levels');
+    ci()->db->where('id_jabatan', $id_user_level);
+    ci()->db->where('id_menu', $id_menu);
+    $data = ci()->db->get('tbl_levels');
     if ($data->num_rows() > 0) {
         return "checked='checked'";
     }
 }
 function checked_privilege($idJabatan, $idProgress)
 {
-    $ci = get_instance();
-    $ci->db->where('id_jabatan', $idJabatan);
-    $ci->db->where('id_progress', $idProgress);
-    $data = $ci->db->get('tbl_privilege');
+    ci()->db->where('id_jabatan', $idJabatan);
+    ci()->db->where('id_progress', $idProgress);
+    $data = ci()->db->get('tbl_privilege');
     if ($data->num_rows() > 0) {
         return "checked='checked'";
     }
 }
 function privilegeCheck()
 {
-    $ci = get_instance();
-    $ci->db->select('pr._id,nama_progress');
-    $ci->db->from('tbl_privilege p');
-    $ci->db->join('tbl_progress pr', 'pr._id = p.id_progress');
-    $ci->db->where('p.id_jabatan', $ci->session->userdata('id_jabatan'));
-    return $ci->db->get()->result();
+    ci()->db->select('pr._id,nama_progress');
+    ci()->db->from('tbl_privilege p');
+    ci()->db->join('tbl_progress pr', 'pr._id = p.id_progress');
+    ci()->db->where('p.id_jabatan', ci()->session->userdata('id_jabatan'));
+    return ci()->db->get()->result();
 }
 
 function pptkCheck(){
-    $ci = get_instance();
-    $jab = $ci->session->id_jabatan;
-    $res = $ci->db->get_where('tbl_jabatan',array('nama_jabatan'=>'PPTK'))->row();
+    $jab = ci()->session->id_jabatan;
+    $res = ci()->db->get_where('tbl_jabatan',array('nama_jabatan'=>'PPTK'))->row();
     if($res->_id == $jab){
         return true;
     }else{
@@ -157,28 +152,24 @@ function pptkCheck(){
     }
 }
 function getJabatan($nama){
-    $ci = get_instance();
-    $bidang = $ci->db->get_where('tbl_jabatan',array('nama_jabatan'=>$nama))->row();
+    $bidang = ci()->db->get_where('tbl_jabatan',array('nama_jabatan'=>$nama))->row();
     return $bidang->_id;
 }
 function kepalaBidang($id){
-    $ci = get_instance();
     $jabatan = getJabatan('Kepala Bidang');
-    $ci->db->select('uname, nama_user');
-    $ci->db->from('tbl_users');
-    $ci->db->where('id_jabatan',$jabatan);
-    $ci->db->where('id_bidang',$id);
-    return $ci->db->get()->row();
+    ci()->db->select('uname, nama_user');
+    ci()->db->from('tbl_users');
+    ci()->db->where('id_jabatan',$jabatan);
+    ci()->db->where('id_bidang',$id);
+    return ci()->db->get()->row();
 }
 function kepalaDinas(){
-    $ci = get_instance();
     $jabatan = getJabatan('Kepala Dinas');
-    return $ci->db->get_where('tbl_users',array('id_jabatan'=>$jabatan))->row();
+    return ci()->db->get_where('tbl_users',array('id_jabatan'=>$jabatan))->row();
 }
 function auditor(){
-    $ci = get_instance();
     $jabatan = getJabatan('Auditor');
-    return $ci->db->get_where('tbl_users',array('id_jabatan'=>$jabatan))->row();
+    return ci()->db->get_where('tbl_users',array('id_jabatan'=>$jabatan))->row();
 }
 
 function superCheck(){
@@ -193,19 +184,18 @@ function superCheck(){
     }
 }
 function canApproveCheck(){
-    $ci = get_instance();
-    $ci->load->model('Approve_model','amodel');
+    ci()->load->model('Approve_model','amodel');
     $can = privilegeCheck();
     $userCan = array();
     foreach($can as $c){
         $userCan[] = $c->_id;
     }
-    $canApprove = $ci->amodel->canApproveCheckM($userCan);
+    $canApprove = ci()->amodel->canApproveCheckM($userCan);
     $userCanOrdinal = array();
     foreach($canApprove as $approve){
         $userCanOrdinal[] = $approve->ordinal-1;
     }
-    // $test = $ci->amodel->getProgress($userCanOrdinal);
+    // $test = ci()->amodel->getProgress($userCanOrdinal);
     // $userCanApprove = array();
     // foreach($test as $t){
     //     $userCanApprove[] = $t->id_progress;
@@ -213,27 +203,24 @@ function canApproveCheck(){
     return $userCanOrdinal;
 }
 function cekAlur($ord){
-    $ci = get_instance();
-    $ci->db->select('status');
-    $ci->db->from('tbl_alur');
-    $ci->db->where('ordinal',$ord);
-    return $ci->db->get()->row();
+    ci()->db->select('status');
+    ci()->db->from('tbl_alur');
+    ci()->db->where('ordinal',$ord);
+    return ci()->db->get()->row();
 }
 function cekAkhir(){
-    $ci = get_instance();
-    $ci->db->select('ordinal');
-    $ci->db->from('tbl_alur');
-    $ci->db->order_by('ordinal','DESC');
-    $ci->db->limit(1,0);
-    return $ci->db->get()->row();
+    ci()->db->select('ordinal');
+    ci()->db->from('tbl_alur');
+    ci()->db->order_by('ordinal','DESC');
+    ci()->db->limit(1,0);
+    return ci()->db->get()->row();
 }
 
 function cekBku($status){
-    $ci = get_instance();
-    $ci->db->select('ordinal');
-    $ci->db->from('tbl_alur');
-    $ci->db->where('status',1);
-    $ordinal = $ci->db->get()->row();
+    ci()->db->select('ordinal');
+    ci()->db->from('tbl_alur');
+    ci()->db->where('status',1);
+    $ordinal = ci()->db->get()->row();
     if($status >= $ordinal->ordinal){
         return true;
     }else{
@@ -339,73 +326,29 @@ if (!function_exists('time_ago')) {
 
 
 
-function antrian($id, $date)
-{
-    $ci = get_instance();
-    $today = date('Y-m-d');
-    $query = "SELECT count(_id)as maxantrian FROM tbl_counter where id_loket='$id' AND date = '$today'";
-    $data = $ci->db->query($query)->row_array();
-    $kode = $data['maxantrian'];
-    $noUrut = (int) substr($kode, -3);
-    $noUrut += 1;
-    $kodeBaru = sprintf("%03s", $noUrut);
-    return $kodeBaru;
+function jumlahDana(){
+    ci()->db->select('SUM(pagu) as total');
+    ci()->db->from('tbl_rekening_kegiatan');
+    $tot = ci()->db->get();
+    return $tot->row()->total;
 }
-
-function jmlbooking($id)
-{
-    $ci = get_instance();
-    $today = date('Y-m-d');
-    $query = "SELECT count(id_layanan)as jml FROM tbl_booking INNER JOIN tbl_layanan ON tbl_booking.id_layanan=tbl_layanan._id INNER JOIN tbl_loket ON tbl_layanan.id_menumpp=tbl_loket.id_menumpp where tbl_loket.id_menumpp='$id' AND DATE_FORMAT(tbl_booking.createdate,'%Y-%m-%d') = '$today'";
-    $data = $ci->db->query($query)->row_array();
-    $jml = $data['jml'];
-    return $jml;
+function jumlahPencairan(){
+    ci()->db->select('SUM(total) as total');
+    ci()->db->from('tbl_pencairan');
+    $tot = ci()->db->get();
+    return $tot->row()->total;
 }
-
-function jmlantrian($id)
-{
-    $ci = get_instance();
-    $today = date('Y-m-d');
-    $query = "SELECT COUNT(id_loket) as jml FROM tbl_counter INNER JOIN tbl_loket ON tbl_counter.id_loket=tbl_loket._id where tbl_loket.id_menumpp='$id' AND tbl_counter.date= '$today'";
-    $data = $ci->db->query($query)->row_array();
-    $jml = $data['jml'];
-    return $jml;
+function jumlahPencairanBulanIni(){
+    $d = date('m');
+    ci()->db->select('SUM(total) as total');
+    ci()->db->from('tbl_pencairan');
+    ci()->db->where('MONTH(created_at)',$d);
+    $tot = ci()->db->get();
+    return $tot->row()->total;
 }
-
-function allbooking()
-{
-    $ci = get_instance();
-    $today = date('Y-m-d');
-    $query = "SELECT count(id_layanan)as jml FROM tbl_booking INNER JOIN tbl_layanan ON tbl_booking.id_layanan=tbl_layanan._id INNER JOIN tbl_loket ON tbl_layanan.id_menumpp=tbl_loket.id_menumpp where DATE_FORMAT(tbl_booking.createdate,'%Y-%m-%d') = '$today'";
-    $data = $ci->db->query($query)->row_array();
-    $jml = $data['jml'];
-    return $jml;
-}
-function allantrian()
-{
-    $ci = get_instance();
-    $today = date('Y-m-d');
-    $query = "SELECT COUNT(id_loket) as jml FROM tbl_counter INNER JOIN tbl_loket ON tbl_counter.id_loket=tbl_loket._id where tbl_counter.date= '$today'";
-    $data = $ci->db->query($query)->row_array();
-    $jml = $data['jml'];
-    return $jml;
-}
-function allterlayani()
-{
-    $ci = get_instance();
-    $today = date('Y-m-d');
-    $query = "SELECT COUNT(antrian) as jml FROM tbl_counter INNER JOIN tbl_loket ON tbl_counter.id_loket=tbl_loket._id where tbl_counter.status <> 1 AND tbl_counter.date= '$today'";
-    $data = $ci->db->query($query)->row_array();
-    $jml = $data['jml'];
-    return $jml;
-}
-
-function alltdkterlayani()
-{
-    $ci = get_instance();
-    $today = date('Y-m-d');
-    $query = "SELECT COUNT(antrian) as jml FROM tbl_counter INNER JOIN tbl_loket ON tbl_counter.id_loket=tbl_loket._id where tbl_counter.status = 1 AND tbl_counter.date= '$today'";
-    $data = $ci->db->query($query)->row_array();
-    $jml = $data['jml'];
-    return $jml;
+function totalPencairan(){
+    ci()->db->select('COUNT(_id) as total');
+    ci()->db->from('tbl_pencairan');
+    $tot = ci()->db->get();
+    return $tot->row()->total;
 }
