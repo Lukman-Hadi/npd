@@ -51,8 +51,85 @@
 		</div>
 	</div>
 </div>
+<div class="modal fade" id="modal-form-timeline" role="dialog" aria-labelledby="modal-form" aria-hidden="true" data-focus="false">
+	<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+		<div class="modal-content">
+			<div class="modal-body p-0">
+				<div class="card">
+					<div class="card-header bg-transparent">
+						<h5 class="mb-0">Riwayat Pengajuan</h5>
+					</div>
+					<div class="card-body">
+						<div class="timeline timeline-one-side" data-timeline-content="axis" data-timeline-axis-style="dashed">
+							<div id="content-timeline">
+
+							</div>
+							<!-- <div class="timeline-block mt-0 mb-0">
+								<span class="timeline-step badge-success">
+									<i class="ni ni-bell-55"></i>
+								</span>
+								<div class="timeline-content">
+									<small class="text-muted font-weight-bold">Tanggal</small>
+									<h5 class=" mt-1 mb-0">Di ACCC  OLEH</h5>
+									<p class=" text-sm mt-0 mb-0">Catatan</p>
+								</div>
+							</div>
+							<div class="timeline-block mt-0 mb-0">
+								<span class="timeline-step badge-danger">
+									<i class="ni ni-bell-55"></i>
+								</span>
+								<div class="timeline-content">
+									<small class="text-muted font-weight-bold">Tanggal</small>
+									<h5 class=" mt-1 mb-0">Di REJ  OLEH</h5>
+									<p class=" text-sm mt-0 mb-0">Catatan</p>
+								</div>
+							</div>
+							<div class="timeline-block mt-0 mb-0">
+								<span class="timeline-step badge-info">
+									<i class="ni ni-bell-55"></i>
+								</span>
+								<div class="timeline-content">
+									<small class="text-muted font-weight-bold">Tanggal</small>
+									<h5 class=" mt-1 mb-0">Input BKU  OLEH</h5>
+									<p class=" text-sm mt-0 mb-0">Catatan</p>
+								</div>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <script>
+	const urlTimeline = '<?= base_url() ?>approve/timeline';
+	function openMod(id){
+		$('#modal-form-timeline').modal('toggle');
+		let innerH = '';		
+		$.ajax({
+			type: "GET",
+			url : `${urlTimeline}?id=${id}`,
+			success : (r)=>{
+				r.map((e)=>{
+					innerH += `<div class="timeline-block mt-0 mb-0">
+								<span class="timeline-step badge-success">
+									<i class="ni ni-bell-55"></i>
+								</span>
+								<div class="timeline-content">
+									<small class="text-muted font-weight-bold">${e.tgl}</small>
+									<h5 class=" mt-1 mb-0">${e.nama_progress} oleh ${e.nama_user}</h5>
+									<p class=" text-sm mt-0 mb-0">${e.catatan}</p>
+								</div>
+							</div>`
+				});
+				$('#content-timeline').html(innerH);
+			},
+			error : (e)=>{
+				console.log('e', e)
+			}
+		})
+	}
     const uang = new Intl.NumberFormat('ID-id', {
         style: 'currency',
         currency: 'IDR'
@@ -69,7 +146,7 @@
         return `
         <div class="col-12 p-0 text-center">
         <div class="row d-flex justify-content-around">
-            <button class="btn btn-outline-primary btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" title="Track Pengajuan"><span class="btn-inner--icon"><i class="fa fa-poll"></i></span></button>
+            <button class="btn btn-outline-primary btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" onclick="openMod('${row._id}')" title="Track Pengajuan"><span class="btn-inner--icon"><i class="fa fa-poll"></i></span></button>
             <button class="btn btn-success btn-sm py-0 m-0 pengajuan" title="Lihat Pengajuan" onclick="detail('${row.kode_pengajuan}')"><span class="btn-inner--icon"><i class="fa fa-eye"></i></span></button>
         </div>
         </div>`

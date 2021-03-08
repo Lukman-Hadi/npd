@@ -352,3 +352,12 @@ function totalPencairan(){
     $tot = ci()->db->get();
     return $tot->row()->total;
 }
+
+function nipFormat($nip){
+    //8 6 1 3
+    $one = substr($nip,0,8);
+    $two = substr($nip,8,6);
+    $tri = substr($nip,14,1);
+    $for = substr($nip,15,3);
+    return "Nip .".$one." ".$two." ".$tri." ".$for;
+}

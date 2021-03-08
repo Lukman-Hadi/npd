@@ -446,6 +446,7 @@
                             title: '' + result.message + '.'
                         })
                         $('#table').bootstrapTable('refresh');
+                        window.location.replace('../approve');
                     }
                 }, 'json');
             }

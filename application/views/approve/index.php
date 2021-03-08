@@ -4,7 +4,6 @@
 			<div class="row align-items-center py-4">
 				<div class="col-lg-6 col-7">
 					<h6 class="h2 text-white d-inline-block mb-0"><?= $title ?></h6>
-					<button class="btn btn-neutral" onclick="openMod()"> TES T</button>
 				</div>
 			</div>
 		</div>
@@ -93,6 +92,7 @@
 		</div>
 	</div>
 </div>
+<!-- timeline -->
 <div class="modal fade" id="modal-form-timeline" role="dialog" aria-labelledby="modal-form" aria-hidden="true" data-focus="false">
 	<div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
 		<div class="modal-content">
@@ -103,7 +103,10 @@
 					</div>
 					<div class="card-body">
 						<div class="timeline timeline-one-side" data-timeline-content="axis" data-timeline-axis-style="dashed">
-							<div class="timeline-block mt-0 mb-0">
+							<div id="content-timeline">
+
+							</div>
+							<!-- <div class="timeline-block mt-0 mb-0">
 								<span class="timeline-step badge-success">
 									<i class="ni ni-bell-55"></i>
 								</span>
@@ -132,7 +135,7 @@
 									<h5 class=" mt-1 mb-0">Input BKU  OLEH</h5>
 									<p class=" text-sm mt-0 mb-0">Catatan</p>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -141,9 +144,45 @@
 	</div>
 </div>
 <script>
-function openMod(){
-	$('#modal-form-timeline').modal('toggle');
-}
+	const urlTimeline = '<?= base_url() ?>approve/timeline';
+	function openMod(id){
+		$('#modal-form-timeline').modal('toggle');
+		let innerH = '';		
+		$.ajax({
+			type: "GET",
+			url : `${urlTimeline}?id=${id}`,
+			success : (r)=>{
+				r.map((e)=>{
+					innerH += `<div class="timeline-block mt-0 mb-0">
+								<span class="timeline-step badge-success">
+									<i class="ni ni-bell-55"></i>
+								</span>
+								<div class="timeline-content">
+									<small class="text-muted font-weight-bold">${e.tgl}</small>
+									<h5 class=" mt-1 mb-0">${e.nama_progress} oleh ${e.nama_user}</h5>
+									<p class=" text-sm mt-0 mb-0">${e.catatan}</p>
+								</div>
+							</div>`
+				});
+				$('#content-timeline').append(innerH);
+			},
+			error : (e)=>{
+				console.log('e', e)
+			}
+		})
+	}
+	function fetchTimeline(id){
+		$.ajax({
+			type: "GET",
+			url : `${urlTimeline}?id=${id}`,
+			success : (r)=>{
+				return r;
+			},
+			error : (e)=>{
+				console.log('e', e)
+			}
+		})
+	}
 	function approve(id) {
 		$('#modal-form').modal('toggle');
 		$('#ff').trigger("reset");
@@ -209,7 +248,7 @@ function openMod(){
 			<div class="col-12 p-0 text-center">
 			<div class="row d-flex justify-content-around">
 				<button class="btn btn-primary btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" title="Input BKU" onclick="bku('${row.kode_pengajuan}')"><span class="btn-inner--icon"><i class="fa fa-edit"></i></span></button>
-				<button class="btn btn-outline-primary btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" title="Track Pengajuan"><span class="btn-inner--icon"><i class="fa fa-poll"></i></span></button>
+				<button class="btn btn-outline-primary btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" onclick="openMod('${row._id}')" title="Track Pengajuan"><span class="btn-inner--icon"><i class="fa fa-poll"></i></span></button>
 			</div>
 			</div>`
 		} else if (row.kunci == 0) {
@@ -218,7 +257,7 @@ function openMod(){
 			<div class="row d-flex justify-content-around">
 				<button class="btn btn-primary btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" title="Edit Pengajuan" onclick="edit('${row.kode_pengajuan}')"><span class="btn-inner--icon"><i class="fa fa-edit"></i></span></button>
 				<button class="btn btn-danger btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" title="Hapus Pengajuan" onclick="destroy('${row._id}','${row.kode_pengajuan}')"><span class="btn-inner--icon"><i class="fa fa-window-close"></i></span></button>
-				<button class="btn btn-outline-primary btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" title="Track Pengajuan"><span class="btn-inner--icon"><i class="fa fa-poll"></i></span></button>
+				<button class="btn btn-outline-primary btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" onclick="openMod('${row._id}')" title="Track Pengajuan"><span class="btn-inner--icon"><i class="fa fa-poll"></i></span></button>
 			</div>
 			</div>`
 		} else {
@@ -227,7 +266,7 @@ function openMod(){
 			<div class="row d-flex justify-content-around">
 				<button class="btn btn-primary btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" title="Approve" onclick="approve('${row._id}')"><span class="btn-inner--icon"><i class="fa fa-check"></i></span></button>
 				<button class="btn btn-danger btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" title="Tolak" onclick="reject('${row._id}')"><span class="btn-inner--icon"><i class="fa fa-window-close"></i></span></button>
-				<button class="btn btn-outline-primary btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" title="Track Pengajuan"><span class="btn-inner--icon"><i class="fa fa-poll"></i></span></button>
+				<button class="btn btn-outline-primary btn-sm py-0 m-0" data-toggle="tooltip" data-placement="top" onclick="openMod('${row._id}')" title="Track Pengajuan"><span class="btn-inner--icon"><i class="fa fa-poll"></i></span></button>
 				<button class="btn btn-success btn-sm py-0 m-0 pengajuan" title="Lihat Pengajuan" onclick="detail('${row.kode_pengajuan}')"><span class="btn-inner--icon"><i class="fa fa-eye"></i></span></button>
 			</div>
 			</div>`

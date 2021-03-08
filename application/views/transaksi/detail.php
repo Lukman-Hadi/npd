@@ -15,7 +15,7 @@
                 <div class="col-lg-6 col-5 text-right">
                 <?php $akhir = cekAkhir(); if($permohonan->status==$akhir->ordinal){?>
                     <a href="<?= base_url() ?>transaksi/generatepdf?kode=<?= $permohonan->kode_pengajuan ?>" class="btn btn-secondary btn-lg btn-rounded">PRINT</a>
-                    <a href="<?= base_url() ?>transaksi/generatepdf?kode=<?= $permohonan->kode_pengajuan ?>" class="btn btn-secondary btn-lg btn-rounded">PRINT DETAIL NPD</a>
+                    <a href="<?= base_url() ?>transaksi/printdetail?kode=<?= $permohonan->kode_pengajuan ?>" class="btn btn-secondary btn-lg btn-rounded">PRINT DETAIL NPD</a>
                 <?php } ?>
                 </div>
             </div>

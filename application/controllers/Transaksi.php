@@ -449,6 +449,19 @@ class Transaksi extends CI_Controller {
         $data['css_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.css';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.js';
+        $this->template->load('templateprint','print/npd',$data);
+    }
+    function printDetail(){
+        $kode = $this->input->get('kode');
+        $data['permohonan']= $this->tmodel->getPengajuanPencairan($kode)->row();
+        $data['detail']= $this->tmodel->getDetail($kode)->result();
+        $data['rincian'] = $this->tmodel->getRincian($kode)->result();
+        $data['title_pdf']  = 'PENGAJUAN NO'.$kode;
+        $data['collapsed'] = '';
+        $data['css_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.css';
+        $data['css_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.css';
+        $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.js';
         $this->template->load('templateprint','print/detail',$data);
     }
 

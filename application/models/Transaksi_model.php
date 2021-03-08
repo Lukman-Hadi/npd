@@ -219,4 +219,14 @@ class Transaksi_model extends CI_Model
             return false;
         }
     }
+    function getTimeline($id){
+        $this->db->select('nama_user, nama_progress, catatan, DATE(pp.created_at) as tgl, pp.ordinal as ordinal');
+        $this->db->from('tbl_progress_pengajuan pp');
+        $this->db->join('tbl_users u','u._id = pp.id_user','LEFT');
+        $this->db->join('tbl_alur al','al.ordinal = pp.ordinal','LEFT');
+        $this->db->join('tbl_progress pg','pg._id = al.id_progress','LEFT');
+        $this->db->where('pp.id_pengajuan',$id);
+        $this->db->order_by('pp.created_at', 'ASC');
+        return $this->db->get()->result();
+    }
 }

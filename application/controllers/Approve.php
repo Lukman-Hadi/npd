@@ -70,6 +70,13 @@ class Approve extends CI_Controller {
     function getDetailBku(){
         $nPermohonan = $this->uri->segment(3);
         $data = $this->tmodel->getDetailBku($nPermohonan)->result();
+        $modified = array();
+        $this->output->set_content_type('application/json');
+        echo json_encode($data);
+    }
+    function getDetailBkuPrint(){
+        $nPermohonan = $this->uri->segment(3);
+        $data = $this->tmodel->getDetailBku($nPermohonan)->result();
         $this->output->set_content_type('application/json');
         echo json_encode($data);
     }
@@ -445,5 +452,12 @@ class Approve extends CI_Controller {
                 break;
             }
         }
+    }
+
+    function timeline(){
+        $id = $this->input->get('id');
+        $data = $this->tmodel->getTimeline($id);
+        $this->output->set_content_type('application/json');
+        echo json_encode($data);
     }
 }
