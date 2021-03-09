@@ -12,14 +12,14 @@ class Kegiatan extends CI_Controller {
 
 	function index(){
         $data['title']  = 'Data Kegiatan';
-        $data['collapsed'] = '';
-        $data['css_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.css';
         $data['css_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.css';
         $data['css_files'][] = base_url() . 'assets/admin/vendor/select2/dist/css/select2.min.css';
         $data['css_files'][] = base_url() . 'assets/admin/vendor/select2/dist/css/select2-bootstrap.css';
-        // $data['css_files'][] = base_url() . 'assets/admin/easyui/themes/icon.css';
+        $data['css_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.css';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/extensions/export/bootstrap-table-export.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/extensions/export/jquery-table-export.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/select2/dist/js/select2.min.js';
         $this->template->load('template','master/kegiatan',$data);
     }

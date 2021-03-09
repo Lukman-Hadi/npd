@@ -12,11 +12,12 @@ class Subkegiatan extends CI_Controller {
 
 	function index(){
         $data['title']  = 'Data Sub Kegiatan';
-        $data['collapsed'] = '';
         $data['css_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.css';
         $data['css_files'][] = base_url() . 'assets/admin/vendor/select2/dist/css/select2.min.css';
         $data['css_files'][] = base_url() . 'assets/admin/vendor/select2/dist/css/select2-bootstrap.css';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/extensions/export/bootstrap-table-export.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/extensions/export/jquery-table-export.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/select2/dist/js/select2.min.js';
         $this->template->load('template','master/subkegiatan',$data);
     }

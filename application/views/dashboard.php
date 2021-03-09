@@ -10,7 +10,7 @@
           </div>
           <!-- Card stats -->
           <div class="row">
-            <div class="col-xl-6 col-lg 6 col-md-6">
+            <div class="col-xl-6 col-md-6">
               <div class="card card-stats pb-4">
                 <!-- Card body -->
                 <div class="card-body">
@@ -28,7 +28,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-lg 6 col-md-6">
+            <div class="col-xl-6 col-md-6">
               <div class="card card-stats pb-4">
                 <!-- Card body -->
                 <div class="card-body">
@@ -46,7 +46,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-lg 6 col-md-6">
+            <div class="col-xl-6 col-md-6">
               <div class="card card-stats pb-4">
                 <!-- Card body -->
                 <div class="card-body">

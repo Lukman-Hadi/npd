@@ -40,15 +40,17 @@
 						This is an exmaple of datatable using the well known datatables.net plugin. This is a minimal setup in order to get started fast.
 					</p>
 				</div>
-
 				<div class="table-responsive py-2 px-4">
 					<table id="table"
 						   data-toggle="table"
+						   data-show-export="true"
+						   data-export-types = '["excel"]'
 						   data-url="program/getData"
 						   data-pagination="true" 
 						   data-search="true"
 						   data-click-to-select="true"
 						   data-single-select="true"
+						   data-toolbar="#toolbar"
 						   class="table table-sm" 
 						   data-side-pagination="server">
 						<thead class="thead-light">

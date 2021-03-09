@@ -43,6 +43,8 @@
 
 				<div class="table-responsive py-2 px-4">
 					<table id="table"
+						   data-show-export="true"
+						   data-export-types = '["excel"]'
 						   data-toggle="table"
 						   data-url="rekening/getData"
 						   data-pagination="true"

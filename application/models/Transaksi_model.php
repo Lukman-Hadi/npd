@@ -203,6 +203,12 @@ class Transaksi_model extends CI_Model
         $this->db->where('id_jabatan',3);
         return $this->db->get();
     }
+    function getBendahara(){
+        $this->db->select('_id as idbendahara, nama_user as nama, uname');
+        $this->db->from('tbl_users');
+        $this->db->where('id_jabatan',6);
+        return $this->db->get();
+    }
 
     function updateDelete($jumlah, $idPengajuanDetail, $idPengajuanRincian, $idPengajuan){
         $del1 = $this->db->query('UPDATE tbl_pengajuan SET total = (total - "'.$jumlah.'") WHERE _id = "'.$idPengajuan.'"');

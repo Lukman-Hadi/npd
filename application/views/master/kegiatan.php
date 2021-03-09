@@ -43,6 +43,8 @@
 				<div class="table-responsive py-2 px-4">
 					<table id="table"
 						   data-toggle="table"
+						   data-show-export="true"
+						   data-export-types = '["excel"]'
 						   data-url="kegiatan/getData"
 						   data-pagination="true"
 						   data-search="true"

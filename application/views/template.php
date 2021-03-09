@@ -39,7 +39,6 @@
     foreach($css_files as $file) { ?>
         <link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
   <?php } ?>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
   <script src="<?= base_url() ?>/assets/admin/vendor/jquery/dist/jquery.min.js"></script>
   <script src="<?= base_url() ?>/assets/admin/js/jquery.mask.min.js"></script>
   <?php foreach($js_files as $file) { ?>
@@ -77,6 +76,37 @@
               <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
                 <i class="ni ni-zoom-split-in"></i>
               </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="btn-inner--icon"><i class="ni ni-bell-55"></i></span>
+                <span class="badge badge-danger"><?php $n = getNotif();echo $n['total'] ?></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right py-0 overflow-hidden">
+                <div class="px-3 py-3">
+                  <h6 class="text-sm text-muted m-0">You have <strong class="text-primary"> <?= $n['total'] ?></strong> notifications.</h6>
+                </div>
+                <div class="list-group list-group-flush">
+                <?php foreach($n['rows'] as $row){?>
+                  <a href="<?= base_url().'approve/detail/'.$row->kode_pengajuan ?>" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col ml--2">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="mb-0 text-sm"><?= $row->nama_user ?></h4>
+                          </div>
+                          <div class="text-right text-muted">
+                            <small><?= $row->last_update!=null?time_elapsed_string($row->last_update):time_elapsed_string($row->created_at);?></small>
+                          </div>
+                        </div>
+                        <p class="text-sm mb-0"><?= 'Pengajuan No '.$row->kode_pengajuan ?></p>
+                      </div>
+                    </div>
+                  </a>
+                <?php }; ?>
+                </div>
+                <a href="<?= base_url().'approve' ?>" class="dropdown-item text-center text-primary font-weight-bold py-3">Lihat Semua</a>
+              </div>
             </li>
           </ul>
           <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">

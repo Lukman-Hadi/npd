@@ -311,7 +311,7 @@ if (!function_exists('time_ago')) {
         $periods = array("Detik", "Menit", "Jam", "Hari", "Minggu", "Bulan", "Tahun", "Decade");
         $lengths = array("60", "60", "24", "7", "4.35", "12", "10");
         $now = time();
-        $difference     = $now - $time;
+        $difference     = $now - (strtotime($time));
         $tense         = "ago";
         for ($j = 0; $difference >= $lengths[$j] && $j < count($lengths) - 1; $j++) {
             $difference /= $lengths[$j];
@@ -324,7 +324,58 @@ if (!function_exists('time_ago')) {
     }
 }
 
+function time_elapsed_string($datetime, $full = false) {
+    date_default_timezone_set('Asia/Jakarta');
+    $now = new DateTime;
+    $ago = new DateTime($datetime);
+    $diff = $now->diff($ago);
 
+    $diff->w = floor($diff->d / 7);
+    $diff->d -= $diff->w * 7;
+
+    $string = array(
+        'y' => 'year',
+        'm' => 'month',
+        'w' => 'week',
+        'd' => 'day',
+        'h' => 'hour',
+        'i' => 'minute',
+        's' => 'second',
+    );
+    foreach ($string as $k => &$v) {
+        if ($diff->$k) {
+            $v = $diff->$k . ' ' . $v . ($diff->$k > 1 ? 's' : '');
+        } else {
+            unset($string[$k]);
+        }
+    }
+
+    if (!$full) $string = array_slice($string, 0, 1);
+    return $string ? implode(', ', $string) . ' ago' : 'just now';
+}
+
+function getNotif(){
+    ci()->load->model('Approve_model','amodel');
+    $idBidang   = ci()->session->id_bidang;
+    $userCanApprove = canApproveCheck();
+    // var_dump($userCanApprove);
+    $who = superCheck();
+    $ispptk = pptkCheck();
+    if($who){
+        $result['total'] = ci()->amodel->getApproveTotal($userCanApprove)->num_rows();
+        $item = ci()->amodel->getApproval($userCanApprove)->result();
+        $result = array_merge($result, ['rows' => $item]);
+    }else if($ispptk){
+        $result = ci()->amodel->getApprovalByPPTK(ci()->session->_id,$userCanApprove);
+    }else if(ci()->session->id_jabatan == 6){
+        $result = ci()->amodel->getApprovalByPengaju(ci()->session->_id,$userCanApprove);  
+    }else{
+        $result['total'] = ci()->amodel->getApproveTotalByBidang($idBidang,$userCanApprove)->num_rows();
+        $item = ci()->amodel->getApprovalByBidang($idBidang,$userCanApprove)->result();
+        $result = array_merge($result, ['rows' => $item]);   
+    }
+    return $result;
+}
 
 function jumlahDana(){
     ci()->db->select('SUM(pagu) as total');
