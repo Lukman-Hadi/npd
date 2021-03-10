@@ -103,6 +103,7 @@
         </tr>
     </table>
 <script>
+
     const uang = new Intl.NumberFormat('ID-id');
     function pajakFormat(v,r){
         let ppn = parseInt(r.ppn,10);

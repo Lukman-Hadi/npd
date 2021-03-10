@@ -44,10 +44,7 @@
   <?php foreach($js_files as $file) { ?>
         <script src="<?php echo $file; ?>"></script>
   <?php } ?>
-  <script src="<?= base_url() ?>/assets/admin/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="<?= base_url() ?>/assets/admin/vendor/js-cookie/js.cookie.js"></script>
-  <script src="<?= base_url() ?>/assets/admin/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
-  <script src="<?= base_url() ?>/assets/admin/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  
 </head>
 
 <body>
@@ -147,12 +144,16 @@
   <!-- Argon Scripts -->
   <!-- Core -->
   <!-- Optional JS -->
+  
+  <!-- Argon JS -->
+  <script src="<?= base_url() ?>/assets/admin/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="<?= base_url() ?>/assets/admin/vendor/js-cookie/js.cookie.js"></script>
+  <script src="<?= base_url() ?>/assets/admin/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="<?= base_url() ?>/assets/admin/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
   <script src="<?= base_url() ?>/assets/admin/vendor/chart.js/dist/Chart.min.js"></script>
   <script src="<?= base_url() ?>/assets/admin/vendor/chart.js/dist/Chart.extension.js"></script>
-  <script src="<?= base_url() ?>assets/admin/vendor/sweetalert2/dist/sweetalert2.min.js"></script>
-  <!-- Argon JS -->
   <script src="<?= base_url() ?>/assets/admin/js/argon.js?v=1.1.0"></script>
-
+  <script src="<?= base_url() ?>assets/admin/vendor/sweetalert2/dist/sweetalert2.min.js"></script>
   <script type="text/javascript">
     const Toast = Swal.mixin({
       toast: true,
@@ -160,7 +161,48 @@
       showConfirmButton: false,
       timer: 3000
     });
-    </script>
+  </script>
+  <script>
+    var BarsChart = (function() {
+
+        //
+        // Variables
+        //
+
+        var $chart = $('#chart-bulan');
+
+
+        //
+        // Methods
+        //
+
+        // Init chart
+        function initChart($chart) {
+
+          // Create chart
+          var ordersChart = new Chart($chart, {
+            type: 'bar',
+            data: {
+              labels: ['wakwak', 'agustus', 'Sep', 'Oct', 'Nov', 'Dec'],
+              datasets: [{
+                label: 'Sales',
+                data: [25, 20, 30, 22, 17, 29]
+              }]
+            }
+          });
+
+          // Save to jQuery object
+          $chart.data('chart', ordersChart);
+        }
+
+
+        // Init chart
+        if ($chart.length) {
+          initChart($chart);
+        }
+
+        })();
+  </script>
 </body>
 
 </html>

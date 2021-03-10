@@ -235,4 +235,22 @@ class Transaksi_model extends CI_Model
         $this->db->order_by('pp.created_at', 'ASC');
         return $this->db->get()->result();
     }
+    
+    function getTotalPencairanPPTK(){
+        $this->db->select('SUM(pc.total) as total,COUNT(pc._id) as jumlah, us.nama_user AS nama_pptk, bd.nama_bidang');
+        $this->db->from('tbl_users us');
+        $this->db->join('tbl_bidang bd','bd._id = us.id_bidang','LEFT');
+        $this->db->join('tbl_pengajuan pj', 'pj.id_pptk = us._id','LEFT');
+        $this->db->join('tbl_pencairan pc', 'pc.id_pengajuan = pj._id','LEFT');
+        $this->db->where('us.id_jabatan',3);
+        $this->db->group_by('us.nama_user');
+        return $this->db->get()->result();
+        // $this->db->select('SUM(pc.total) as total,COUNT(pc._id) as jumlah, us.nama_user AS nama_pptk, bd.nama_bidang');
+        // $this->db->from('tbl_pencairan pc');
+        // $this->db->join('tbl_pengajuan pj','pj._id = pc.id_pengajuan');
+        // $this->db->join('tbl_users us','us._id = pj.id_pptk');
+        // $this->db->join('tbl_bidang bd','bd._id = us.id_bidang');
+        // $this->db->group_by('us.nama_user');
+        // return $this->db->get()->result();
+    }
 }

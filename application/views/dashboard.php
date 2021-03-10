@@ -107,20 +107,22 @@
                   </tr>
                 </thead>
                 <tbody class="list">
-                  <tr>
-                    <th scope="row">
-                      SEMLIKUM UKHTII
-                    </th>
-                    <td class="budget">
-                      PENGANUT BUMI DATAR
-                    </td>
-                    <td>
-                      BANYAK BETT
-                    </td>
-                    <td>
-                      KEPPPOOOOOOOO
-                    </td>
-                  </tr>
+                  <?php foreach($dataPPTK as $d){ ?>
+                    <tr>
+                      <th scope="row">
+                        <?= $d->nama_pptk ?>
+                      </th>
+                      <td class="budget">
+                      <?= $d->nama_bidang ?>
+                      </td>
+                      <td>
+                      Rp. <?= number_format($d->total) ?>
+                      </td>
+                      <td>
+                      <?= $d->jumlah ?>
+                      </td>
+                    </tr>
+                  <?php } ?>
                 </tbody>
               </table>
             </div>
@@ -140,11 +142,75 @@
             <div class="card-body">
               <!-- Chart -->
               <div class="chart">
-                <canvas id="chart-bars" class="chart-canvas"></canvas>
+                <canvas id="chart-bulan" class="chart-canvas"></canvas>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
+  </div>
+  <script>
+    // const ctx = document.getElementById('chart-bulan').getContext('2d');
+    // const chart = new Chart(ctx, {
+    //   type: 'bar',
+    //   data : {
+    //       labels: ['rupiah','rupiah','rupiah','rupiah','rupiah','rupiah'],
+    //       datasets:[{
+    //         label: 'Rupiah',
+    //         data:[12,12,12,12,12,12],
+    //         backgroundColor: '#2dce89',
+    //         borderColor: '#2dce89',
+    //         borderWidth: 1
+    //       }]
+    //   },
+    //   options: {
+    //     scales: {
+    //         yAxes: [{
+    //             ticks: {
+    //                 beginAtZero: false
+    //             }
+    //         }]
+    //     }
+    // }
+    // });
+    var BarsChart = (function() {
+
+//
+// Variables
+//
+
+var $chart = $('#chart-bulan');
+
+
+//
+// Methods
+//
+
+// Init chart
+function initChart($chart) {
+
+  // Create chart
+  var ordersChart = new Chart($chart, {
+    type: 'bar',
+    data: {
+      labels: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      datasets: [{
+        label: 'Sales',
+        data: [25, 20, 30, 22, 17, 29]
+      }]
+    }
+  });
+
+  // Save to jQuery object
+  $chart.data('chart', ordersChart);
+}
+
+
+// Init chart
+if ($chart.length) {
+  initChart($chart);
+}
+
+})();
+  </script>
