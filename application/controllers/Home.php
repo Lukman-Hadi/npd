@@ -15,6 +15,7 @@ class Home extends CI_Controller {
         $data['css_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.css';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
         $data['data'] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/js/dashboard.js';
         $this->template->load('template','dashboard',$data);
     }
     function logout(){

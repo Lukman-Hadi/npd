@@ -16,6 +16,7 @@ class Approve extends CI_Controller {
         $data['description'] = 'Pengajuan yang menunggu untuk ditinjau oleh dirimu';
         $data['css_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.css';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/js/approve.js';
         $this->template->load('template','approve/index',$data);
     }
 
@@ -29,6 +30,7 @@ class Approve extends CI_Controller {
             $result['total'] = $this->amodel->getApproveTotal($userCanApprove)->num_rows();
             $item = $this->amodel->getApproval($userCanApprove)->result();
             $result = array_merge($result, ['rows' => $item]);
+            // $result['rows']=$item;
         }else if($ispptk){
             $result = $this->amodel->getApprovalByPPTK($this->session->_id,$userCanApprove);
         }else if($this->session->id_jabatan == 6){
@@ -56,7 +58,9 @@ class Approve extends CI_Controller {
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/select2/dist/js/select2.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/form/form.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/vendor/emodal/eModal.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/pdfobject/pdfobject.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/js/detail.js?v=2';
         $this->template->load('template','transaksi/detail',$data);
         // $this->output->set_content_type('application/json');
         // echo json_encode($this->tmodel->getDetailNew($nPermohonan)->result());
@@ -158,6 +162,7 @@ class Approve extends CI_Controller {
         $data['js_files'][] = base_url() . 'assets/admin/vendor/form/form.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/pdfobject/pdfobject.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/emodal/eModal.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/js/bku.js';
         $this->template->load('template','approve/bkubaru',$data);
     }
     function isRekening(){

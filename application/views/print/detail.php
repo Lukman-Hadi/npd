@@ -45,6 +45,11 @@
     .garisbawah {
         border: 2px solid black;
     }
+    @media print {
+    .print {
+        display :  none !important;
+    }
+    }
 </style>
 <table class="text-center kop">
     <tr>
@@ -102,8 +107,8 @@
             <td><?= nipFormat($permohonan->uname_user) ?></td>
         </tr>
     </table>
+    <a class="print btn btn-block btn-outline-primary" href="javascript:window.print();">Print</a>
 <script>
-
     const uang = new Intl.NumberFormat('ID-id');
     function pajakFormat(v,r){
         let ppn = parseInt(r.ppn,10);
@@ -117,49 +122,6 @@
         console.log('{v,i,d}', {v,i,d})
         return `(${d[0].kode_rekening}) - ${d[0].nama_rekening}`
     }
-    function approve(id){
-        $('#modal-form').modal('toggle');
-        $('#ff').trigger("reset");
-        $('#id_pengajuan').val(id);
-        $('#inrbtn').text('Approve');
-        url = '../approve/approve';
-    }
-    function reject(id) {
-        $('#modal-form').modal('toggle');
-        $('#ff').trigger("reset");
-        $('#id_pengajuan').val(id);
-        $('#inrbtn').text('Reject');
-        url = '../approve/reject';
-    }
-    $('#ff').on('submit', function(e) {
-        e.preventDefault();
-        const string = $('#ff').serialize();
-        $.ajax({
-            type: "POST",
-            url: url,
-            data: string,
-            success: (result) => {
-                var result = eval('(' + result + ')');
-                if (result.errorMsg) {
-                    Toast.fire({
-                        type: 'error',
-                        title: '' + result.errorMsg + '.'
-                    })
-                } else if (result.openMsg) {
-                    $('#modal-form').modal('toggle');
-                    $('#modal-form-acc').modal('toggle');
-                } else {
-                    Toast.fire({
-                        type: 'success',
-                        title: '' + result.message + '.'
-                    })
-                    $('#modal-form').modal('toggle'); // close the dialog
-                    $('#table').bootstrapTable('refresh');
-                    window.location.replace('../../');
-                }
-            },
-        })
-    })
 
     function formatRupiah(val, row) {
         return uang.format(val);
@@ -191,14 +153,4 @@
         })
         return uang.format(sum);
     };
-    function buktiFormatter(val, row) {
-        if (val) {
-            return `<button onclick="openpdf('${val}')" class="btn btn-info btn-sm py-0 m-0"><span class="btn-inner--icon"><i class="fa fa-eye"></i></span></button>`
-        } else {
-            return 'Belum Upload Bukti'
-        }
-    }
-    function openpdf(link) {
-        eModal.iframe('../../assets/bukti/' + link, 'Bukti');
-    }
 </script>

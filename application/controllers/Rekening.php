@@ -20,6 +20,7 @@ class Rekening extends CI_Controller {
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/extensions/export/bootstrap-table-export.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/extensions/export/jquery-table-export.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/select2/dist/js/select2.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/js/rekening.js';
         $this->template->load('template','master/rekening',$data);
     }
 

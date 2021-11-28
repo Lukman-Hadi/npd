@@ -22,6 +22,7 @@ class Transaksi extends CI_Controller {
         $data['js_files'][] = base_url() . 'assets/admin/vendor/select2/dist/js/select2.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/form/form.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/pdfobject/pdfobject.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/js/pengajuan.js';
         $this->template->load('template','transaksi/pengajuanbaru',$data);
     }
 	function listPengajuan(){
@@ -29,6 +30,7 @@ class Transaksi extends CI_Controller {
         $data['collapsed'] = '';
         $data['css_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.css';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/js/list.js';
         $this->template->load('template','transaksi/list',$data);
     }
 
@@ -342,6 +344,7 @@ class Transaksi extends CI_Controller {
         $data['js_files'][] = base_url() . 'assets/admin/vendor/form/form.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/emodal/eModal.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/pdfobject/pdfobject.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/js/detail.js';
         $this->template->load('template','transaksi/detail',$data);
     }
 
@@ -406,6 +409,7 @@ class Transaksi extends CI_Controller {
         $data['collapsed'] = '';
         $data['css_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.css';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/js/pencairan.js';
         $this->template->load('template','transaksi/pencairan',$data);
     }
 
@@ -478,6 +482,7 @@ class Transaksi extends CI_Controller {
         $data['js_files'][] = base_url() . 'assets/admin/vendor/select2/dist/js/select2.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/form/form.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/pdfobject/pdfobject.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/js/edit.js';
         $this->template->load('template','transaksi/edit',$data);
     }
     function showEdit(){

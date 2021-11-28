@@ -1,19 +1,3 @@
-
-<!--
-=========================================================
-* Argon Dashboard - v1.2.0
-=========================================================
-* Product Page: https://www.creative-tim.com/product/argon-dashboard
-
-
-* Copyright  Creative Tim (http://www.creative-tim.com)
-* Coded by www.creative-tim.com
-
-
-
-=========================================================
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
 <!DOCTYPE html>
 <html>
 
@@ -41,9 +25,7 @@
   <?php } ?>
   <script src="<?= base_url() ?>/assets/admin/vendor/jquery/dist/jquery.min.js"></script>
   <script src="<?= base_url() ?>/assets/admin/js/jquery.mask.min.js"></script>
-  <?php foreach($js_files as $file) { ?>
-        <script src="<?php echo $file; ?>"></script>
-  <?php } ?>
+
   
 </head>
 
@@ -140,12 +122,12 @@
     <!-- Header -->
     <?php echo $contents ?>
   </div>
-  </div>
   <!-- Argon Scripts -->
   <!-- Core -->
   <!-- Optional JS -->
-  
-  <!-- Argon JS -->
+  <?php foreach($js_files as $file) { ?>
+        <script src="<?php echo $file; ?>"></script>
+  <?php } ?>
   <script src="<?= base_url() ?>/assets/admin/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="<?= base_url() ?>/assets/admin/vendor/js-cookie/js.cookie.js"></script>
   <script src="<?= base_url() ?>/assets/admin/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
@@ -154,6 +136,7 @@
   <script src="<?= base_url() ?>/assets/admin/vendor/chart.js/dist/Chart.extension.js"></script>
   <script src="<?= base_url() ?>/assets/admin/js/argon.js?v=1.1.0"></script>
   <script src="<?= base_url() ?>assets/admin/vendor/sweetalert2/dist/sweetalert2.min.js"></script>
+  <!-- Argon JS -->
   <script type="text/javascript">
     const Toast = Swal.mixin({
       toast: true,
@@ -161,69 +144,6 @@
       showConfirmButton: false,
       timer: 3000
     });
-  </script>
-  <script>
-    var BarsChart = (function() {
-
-        //
-        // Variables
-        //
-
-        var $chart = $('#chart-bulan');
-
-
-        //
-        // Methods
-        //
-
-        // Init chart
-        function initChart($chart) {
-          $.get({
-            url: 'statistik/getpencairanbulan',
-            success: function(e){
-              var month;
-              var value;
-              month = e.map((e)=>{
-                return e.month;
-              })
-              value = e.map((e)=>{
-                return parseInt(e.value,10);
-              });
-              var ordersChart = new Chart($chart, {
-                type: 'bar',
-                data: {
-                  labels: month,
-                  datasets: [{
-                    label: 'Rupiah',
-                    data: value
-                  }]
-                },
-                options: {
-                  tooltips: {
-                      callbacks: {
-                          label: function(tooltipItem, data) {
-                              return tooltipItem.yLabel.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
-                          }
-                      }
-                  }
-                }
-              });
-            }
-          });
-          // Create chart
-          
-
-          // Save to jQuery object
-          $chart.data('chart', ordersChart);
-        }
-
-
-        // Init chart
-        if ($chart.length) {
-          initChart($chart);
-        }
-
-        })();
   </script>
 </body>
 

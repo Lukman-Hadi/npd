@@ -143,4 +143,4 @@ function formatRupiah(val, row) {
         })
         return uang.format(sum);
     };
-    </script>
+</script>

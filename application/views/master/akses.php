@@ -60,13 +60,5 @@
     </div>
 </div>
 <script type="text/javascript">
-    function kasi_akses(id_menu){
-        //alert(id_menu);
-        var level = '<?= $this->uri->segment(3) ?>';
-        //alert(level);
-        $.ajax({
-            url:"<?=base_url()?>proses/aksesmenu",
-            data:"menu_id=" + id_menu + "&level="+ level
-        });
-    }    
+    const level = '<?= $this->uri->segment(3) ?>';   
 </script>

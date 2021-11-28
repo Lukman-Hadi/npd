@@ -19,7 +19,7 @@ class Proses extends CI_Controller {
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
         // $data['js_files'][] = base_url() . 'assets/admin/easyui/datagrid-groupview.js';
         // $data['js_files'][] = base_url() . 'assets/admin/easyui/plugins/datagrid-scrollview.js';
-        // $data['js_files'][] = base_url() . 'assets/admin/js/menu.js';
+        $data['js_files'][] = base_url() . 'assets/admin/js/proses.js';
         $this->template->load('template','master/proses',$data);
     }
 
@@ -91,6 +91,7 @@ class Proses extends CI_Controller {
         $data['css_files'][] = base_url() . 'assets/admin/vendor/select2/dist/css/select2-bootstrap.css';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/select2/dist/js/select2.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/js/menu.js';
         $this->template->load('template','master/menu',$data);
     }
     function getDataMenu(){
@@ -180,13 +181,15 @@ class Proses extends CI_Controller {
         $data['css_files'][] = base_url() . 'assets/admin/vendor/select2/dist/css/select2.min.css';
         $data['css_files'][] = base_url() . 'assets/admin/vendor/select2/dist/css/select2-bootstrap.css';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
-        $data['js_files'][] = base_url() . 'assets/admin/vendor/select2/dist/js/select2.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/js/akses.js?v=2';
         $this->template->load('template','master/jabatan',$data);
     }
 
     function akses(){
         $data['css_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.css';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/js/akses.js';
         $data['title'] = 'Geser Untuk Memberikan Akses';
         $data['level'] = $this->db->get_where('tbl_levels',array('id_jabatan'=> $this->uri->segment(3)))->row_array();
         $data['menus'] = $this->db->get_where('tbl_menus',array('id_main !='=>null))->result();
@@ -236,6 +239,7 @@ class Proses extends CI_Controller {
         $data['css_files'][] = base_url() . 'assets/admin/vendor/select2/dist/css/select2-bootstrap.css';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/bootstrap-table/bootstrap-table.min.js';
         $data['js_files'][] = base_url() . 'assets/admin/vendor/select2/dist/js/select2.min.js';
+        $data['js_files'][] = base_url() . 'assets/admin/js/alur.js';
         $data['title'] = 'Data Alur Proses';
         $data['subtitle'] = 'Urutan Alur Pengajuan';
         $data['description'] = 'Hati Hati Merubah Data Ini Artinya Merubah Alur Pengajuan';
